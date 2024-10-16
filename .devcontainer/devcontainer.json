@@ -4,6 +4,9 @@
 		"ghcr.io/balazs23/devcontainers-features/bazel:1": {
 			"bazelisk": "latest"
 		},
+		// "ghcr.io/balazs23/devcontainers-features/bazel:latest": {
+		// 	"bazelisk": "latest"
+		// },
 		"ghcr.io/nordcominc/devcontainer-features/android-sdk:1": {},
 		"ghcr.io/casl0/devcontainer-features/android-sdk:1": {
 			"installNdk": true,
@@ -22,9 +25,6 @@
 		},
 		"ghcr.io/devcontainers-contrib/features/meson-asdf:latest": {
 			"version": "latest"
-		},
-		"ghcr.io/balazs23/devcontainers-features/bazel:latest": {
-			"bazelisk": "latest"
 		},
 		"ghcr.io/akhildevelops/devcontainer-features/android-cli:latest": {
 			"PACKAGES": "platform-tools,platforms;android-33,build-tools;33.0.2"
