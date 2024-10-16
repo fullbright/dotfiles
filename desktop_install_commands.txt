@@ -1,0 +1,48 @@
+sudo apt-get update -y && sudo apt-get dist-upgrade -y
+sudo apt install xfce4 xfce4-goodies novnc python3-websockify python3-numpy tightvncserver htop nano neofetch -y
+
+mv ~/.vnc/xstartup ~/.vnc/xstartup.bak
+nano ~/.vnc/xstartup
+
+``` 
+#!/bin/bash
+xrdb $HOME/.Xresources
+startxfce4 &
+```
+
+sudo chmod + ~/.vnc/xstartup
+
+touch $HOME/.Xresources
+
+
+
+
+    1  openssl req -x509 -nodes -newkey rsa:3072 -keyout novnc.pem -out novnc.pem -days 3650
+    2  websockify -D --web=/usr/share/novnc/ --cert=/home/ubuntu/novnc.pem 6080 localhost:5901
+    3  ll /usr/share/ | grep vnc
+    5  websockify -D --web=/usr/share/novnc/ --cert=/home/ubuntu/novnc.pem 6080 localhost:5901
+    6  vncserver 
+    7  history >> desktop_install_commands.txt
+
+
+
+Hello guys, today i will show you the way to get desktop (xfce4)
+If you seen this helpful, you can subscribe!
+
+--------------------------------------------------------------
+Script install Desktop and VNC to Github Codespaces! (xfce4) -
+sudo apt update
+sudo apt install xfce4 xfce4-goodies novnc python3-websockify python3-numpy tightvncserver htop nano neofetch -y
+openssl req -x509 -nodes -newkey rsa:3072 -keyout novnc.pem -out novnc.pem -days 3650
+USER=root vncserver
+vncserver -kill :1
+mv ~/.vnc/xstartup ~/.vnc/xstartup.bak
+nano ~/.vnc/xstartup
+USER=root vncserver
+websockify -D --web=/usr/share/novnc/ --cert=/home/ubuntu/novnc.pem 6080 localhost:5901
+
+_________________________________________
+
+#!/bin/bash
+xrdb $HOME/.Xresources
+startxfce4 &
