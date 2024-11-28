@@ -26,7 +26,7 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles_bare/ --work-tree=$HOME'
 
 # Source the zsh complete
-source $HOME/.git-completion.zsh
+#source $HOME/.git-completion.zsh
 
 # Allow completion for aliases
 unsetopt completealiases
