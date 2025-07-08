@@ -64,7 +64,9 @@ function Invoke-GitCommand {
 Checks if the repository has uncommitted changes
 #>
 function Test-RepositoryClean {
-    return [string]::IsNullOrEmpty((Invoke-GitCommand @("status", "--porcelain")))
+	$gitPorcelainOutput = (Invoke-GitCommand @("status", "--porcelain"))
+	Write-Debug "Porcelain output = $gitPorcelainOutput"
+    return [string]::IsNullOrEmpty($gitPorcelainOutput)
 }
 
 <#
