@@ -220,6 +220,9 @@ function Sync-Repository {
             Write-Info "Pushing local changes..."
             Invoke-GitCommand @("push")
         }
+		else {
+			Write-Warning "Repository is not clean. Not pushing."
+		}
     }
     
     # Cleanup branches
