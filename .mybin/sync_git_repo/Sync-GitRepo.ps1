@@ -216,9 +216,9 @@ function Sync-Repository {
         Merge-RemoteChanges
     }
     else {
-        Write-Success "No remote changes"
+        Write-Success "No remote changes. Check if local changes to push"
         # Push local changes if any
-        if (-not (Test-RepositoryClean)) {
+        if (Test-RepositoryClean) {
             Write-Info "Pushing local changes..."
             Invoke-GitCommand @("push")
         }
