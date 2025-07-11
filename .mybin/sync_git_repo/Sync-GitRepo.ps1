@@ -223,7 +223,7 @@ function Sync-Repository {
             Invoke-GitCommand @("push")
         }
 		else {
-			Write-Warning "Repository is not clean. Not pushing."
+			Write-Error "Repository is not clean. Not pushing."
 		}
     }
     
