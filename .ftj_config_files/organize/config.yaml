@@ -1,0 +1,271 @@
+# organize configuration file
+# https://organize.readthedocs.io
+
+rules:
+  - name: "Clean downloaded files older than 30 days"
+    enabled: True
+    locations:
+      - path: C:\Users\AFANOUS\Downloads\
+      - path: C:\Users\AFANOUS\to_delete\
+        #exclude_dirs: ["tvshows", "Path to a happy Life", "airflow"]
+    subfolders: true
+    filters:
+      - created:
+          days: 30
+          mode: 'older'
+    actions:
+      - echo: "Delete the {name}"
+      - trash
+    tags:
+      - delete-old-files 
+      
+  - name: "Clean downloaded files in 1d folder older than 1 day"
+    enabled: True
+    locations:
+      - path: C:\Users\AFANOUS\to_delete\1d\
+        #exclude_dirs: ["tvshows", "Path to a happy Life", "airflow"]
+        exclude_files: [ ".gitkeep" ]
+    subfolders: true
+    filters:
+      - created:
+          days: 1
+          mode: 'older'
+    actions:
+      - echo: "Delete the {name}"
+      - trash
+    tags:
+      - delete-old-files 
+      
+  
+  - name: "Clean downloaded files in 7d folder older than 7 days"
+    enabled: True
+    locations:
+      - path: C:\Users\AFANOUS\to_delete\7d\
+        #exclude_dirs: ["tvshows", "Path to a happy Life", "airflow"]
+        exclude_files: [ ".gitkeep" ]
+    subfolders: true
+    filters:
+      - created:
+          days: 1
+          mode: 'older'
+    actions:
+      - echo: "Delete the {name}"
+      - trash
+    tags:
+      - delete-old-files 
+      
+      
+  - name: "Clean downloaded files in 15d folder older than 15 days"
+    enabled: True
+    locations:
+      - path: C:\Users\AFANOUS\to_delete\15d\
+        #exclude_dirs: ["tvshows", "Path to a happy Life", "airflow"]
+        exclude_files: [ ".gitkeep" ]
+    subfolders: true
+    filters:
+      - created:
+          days: 1
+          mode: 'older'
+    actions:
+      - echo: "Delete the {name}"
+      - trash
+    tags:
+      - delete-old-files 
+    
+  - name: "Recursively delete all empty directories :))))"
+    enabled: True
+    locations:
+      - C:\Users\AFANOUS\Downloads\
+      - path: C:\Users\AFANOUS\to_delete\
+        #exclude_dirs: ["tvshows", "Path to a happy Life", "airflow"]
+    targets: dirs
+    subfolders: true
+    #targets: dirs
+    filters:
+      - empty
+    actions:
+      - trash
+    tags:
+      - delete-old-files 
+
+  - name: "Backup all my appsconfig files"
+    enabled: True
+    locations:
+      - C:\myApps
+      - path: C:\APPS
+        exclude_dirs: ["syncdocs"]
+    subfolders: true
+    filters:
+      - extension:
+          - config
+          - ini
+          - exe.config
+          - yml
+          - yaml
+    actions:
+      #- copy: 
+      #    dest: "C:\\Users\\AFANOUS\\Documents\\MesSauvegardesDeConfigOutils\\{relative_path}"
+      #    on_conflict: overwrite
+      - copy: 
+          dest: "C:\\Users/AFANOUS/OneDrive - Luxottica Group S.p.A/Documenti/MesSauvegardesDeConfigOutils/{relative_path}"
+          on_conflict: overwrite
+    tags:
+      - backup-configs
+
+
+  - name: "Backup Espanso config files"
+    enabled: True
+    subfolders: true
+    locations:
+      - path: C:\Users\afanous\AppData\Roaming\espanso
+    filters:
+      - extension:
+          - config
+          - ini
+          - exe.config
+          - yml
+          - yaml
+
+    actions:
+      #- copy: 
+      #    dest: "C://Users/AFANOUS/Documents/MesSauvegardesDeConfigOutils/espanso/{relative_path}"
+      #    on_conflict: overwrite
+      - copy: 
+          dest: "C:\\Users/AFANOUS/OneDrive - Luxottica Group S.p.A/Documenti/MesSauvegardesDeConfigOutils/espanso/{relative_path}"
+          on_conflict: overwrite
+    tags:
+      - backup-configs
+
+
+  - name: "Backup Organize config files"
+    enabled: True
+    subfolders: true
+    locations:
+      - path: C:\Users\AFANOUS\AppData\Local\organize
+    filters:
+      - extension:
+          - config
+          - ini
+          - exe.config
+          - yml
+          - yaml
+
+    actions:
+      #- copy: 
+      #    dest: "C://Users/AFANOUS/Documents/MesSauvegardesDeConfigOutils/organize/{relative_path}"
+      #    on_conflict: overwrite
+      - copy: 
+          dest: "C:\\Users/AFANOUS/OneDrive - Luxottica Group S.p.A/Documenti/MesSauvegardesDeConfigOutils/organize/{relative_path}"
+          on_conflict: overwrite
+    tags:
+      - backup-configs
+
+  - name: "Find PDFs and Words"
+    enabled: False
+    locations:
+      - C:\Users\AFANOUS\Downloads\
+      - path: C:\Users\AFANOUS\Documents\Personal
+        exclude_dirs: [ "Personal\\dev", "Obsidian", 'dev' ]
+    subfolders: true
+    filters:
+      - extension: 
+          - pdf
+      - created:
+          years: 3
+          mode: 'newer'
+    actions:
+      - echo: "Found PDF! Added at {created.strftime('%Y-%m-%d')}"
+    tags:
+      - sort-files-to-destination
+      
+      
+  - name: "Microsoft Word files"
+    enabled: False
+    locations:
+      - C:\Users\AFANOUS\Downloads\
+      - path: C:\Users\AFANOUS\Documents\Personal
+        exclude_dirs: [ "Personal\\dev", "Obsidian", 'dev' ]
+    subfolders: true
+    filters:
+      - extension:
+          - doc
+          - docx
+      - created:
+          years: 3
+          mode: 'newer'
+      
+      - filecontent
+    actions:
+      - echo: "{ filecontent }"
+      - echo: "Found Word! Added at {created.strftime('%Y-%m-%d')}"
+    tags:
+      - audit-file
+
+  - name: "Move Bright Softwares files to Personal folder"
+    enabled: False
+    locations:
+      - C:\Users\AFANOUS\Downloads\
+    subfolders: true
+    filters:
+      - extension: pdf
+      - created:
+          years: 3
+          mode: 'newer'
+      - name:
+          contains: "Bright-Softwares"
+          case_sensitive: False
+          
+    actions:
+      - echo: "Move file to Bright Softwares folder"
+      - move: C:\Users\AFANOUS\Documents\Personal\BrightSoftwares\{created.strftime('%Y-%m-%d')}\
+    tags:
+      - sort-files-to-destination
+      
+  - name: "Organize Impots files"
+    enabled: False
+    locations:
+      - C:\Users\AFANOUS\Downloads\
+    subfolders: true
+    filters:
+      - extension: pdf
+      - created:
+          years: 3
+          mode: 'newer'
+      - name:
+          contains: "Fiscalite"
+          case_sensitive: False
+      - filecontent: '.*le régime fiscal (?P<typeregime>.*) en vigueur.*'
+          
+    actions:
+      - echo: "Move file to Impots folder."
+      - echo: "{ filecontent.typeregime }"
+      - move: C:\Users\AFANOUS\Documents\Personal\Impots\ActionsGratuites\{created.strftime('%B_%Y')}\ 
+    tags:
+      - sort-files-to-destination
+      
+      
+  - name: "Organiser les factures word dans les bons dossiers"
+    enabled: False
+    locations:
+      - path: C:\Users\AFANOUS\Downloads\
+      - path: C:\Users\AFANOUS\Documents\Personal
+        exclude_dirs: [ "Personal\\dev", "Obsidian", 'dev' ]
+    subfolders: true
+    filters:
+      - extension:
+          - doc
+          - docx
+          - odt
+          - pdf
+      - created:
+          years: 3
+          mode: 'newer'
+      - name:
+          contains: "FACTURE"
+          case_sensitive: False
+          
+    actions:
+      - echo: "Move file to Factures folder."
+      - move: C:\Users\AFANOUS\Documents\Personal\Factures\{created.strftime('%B_%Y')}\ 
+    tags:
+      - sort-files-to-destination
