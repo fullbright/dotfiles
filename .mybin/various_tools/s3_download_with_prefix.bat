@@ -1,0 +1,1 @@
+aws s3 cp s3://essilor-accesslogs/ . --exclude "*" --include "essilorrxit2025-08-*"  --recursive  --profile essilor-calp-prd-admin
