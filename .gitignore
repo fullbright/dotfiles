@@ -1,2 +1,35 @@
+# Windows computer ignores
 .ftj_config_files/organize/organize/Logs/
 .venv
+
+# Mac computer ignores
+.dotfiles_bare
+
+# Google drive folders
+storage.infreqaccess@afanou.com - Google Drive
+storage.std@afanou.com - Google Drive
+google_drive_storage.infreqaccess_afanou.com/
+
+# Folders in the home directory
+Applications/
+Documents/
+Downloads/
+Games/
+Games/
+Library/
+Mon Drive/
+Movies/
+Music/
+.Trash/
+Desktop/
+MyDocuments_documents/
+Pictures/
+Public/
+Screenshots/
+VirtualBox VMs/
+cam-truck/
+dev/
+dev_d_personal_from_windows/
+
+
+
