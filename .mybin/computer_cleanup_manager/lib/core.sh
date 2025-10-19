@@ -153,7 +153,17 @@ is_git_repo() {
 
 get_remote_url() {
     local folder=$1
-    git -C "$folder" ls-remote --get-url origin 2>/dev/null || return 1
+    local url
+    # Use 2>&1 to capture stderr and prevent it from appearing in output
+    url=$(git -C "$folder" ls-remote --get-url origin 2>&1)
+    
+    # Check if it's a valid URL (not an error message)
+    if [[ $? -eq 0 ]] && [[ "$url" =~ ^https?:// ]] || [[ "$url" =~ ^git@ ]]; then
+        echo "$url"
+        return 0
+    else
+        return 1
+    fi
 }
 
 has_uncommitted_changes() {
@@ -226,7 +236,7 @@ prompt_yes_no() {
     local response
     
     while true; do
-        read -p "${CYAN}${prompt} ${NC}(y/n): " -r response
+        read -p "${CYAN}${prompt} ${NC}(y/n): " -r response </dev/tty
         case "$response" in
             [Yy]*)
                 return 0
@@ -235,7 +245,7 @@ prompt_yes_no() {
                 return 1
                 ;;
             *)
-                echo "Please answer yes or no."
+                echo "Please answer yes or no." >&2
                 ;;
         esac
     done
@@ -246,7 +256,7 @@ prompt_continue_or_skip() {
     local response
     
     while true; do
-        read -p "${CYAN}${prompt}${NC} (c=continue/s=skip/a=abort): " -r response
+        read -p "${CYAN}${prompt}${NC} (c=continue/s=skip/a=abort): " -r response </dev/tty
         case "$response" in
             [Cc]*)
                 return 0
@@ -258,7 +268,7 @@ prompt_continue_or_skip() {
                 return 2
                 ;;
             *)
-                echo "Please answer c, s, or a."
+                echo "Please answer c, s, or a." >&2
                 ;;
         esac
     done

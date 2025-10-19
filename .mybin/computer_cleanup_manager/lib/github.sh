@@ -16,12 +16,23 @@ init_github_owners() {
         GITHUB_OWNERS=("fullbright" "BrightSoftwares")
     fi
     
-    # Add current authenticated user
+    # Add current authenticated user if not already in list
     local current_user
     current_user=$(gh api user --jq .login 2>/dev/null)
     if [[ -n "$current_user" ]] && [[ ! " ${GITHUB_OWNERS[*]} " =~ " ${current_user} " ]]; then
         GITHUB_OWNERS+=("$current_user")
     fi
+    
+    # Remove duplicates while preserving order
+    local -a unique_owners=()
+    local -A seen=()
+    for owner in "${GITHUB_OWNERS[@]}"; do
+        if [[ -z "${seen[$owner]:-}" ]]; then
+            unique_owners+=("$owner")
+            seen[$owner]=1
+        fi
+    done
+    GITHUB_OWNERS=("${unique_owners[@]}")
     
     log_debug "GitHub owners initialized: ${GITHUB_OWNERS[*]}"
 }
@@ -43,31 +54,35 @@ select_github_owner() {
         return 0
     fi
     
-    echo ""
-    echo "${CYAN}Select GitHub owner/organization:${NC}"
+    # Send prompts to stderr to avoid capturing them
+    echo "" >&2
+    echo "${CYAN}Select GitHub owner/organization:${NC}" >&2
     
     local i=1
     for owner in "${GITHUB_OWNERS[@]}"; do
-        echo "  $i) $owner"
+        echo "  $i) $owner" >&2
         ((i++))
     done
-    echo "  $i) Enter new owner/org"
-    echo ""
+    echo "  $i) Enter new owner/org" >&2
+    echo "" >&2
+    
+    local selected_owner=""
     
     while true; do
-        read -p "Selection [1-$i]: " -r selection
+        read -p "Selection [1-$i]: " -r selection </dev/tty
         
         if [[ "$selection" =~ ^[0-9]+$ ]]; then
             if (( selection > 0 && selection < i )); then
-                local selected_owner="${GITHUB_OWNERS[$((selection - 1))]}"
-                echo "$selected_owner"
+                selected_owner="${GITHUB_OWNERS[$((selection - 1))]}"
                 
                 # Remember this selection as default for this session
                 DEFAULT_OWNER="$selected_owner"
                 
+                # Only echo the result to stdout
+                echo "$selected_owner"
                 return 0
             elif (( selection == i )); then
-                read -p "Enter owner/org name: " -r new_owner
+                read -p "Enter owner/org name: " -r new_owner </dev/tty
                 
                 if [[ -n "$new_owner" ]]; then
                     # Verify owner exists
@@ -84,7 +99,7 @@ select_github_owner() {
             fi
         fi
         
-        echo "Invalid selection. Please try again."
+        echo "Invalid selection. Please try again." >&2
     done
 }
 

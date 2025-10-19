@@ -205,22 +205,25 @@ process_non_repo() {
     
     # Open in Finder for user review
     if command -v open &>/dev/null; then
-        open "$folder"
+        open "$folder" 2>/dev/null &
     fi
     
-    if prompt_yes_no "Do you want to keep this folder and create a repository?"; then
-        local owner
-        owner=$(select_github_owner)
-        
-        if create_and_link_repo "$folder" "$owner"; then
-            process_repo_with_changes "$folder"
-        else
-            log_error "Failed to create repository"
-            return 1
-        fi
-    else
+    if ! prompt_yes_no "Do you want to keep this folder and create a repository?"; then
         log_info "Folder will be left as-is"
         state_mark_skipped "$folder"
+        return 0  # Return success to continue
+    fi
+    
+    local owner
+    owner=$(select_github_owner)
+    
+    if create_and_link_repo "$folder" "$owner"; then
+        process_repo_with_changes "$folder"
+        return $?
+    else
+        log_error "Failed to create repository"
+        state_mark_failed "$folder" "create_repo_failed"
+        return 1
     fi
 }
 
@@ -230,18 +233,21 @@ process_no_remote() {
     
     log_info "Repository has no remote configured"
     
-    if prompt_yes_no "Create a GitHub repository for this?"; then
-        local owner
-        owner=$(select_github_owner)
-        
-        if link_to_new_repo "$folder" "$owner"; then
-            process_repo_with_changes "$folder"
-        else
-            log_error "Failed to link repository"
-            return 1
-        fi
-    else
+    if ! prompt_yes_no "Create a GitHub repository for this?"; then
         state_mark_skipped "$folder"
+        return 0  # Return success to continue
+    fi
+    
+    local owner
+    owner=$(select_github_owner)
+    
+    if link_to_new_repo "$folder" "$owner"; then
+        process_repo_with_changes "$folder"
+        return $?
+    else
+        log_error "Failed to link repository"
+        state_mark_failed "$folder" "link_repo_failed"
+        return 1
     fi
 }
 
@@ -253,18 +259,21 @@ process_external_repo() {
     
     log_info "External repository: $remote_url"
     
-    if prompt_yes_no "Fork this repository to your account?"; then
-        local owner
-        owner=$(select_github_owner)
-        
-        if fork_and_update_remote "$folder" "$owner"; then
-            process_repo_with_changes "$folder"
-        else
-            log_error "Failed to fork repository"
-            return 1
-        fi
-    else
+    if ! prompt_yes_no "Fork this repository to your account?"; then
         state_mark_skipped "$folder"
+        return 0  # Return success, not failure
+    fi
+    
+    local owner
+    owner=$(select_github_owner)
+    
+    if fork_and_update_remote "$folder" "$owner"; then
+        # After forking, process as a repo with changes
+        process_repo_with_changes "$folder"
+    else
+        log_error "Failed to fork repository"
+        state_mark_failed "$folder" "fork_failed"
+        return 1
     fi
 }
 
@@ -413,7 +422,7 @@ main() {
             continue
         fi
         
-        # Process folder
+        # Process folder (capture return code properly)
         if process_folder_by_category "$folder" "$category"; then
             ((processed++))
             state_save_checkpoint
@@ -421,9 +430,14 @@ main() {
             ((failed++))
             log_error "Failed to process: $folder_name"
             
-            if ! prompt_yes_no "Continue with next folder?"; then
-                log_info "User aborted process"
-                break
+            # Only prompt if not in batch mode
+            if [[ "${BATCH_SIZE:-1}" -eq 1 ]]; then
+                if ! prompt_yes_no "Continue with next folder?"; then
+                    log_info "User aborted process"
+                    break
+                fi
+            else
+                log_warn "Continuing with next folder in batch mode"
             fi
         fi
     done
