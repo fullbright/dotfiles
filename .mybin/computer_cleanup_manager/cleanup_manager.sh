@@ -261,6 +261,7 @@ process_external_repo() {
     
     if ! prompt_yes_no "Fork this repository to your account?"; then
         state_mark_skipped "$folder"
+        echo "Marked, returning exit 0"
         return 0  # Return success, not failure
     fi
     
