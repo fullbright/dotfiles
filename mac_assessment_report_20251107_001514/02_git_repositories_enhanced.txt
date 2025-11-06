@@ -1,0 +1,240 @@
+=== Enhanced Git Repository Scan ===
+Scan Date: Ven  7 nov 2025 00:15:59 CET
+
+Searching in:
+  - /Users/sergio/Documents
+  - /Users/sergio/Desktop
+  - /Users/sergio/Projects
+  - /Users/sergio/Dev
+  - /Users/sergio/Development
+  - /Users/sergio/Code
+  - /Users/sergio/src
+  - /Users/sergio/repos
+  - /Users/sergio/git
+  - /Users/sergio/dotfiles
+  - /Users/sergio
+
+
+━━━ Scanning: /Users/sergio/Documents ━━━
+
+
+━━━ Scanning: /Users/sergio/Desktop ━━━
+
+
+━━━ Scanning: /Users/sergio/Dev ━━━
+
+[1] Repository: /Users/sergio/Dev/collectmeterdigits/neural-network-digital-counter-readout
+    Size: 170M
+    Remote: https://github.com/jomjol/neural-network-digital-counter-readout.git
+    Branch: master
+    Status: ✓ Clean working directory
+
+[2] Repository: /Users/sergio/Dev/duolingo-clone
+    Size: 327M
+    Remote: https://github.com/BrightSoftwares/duolingo-clone.git
+    Branch: main
+    Status: ✓ Clean working directory
+
+
+━━━ Scanning: /Users/sergio ━━━
+
+[3] Repository: /Users/sergio/dev_completed/accelerated-text-fullbright
+    Size: 115M
+    Remote: https://github.com/fullbright/accelerated-text.git
+    Branch: migration-20251009-232623
+    Status: ✓ Clean working directory
+
+[4] Repository: /Users/sergio/.config/stripe/samples-cache/samples-list
+    Size:  76K
+    Remote: https://github.com/stripe-samples/samples-list.git
+    Branch: master
+    Status: ✓ Clean working directory
+
+[5] Repository: /Users/sergio/.config/stripe/samples-cache/checkout-one-time-payments
+    Size:  14M
+    Remote: https://github.com/stripe-samples/checkout-one-time-payments.git
+    Branch: master
+    Status: ✓ Clean working directory
+
+[6] Repository: /Users/sergio/Mon Drive/60.backups/62.00.all_fresl31299/Documents/92.ftj.run/Gdp.ModuleDeployment
+    Size:  29M
+    Remote: https://EL-RX-DigitalServices@dev.azure.com/EL-RX-DigitalServices/GDP%20Project/_git/Gdp.ModuleDeployment
+    Branch: sergio/revert_jpl_feature_on_v4
+    Status: ⚠️  HAS UNCOMMITTED CHANGES
+    Modified files:
+ M BuildScripts/GenerateAsgPackages.ps1
+ M BuildScripts/GenerateModuleVersionList.ps1
+ M BuildScripts/GeneratePackages.ps1
+ M README.md
+ M Scripts/EssilorLaas.psm1
+ M Scripts/EssilorMetadata.psm1
+ M Scripts/EssilorS3.psm1
+ M Scripts/EssilorSSM.psm1
+ M Scripts/FcsInstaller.psm1
+ M Scripts/GdpInstall.psm1
+ M Scripts/Install.Configuration.ps1
+ M Scripts/Logger/Logger.exe.RoslynCA.json
+ M Scripts/Logger/Logger.exe.config
+ M Scripts/Logger/log4netKinesis.config
+ M Scripts/Logger/log4netLaas.config
+ M Scripts/Logger/log4netLaasAndKinesis.config
+ M Scripts/ModuleHostInstaller.psm1
+ M Scripts/Run.cmd
+ M Scripts/Run.ps1
+ M Scripts/RxcpModulesInstaller.psm1
+
+[7] Repository: /Users/sergio/Mon Drive/60.backups/62.00.all_fresl31299/Documents/92.ftj.run/GDP.DataSetSQLQueries.Dione
+    Size: 6,7M
+    Remote: https://in-tfscloud-i.rxdigitalplatform.com/tfs/RxIT-DigitalServices/GDP%20Project/_git/GDP.DataSetSQLQueries.Dione
+    Branch: master
+    Status: ⚠️  HAS UNCOMMITTED CHANGES
+    Modified files:
+ M SQLQueries/dione_getgeometrybycommdia_v1.xml
+ M SQLQueries/dione_getgeometrybycommdia_v2.xml
+ M SQLQueries/dione_getgeometrybyphysicaldia_v1.xml
+ M SQLQueries/dione_getgeometrybyphysicaldia_v2.xml
+ M SQLQueries/dione_getgeometrybyusefuldia_v1.xml
+ M SQLQueries/dione_getgeometrybyusefuldia_v2.xml
+ M SQLQueries/dione_getipsversion_v1.xml
+ M SQLQueries/dione_getipsversion_v2.xml
+ M SQLQueries/dione_getlenstype_v1.xml
+ M SQLQueries/dione_getmaterialid_v1.xml
+ M SQLQueries/dione_getversionmaturity_v1.xml
+?? "Icon\r"
+?? "SQLQueries/Icon\r"
+
+[8] Repository: /Users/sergio/Mon Drive/60.backups/62.00.all_fresl31299/Documents/92.ftj.run/Gdp.ModuleDeployment.RIP
+    Size:  37M
+    Remote: http://in-tfscloud-pfr00.essilor.com:8080/tfs/RxIT-DigitalServices/GDP%20Project/_git/Gdp.ModuleDeployment
+    Branch: master
+    Status: ⚠️  HAS UNCOMMITTED CHANGES
+    Modified files:
+ M BuildScripts/GenerateAsgPackages.ps1
+ M BuildScripts/GenerateModuleVersionList.ps1
+ M BuildScripts/GeneratePackages.ps1
+ M README.md
+ M Scripts/EssilorLaas.psm1
+ M Scripts/EssilorMetadata.psm1
+ M Scripts/EssilorS3.psm1
+ M Scripts/EssilorSSM.psm1
+ M Scripts/FcsInstaller.psm1
+ M Scripts/GdpInstall.psm1
+ M Scripts/Install.Configuration.ps1
+ M Scripts/Logger/Logger.exe.RoslynCA.json
+ M Scripts/Logger/Logger.exe.config
+ M Scripts/Logger/log4netKinesis.config
+ M Scripts/Logger/log4netLaas.config
+ M Scripts/Logger/log4netLaasAndKinesis.config
+ M Scripts/ModuleHostInstaller.psm1
+ M Scripts/Run.cmd
+ M Scripts/Run.ps1
+ M Scripts/RxcpModulesInstaller.psm1
+
+[9] Repository: /Users/sergio/Mon Drive/60.backups/62.00.all_fresl31299/Documents/92.ftj.run/GDP.DataSetSQLQueries.deprecated
+    Size: 8,5M
+    Remote: https://in-tfscloud-i.rxdigitalplatform.com/tfs/RxIT-DigitalServices/GDP%20Project/_git/GDP.DataSetSQLQueries
+    Branch: master
+    Status: ⚠️  HAS UNCOMMITTED CHANGES
+    Modified files:
+ M SQLQueries/adoc_productinfo_v1.xml
+ M SQLQueries/adoc_productoptions_v1.xml
+ M SQLQueries/adoc_thicknessconstraints_v1.xml
+ M SQLQueries/common_allsettings_v1.xml
+ M SQLQueries/common_manysettings_v1.xml
+ M SQLQueries/common_onesetting_v1.xml
+ M SQLQueries/sflib_ddvbinosf_v1.xml
+ M SQLQueries/sflib_ddvmonosf_v1.xml
+ M SQLQueries/sflib_fbsbinosf_v1.xml
+ M SQLQueries/sflib_fbsmonosf_v1.xml
+ M SQLQueries/sflib_opcsffamily_v1.xml
+ M SQLQueries/sflib_opcwithsurface_v1.xml
+ M SQLQueries/sflib_opcwithsurface_v2.xml
+ M SQLQueries/sflib_sffamilymaterial_v1.xml
+ M SQLQueries/stock_cvbgaperror_v1.xml
+ M SQLQueries/stock_cvbgapwarning_v1.xml
+ M SQLQueries/stock_ipsversionbyid_v1.xml
+ M SQLQueries/stock_materialbyid_v1.xml
+ M SQLQueries/stock_materialbyid_v2.xml
+ M SQLQueries/surf_surfacedefinition_v1.xml
+
+[10] Repository: /Users/sergio/Mon Drive/60.backups/62.00.all_fresl31299/Documents/92.ftj.run/Gdp.Deployment.Scripts
+    Size:  13M
+    Remote: http://in-tfscloud-pfr00.essilor.com:8080/tfs/RxIT-DigitalServices/GDP%20Project/_git/Gdp.Deployment.Scripts
+    Branch: development
+    Status: ⚠️  HAS UNCOMMITTED CHANGES
+    Modified files:
+ M .gitignore
+ M Admin/ASG/Asg_Refresh_From_Tfs.ps1
+ M Admin/Authentication/GenerateHash.ps1
+ M Admin/Authentication/readme.txt
+ M Admin/DnsCompare/CINCNames.csv
+ M Admin/DnsCompare/DevCNames.csv
+ M Admin/DnsCompare/DnsCompare.ps1
+ M Admin/DnsCompare/GINCNames.csv
+ M Admin/DnsCompare/GrafanaCNames.csv
+ M Admin/DnsCompare/PPRCCNames.csv
+ M Admin/DnsCompare/PPRCNames.csv
+ M Admin/DnsCompare/PPRICNames.csv
+ M Admin/DnsCompare/PRDCCNames.csv
+ M Admin/DnsCompare/PRDICNames.csv
+ M Admin/DnsCompare/QuaCNames.csv
+ M Admin/DnsCompare/TinCNames.csv
+ M Admin/DynamoDB/EpochToDate.cmd
+ M Admin/DynamoDB/EpochToDate.ps1
+ M Admin/DynamoDB/GetByPres.cmd
+ M Admin/DynamoDB/GetGdpJob.cmd
+
+[11] Repository: /Users/sergio/Mon Drive/60.backups/62.00.all_fresl31299/Documents/92.ftj.run/GDP.DataSetSQLQueries.Saturn
+    Size:  12M
+    Remote: https://in-tfscloud-i.rxdigitalplatform.com/tfs/RxIT-DigitalServices/GDP%20Project/_git/GDP.DataSetSQLQueries.Saturn
+    Branch: master
+    Status: ⚠️  HAS UNCOMMITTED CHANGES
+    Modified files:
+ M SQLQueries/adoc_productinfo_v1.xml
+ M SQLQueries/adoc_productoptions_v1.xml
+ M SQLQueries/adoc_thicknessconstraints_v1.xml
+ M SQLQueries/checking_allattributelocation_v1.xml
+ M SQLQueries/checking_allcriterionparameters_v1.xml
+ M SQLQueries/checking_allfeasibilitycriterionparameters_v1.xml
+ M SQLQueries/checking_checkdatabasecompatibility_v1.xml
+ M SQLQueries/checking_criterionbystrategy_v1.xml
+ M SQLQueries/checking_criterionparameter_v1.xml
+ M SQLQueries/checking_documenttype_v1.xml
+ M SQLQueries/checking_isstrategycodeexist_v1.xml
+ M SQLQueries/checking_isstrategycodeexist_v2.xml
+ M SQLQueries/checking_istolerancesetcodeexist_v1.xml
+ M SQLQueries/checking_points_v1.xml
+ M SQLQueries/checking_strategycode_v1.xml
+ M SQLQueries/checking_strategycodewithoutmarketid_v1.xml
+ M SQLQueries/checking_substratecode_v1.xml
+ M SQLQueries/checking_toleranceset_v1.xml
+ M SQLQueries/checking_tolerancesetwithoutmarketid_v1.xml
+ M SQLQueries/common_allsettings_v1.xml
+
+[12] Repository: /Users/sergio/Mon Drive/30-39.ftj.projects/31.active_projects/302.EssilorLuxottica/60.backups/62.00.all_fresl31299/Documents/92.ftj.run/Gdp.ModuleDeployment
+    Size:  28M
+    Remote: https://EL-RX-DigitalServices@dev.azure.com/EL-RX-DigitalServices/GDP%20Project/_git/Gdp.ModuleDeployment
+    Branch: HEAD
+unknown
+    Status: ⚠️  HAS UNCOMMITTED CHANGES
+    Modified files:
+AM BuildScripts/GenerateAsgPackages.ps1
+AM BuildScripts/GenerateModuleVersionList.ps1
+AM BuildScripts/GeneratePackages.ps1
+AM README.md
+AM Scripts/EssilorLaas.psm1
+AM Scripts/EssilorMetadata.psm1
+AM Scripts/EssilorS3.psm1
+AM Scripts/EssilorSSM.psm1
+AM Scripts/FcsInstaller.psm1
+AM Scripts/GdpInstall.psm1
+AM Scripts/Install.Configuration.ps1
+A  Scripts/Logger/AWSSDK.Core.dll
+A  Scripts/Logger/AWSSDK.EC2.dll
+A  Scripts/Logger/AWSSDK.KinesisFirehose.dll
+A  Scripts/Logger/AWSSDK.SecurityToken.dll
+A  Scripts/Logger/AWSSDK.SimpleSystemsManagement.dll
+A  Scripts/Logger/CommandLine.dll
+A  Scripts/Logger/Essilor.Common.Configuration.dll
+A  Scripts/Logger/Essilor.Common.KinesisFacade.dll
+A  Scripts/Logger/Essilor.Common.LaasFacade.dll
