@@ -1,0 +1,8 @@
+=== Sensitive Files and Credentials ===
+
+⚠️  These files may contain sensitive information
+   Ensure they are properly backed up and encrypted
+
+━━━ Searching in: /Users/sergio/Documents ━━━
+
+━━━ Searching in: /Users/sergio/Desktop ━━━

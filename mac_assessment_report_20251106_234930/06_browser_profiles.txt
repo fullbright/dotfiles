@@ -1,0 +1,102 @@
+=== Browser Profiles ===
+
+━━━ Google Chrome ━━━
+Chrome directory: /Users/sergio/Library/Application Support/Google/Chrome
+Size:  17G
+Profiles found:
+  - Profile 10 ( 51M)
+    Has Preferences file: Yes
+    Display Name: jp
+    Extensions: 4
+
+  - Profile 11 (644M)
+    Has Preferences file: Yes
+    Display Name: Personne 3
+    Extensions: 13
+    Has Bookmarks: Yes
+
+  - Profile 7 (8,9M)
+    Has Preferences file: Yes
+    Display Name: JPMopo
+    Extensions: 2
+
+  - Profile 9 ( 22M)
+    Has Preferences file: Yes
+    Display Name: Sofia Folwer
+    Extensions: 9
+
+  - Profile 8 ( 73M)
+    Has Preferences file: Yes
+    Display Name: Home Storage Extended
+    Extensions: 10
+    Has Bookmarks: Yes
+
+  - Profile 6 ( 67M)
+    Has Preferences file: Yes
+    Display Name: Isa Bryant
+    Extensions: 4
+    Has Bookmarks: Yes
+
+  - Profile 1 (5,2G)
+    Has Preferences file: Yes
+    Display Name: Sergio Afanou - Essilor
+    Extensions: 27
+    Has Bookmarks: Yes
+
+  - Default (2,3G)
+    Has Preferences file: Yes
+    Display Name: full3right@gmail.com
+    Extensions: 37
+    Has Bookmarks: Yes
+
+  - Profile 4 ( 56M)
+    Has Preferences file: Yes
+    Display Name: Personne 2
+    Extensions: 4
+    Has Bookmarks: Yes
+
+  - Profile 3 (584M)
+    Has Preferences file: Yes
+    Display Name: Personne 1
+    Extensions: 10
+    Has Bookmarks: Yes
+
+  - Profile 2 (3,3G)
+    Has Preferences file: Yes
+    Display Name: sergio@afanou.com
+    Extensions: 52
+    Has Bookmarks: Yes
+
+  - Profile 5 ( 49M)
+    Has Preferences file: Yes
+    Display Name: AWS MAIN
+    Extensions: 9
+
+
+━━━ Firefox ━━━
+Firefox directory: /Users/sergio/Library/Application Support/Firefox/Profiles
+Size:  43M
+Profiles found:
+  - ydt9kx21.default-release ( 43M)
+    Has prefs.js: Yes
+    Extensions: 0
+
+  - 66aq7ov2.default (4,0K)
+
+
+━━━ Safari ━━━
+Safari directory: /Users/sergio/Library/Safari
+Size: N/A
+Bookmarks: Yes
+History: Yes (N/A)
+
+═══════════════════════════════════════════════════════════
+BACKUP RECOMMENDATION:
+═══════════════════════════════════════════════════════════
+
+To backup Chrome profiles:
+  rsync -av "/Users/sergio/Library/Application Support/Google/Chrome" /path/to/backup/
+To backup Firefox profiles:
+  rsync -av "/Users/sergio/Library/Application Support/Firefox/Profiles" /path/to/backup/
+To backup Safari data:
+  rsync -av "/Users/sergio/Library/Safari" /path/to/backup/

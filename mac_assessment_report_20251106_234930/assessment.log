@@ -1,0 +1,52 @@
+[0;32m[2025-11-06 23:49:30][0m ✓ Starting comprehensive assessment...
+[0;32m[2025-11-06 23:49:30][0m ✓ This will perform READ-ONLY operations on your system
+[0;32m[2025-11-06 23:49:30][0m ✓ Report will be saved to: /Users/sergio/mac_assessment_report_20251106_234930
+
+═══════════════════════════════════════════════════════════════
+[0;34m[2025-11-06 23:49:30][0m SYSTEM INFORMATION
+═══════════════════════════════════════════════════════════════
+[0;32m[2025-11-06 23:49:30][0m ✓ System information saved to: /Users/sergio/mac_assessment_report_20251106_234930/01_system_info.txt
+
+═══════════════════════════════════════════════════════════════
+[0;34m[2025-11-06 23:49:30][0m GIT REPOSITORIES ASSESSMENT
+═══════════════════════════════════════════════════════════════
+[0;32m[2025-11-06 23:49:30][0m ✓ Scanning for git repositories in common locations...
+[0;32m[2025-11-06 23:49:35][0m ✓ Git repositories assessed: 2 repositories found
+[0;32m[2025-11-06 23:49:35][0m ✓ Details saved to: /Users/sergio/mac_assessment_report_20251106_234930/02_git_repositories.txt
+[1;33m[2025-11-06 23:49:35][0m ⚠ 1 repositories have uncommitted changes
+
+═══════════════════════════════════════════════════════════════
+[0;34m[2025-11-06 23:49:35][0m HOMEBREW PACKAGES
+═══════════════════════════════════════════════════════════════
+[0;32m[2025-11-06 23:49:35][0m ✓ Collecting Homebrew package lists...
+[0;32m[2025-11-06 23:50:12][0m ✓ Homebrew packages saved to: /Users/sergio/mac_assessment_report_20251106_234930/03_homebrew_packages.txt
+[0;32m[2025-11-06 23:50:12][0m ✓ Brewfile created at: /Users/sergio/mac_assessment_report_20251106_234930/Brewfile
+[0;32m[2025-11-06 23:50:12][0m ✓   To restore: brew bundle install --file=/Users/sergio/mac_assessment_report_20251106_234930/Brewfile
+
+═══════════════════════════════════════════════════════════════
+[0;34m[2025-11-06 23:50:12][0m MAC APP STORE APPLICATIONS
+═══════════════════════════════════════════════════════════════
+[1;33m[2025-11-06 23:50:12][0m ⚠ mas-cli not installed (install with: brew install mas)
+
+═══════════════════════════════════════════════════════════════
+[0;34m[2025-11-06 23:50:12][0m ALL INSTALLED APPLICATIONS
+═══════════════════════════════════════════════════════════════
+[0;32m[2025-11-06 23:50:12][0m ✓ Scanning /Applications and ~/Applications...
+[0;32m[2025-11-06 23:50:12][0m ✓ Applications list saved to: /Users/sergio/mac_assessment_report_20251106_234930/05_all_applications.txt
+
+═══════════════════════════════════════════════════════════════
+[0;34m[2025-11-06 23:50:12][0m BROWSER PROFILES
+═══════════════════════════════════════════════════════════════
+[0;32m[2025-11-06 23:50:12][0m ✓ Scanning for browser profiles...
+[0;32m[2025-11-06 23:50:20][0m ✓ Browser profiles saved to: /Users/sergio/mac_assessment_report_20251106_234930/06_browser_profiles.txt
+
+═══════════════════════════════════════════════════════════════
+[0;34m[2025-11-06 23:50:20][0m DOTFILES AND CONFIGURATION
+═══════════════════════════════════════════════════════════════
+[0;32m[2025-11-06 23:50:20][0m ✓ Scanning for dotfiles in home directory...
+[0;32m[2025-11-06 23:50:22][0m ✓ Dotfiles assessment saved to: /Users/sergio/mac_assessment_report_20251106_234930/07_dotfiles.txt
+
+═══════════════════════════════════════════════════════════════
+[0;34m[2025-11-06 23:50:22][0m SENSITIVE FILES AND CREDENTIALS
+═══════════════════════════════════════════════════════════════
+[0;32m[2025-11-06 23:50:22][0m ✓ Scanning for sensitive files (this may take a while)...

@@ -1,0 +1,70 @@
+=== System Applications (/Applications) ===
+
+Android Studio.app
+Arc.app
+Audacity.app
+Brave Browser.app
+CH34xVCPDriver.app
+CP210xVCPDriver.app
+Claude.app
+Clipy.app
+Cursor.app
+Cyberduck.app
+DisplayLink Manager.app
+Docker.app
+Figma.app
+FileZilla.app
+Firefox.app
+GIMP-2.10.app
+Gearboy.app
+Genymotion Shell.app
+Genymotion.app
+Google Chrome.app
+Google Docs.app
+Google Drive.app
+Google Sheets.app
+Google Slides.app
+Grammarly Desktop.app
+HandBrakeBatch.app
+Inkscape.app
+Insomnia.app
+Install macOS Monterey.app
+KeePass2.23.app
+KeePassXC.app
+LINE.app
+LibreOffice.app
+McGimp-2.10.22.app
+Microsoft Edge.app
+MusicBrainz Picard.app
+Obsidian.app
+Postman.app
+Raspberry Pi Imager.app
+React Native Debugger.app
+Remote Desktop Manager Free.app
+RustDesk.app
+Safari.app
+Screaming Frog SEO Spider.app
+Skype.app
+Snes9x.app
+TeamViewer.app
+TogglDesktop.app
+Ultimaker Cura.app
+UniFi-Discover.app
+UniFi.app
+Unzip - RAR ZIP 7Z Unarchiver.app
+VLC.app
+Vagrant Manager.app
+VirtualBox.app
+Visual Studio Code.app
+Wireshark.app
+Xcode.app
+balenaEtcher.app
+iMovie.app
+zoom.us.app
+
+Total: 61
+
+=== User Applications (~/Applications) ===
+
+
+Total: 0

@@ -1,0 +1,151 @@
+=== Dotfiles in Home Directory ===
+
+━━━ Important Dotfiles ━━━
+✓ .zshrc (file, N/A)
+✓ .vimrc (file, N/A)
+✓ .gitconfig (file, N/A)
+✓ .ssh/known_hosts (file, N/A)
+✓ .ssh/id_rsa (file, N/A)
+✓ .config (directory, 218M, 2612 files)
+✓ .aws (directory, 4,0K, 1 files)
+✓ .docker (directory, 212M, 82 files)
+✓ .gnupg (directory, 8,0K, 2 files)
+
+━━━ All Dotfiles (.) in Home ━━━
+.CFUserTextEncoding
+.DS_Store
+.EasyOCR
+.Genymobile
+.ScreamingFrogSEOSpider
+.Trash
+.actrc
+.android
+.angular-config.json
+.ansible
+.anydesk
+.app-store
+.appinventor
+.aws
+.babel.json
+.bash_history
+.boto
+.bundle
+.cache
+.clasprc.json
+.cleanup.config
+.cleanup_backups
+.cleanup_state
+.cockroachsql_history
+.cocoapods
+.composer
+.config
+.credentials
+.cups
+.cursor
+.dart
+.dartServer
+.devcontainer
+.docker
+.dotfiles_bare
+.drivesync
+.drush
+.emulator_console_auth_token
+.env
+.env.migrated_from_mac
+.eslintrc.js
+.expo
+.flutter
+.flutter_tool_state
+.fly
+.freerdp
+.ftj_config_files
+.gem
+.gitconfig
+.github
+.gitignore
+.gnupg
+.gradle
+.keras
+.lesshst
+.local
+.matplotlib
+.mybin
+.mysql_history
+.n8n
+.netrc
+.ngrok2
+.node-gyp
+.node_repl_history
+.npm
+.oh-my-zsh
+.oh-my-zsh-custom
+.openjfx
+.oracle_jre_usage
+.postgresql
+.prettierrc.js
+.psql_history
+.pub-cache
+.pyenv
+.pylint.d
+.python_history
+.railway
+.rbenv
+.react-native-cli
+.rndebuggerrc
+.sqlite_history
+.ssh
+.subversion
+.swiftpm
+.tmux-themepack
+.v8flags.6.8.275.32-node.52.3bffa4ebdf4874e506c2b12405796aa5.json
+.v8flags.7.9.317.25-node.23.3bffa4ebdf4874e506c2b12405796aa5.json
+.v8flags.8.3.110.9-node.23.3bffa4ebdf4874e506c2b12405796aa5.json
+.vagrant.d
+.vim_mru_files
+.vim_runtime
+.viminfo
+.vimrc
+.vscode
+.wget-hsts
+.yarnrc
+.zcompdump-MacBook Pro de Sergio-5.7.1
+.zcompdump-MacBook Pro de Sergio-5.8
+.zcompdump-MacBook Pro de Sergio-5.8.1
+.zcompdump-MacBook Pro de Sergio-5.8.1.zwc
+.zsh_history
+.zsh_sessions
+.zshenv
+.zshrc
+.zshrc.backup
+
+Total: 105
+
+━━━ SSH Keys ━━━
+SSH directory: /Users/sergio/.ssh
+total 112
+-rw-------  1 sergio  staff   2,6K 28 jan  2021 id_rsa
+-rw-r--r--  1 sergio  staff   588B 28 jan  2021 id_rsa.pub
+-rw-------  1 sergio  staff   3,3K  4 jul 18:31 id_rsa_ghactions_rasavakekeli_nopasscode
+-rw-------  1 sergio  staff    18K  4 jul 18:58 known_hosts
+-rw-r--r--  1 sergio  staff   3,9K 19 jan  2021 known_hosts-e
+-rw-------  1 sergio  staff    17K  4 jul 18:58 known_hosts.old
+
+⚠️  IMPORTANT: Private SSH keys found:
+/Users/sergio/.ssh/known_hosts-e
+/Users/sergio/.ssh/known_hosts.old
+/Users/sergio/.ssh/id_rsa
+/Users/sergio/.ssh/id_rsa_ghactions_rasavakekeli_nopasscode
+
+━━━ GPG Keys ━━━
+GnuPG directory: /Users/sergio/.gnupg
+Size: 8,0K
+
+GPG keys:
+
+━━━ Git Configuration ━━━
+Git config found at: /Users/sergio/.gitconfig
+
+User config:
+Not set
+full3right@gmail.com
+

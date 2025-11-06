@@ -1,0 +1,39 @@
+=== Git Repository Inventory ===
+Scan Date: Jeu  6 nov 2025 23:49:30 CET
+
+
+━━━ Scanning: /Users/sergio/Documents ━━━
+
+
+━━━ Scanning: /Users/sergio/Desktop ━━━
+
+
+━━━ Scanning: /Users/sergio/Dev ━━━
+
+[1] Repository: /Users/sergio/Dev/collectmeterdigits/neural-network-digital-counter-readout
+    Size: 170M
+    Remote: https://github.com/jomjol/neural-network-digital-counter-readout.git
+    Branch: master
+    Status: ⚠️  HAS UNCOMMITTED CHANGES
+    Modified files:
+?? ziffer_sortiert_raw/
+    Last commit: 7060eb1b - v1910 (il y a 10 mois)
+
+[2] Repository: /Users/sergio/Dev/duolingo-clone
+    Size: 327M
+    Remote: https://github.com/BrightSoftwares/duolingo-clone.git
+    Branch: main
+    Status: ✓ Clean working directory
+    Last commit: c75050c - chore: archive legacy files for cleanup (il y a 3 semaines)
+
+
+═══════════════════════════════════════════════════════════
+SUMMARY
+═══════════════════════════════════════════════════════════
+Total repositories found: 2
+Repositories with uncommitted changes: 1
+Repositories with unpushed commits: 0
+Clean repositories: 1
+
+⚠️  WARNING: You have repositories that need attention!
+   Please commit and push changes before reinstalling.

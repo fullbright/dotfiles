@@ -1,0 +1,19 @@
+=== System Information ===
+
+Hostname: MacBook-Pro-de-Sergio-2.local
+macOS Version: 12.7.6
+Build Version: 21H1320
+Kernel: 21.6.0
+Architecture: x86_64
+User: sergio
+Home Directory: /Users/sergio
+
+=== Disk Usage ===
+Filesystem       Size   Used  Avail Capacity iused    ifree %iused  Mounted on
+/dev/disk1s6s1  466Gi   20Gi  9.4Gi    68%  502388 98989080    1%   /
+
+=== Memory ===
+Total RAM: 16 GB
+
+=== Current Date/Time ===
+Jeu  6 nov 2025 23:49:30 CET
