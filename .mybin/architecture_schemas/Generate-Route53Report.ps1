@@ -1,5 +1,5 @@
 param (
-    [string]$myPath = "C:\Users\AFANOUS\OneDrive - Luxottica Group S.p.A\Documenti\93.ftj.projects\302.096.PRJ.schemas_d_architecture\Q2_2025_route53"  # Default folder path
+    [string]$myPath = "C:\Users\AFANOUS\OneDrive - Luxottica Group S.p.A\Documenti\93.ftj.projects\302.096.PRJ.schemas_d_architecture\Q3_2025_route53"  # Default folder path
 )
 
 # Normalize path to absolute

@@ -1,6 +1,7 @@
 # Windows computer ignores
 .ftj_config_files/organize/organize/Logs/
 .venv
+.mybin/architecture_schemas/logs/
 
 # Mac computer ignores
 .dotfiles_bare
@@ -30,6 +31,7 @@ VirtualBox VMs/
 cam-truck/
 dev/
 dev_d_personal_from_windows/
+
 
 
 

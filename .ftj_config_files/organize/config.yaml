@@ -6,8 +6,10 @@ rules:
     enabled: True
     locations:
       - path: C:\Users\AFANOUS\Downloads\
+        exclude_files: [ ".gitkeep" ]
       - path: C:\Users\AFANOUS\to_delete\
         #exclude_dirs: ["tvshows", "Path to a happy Life", "airflow"]
+        exclude_files: [ ".gitkeep" ]
     subfolders: true
     filters:
       - created:
