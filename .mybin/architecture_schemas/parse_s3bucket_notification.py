@@ -18,7 +18,7 @@ PLATFORMS = ['gdp', 'spp', 'lsvw', 'eyec', 'ey', 'dbu']
 # Setup logging
 LOG_FILE = "logs/s3_parser.log"
 logging.basicConfig(
-    level=logging.INFO,
+    level=logging.DEBUG,
     format='%(asctime)s - %(levelname)s - %(message)s',
     handlers=[
         logging.FileHandler(LOG_FILE, mode='w', encoding='utf-8'),
@@ -56,16 +56,31 @@ def flexible_json_parse(text):
         try:
             # Second attempt: remove excessive whitespace and line breaks
             cleaned = re.sub(r'\s+', ' ', text)
+            logger.debug(f"Body after second cleanup = {repr(cleaned)}")
             return json.loads(cleaned)
         except json.JSONDecodeError:
             try:
                 # Third attempt: fix common issues with line breaks in strings
                 # Replace line breaks within quoted strings with spaces
                 fixed = re.sub(r'(?<=")([^"]*?)[\r\n]+([^"]*?)(?=")', r'\1 \2', text)
+                logger.debug(f"Body after third cleanup = {repr(fixed)}")
                 return json.loads(fixed)
             except json.JSONDecodeError as e:
-                logger.error(f"JSON parsing failed: {e}")
-                return None
+                # logger.error(f"JSON parsing failed: {e}")
+                # return None
+                try:
+                    # Fourth attempt: fix common issues with line breaks in strings
+                    # Replace line breaks with spaces
+                    fixed_4 = re.sub(r'\s+', ' ', fixed)
+                    logger.debug(f"Body after fourth cleanup = {repr(fixed_4)}")
+                    
+                    fixed_5 = re.sub('reserved=0":{"Tag"', 'reserved=0", "the":{"Tag"', fixed_4)  # = fixed_4.replace("reserved=0\":{\"Tag\"", "reserved=0", "the\":{\"Tag\"") # re.sub(r'\s+', ' ', fixed)
+                    logger.debug(f"Body after fifth cleanup = {repr(fixed_5)}")
+
+                    return json.loads(fixed_5)
+                except json.JSONDecodeError as e:
+                    logger.error(f"JSON parsing failed: {e}")
+                    return None
 
 
 def extract_keywords_from_bucket(bucket_name, keyword_list):
@@ -236,6 +251,7 @@ def process_excel_file():
                 
                 # Clean email body
                 cleaned_body = clean_email_body(email_body)
+                logger.debug(f"Cleaned body = {cleaned_body}")
                 
                 # Parse JSON
                 json_data = flexible_json_parse(cleaned_body)
