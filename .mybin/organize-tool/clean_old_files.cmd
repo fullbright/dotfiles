@@ -1,6 +1,15 @@
 echo "Running organize-tool"
-cd d:\soloapps\organize\
-d:
-d:\soloapps\organize\.venv\Scripts\activate.bat && organize.exe run
+cd C:\myOfflineDATA\soloapps\organize\
+
+
+rem c:
+set VENV_PATH=C:\myOfflineDATA\soloapps\organize\.venv
+call %VENV_PATH%\Scripts\activate.bat
+
+rem C:\myOfflineDATA\soloapps\organize\.venv\Scripts\organize.exe run
+cd /d C:\myOfflineDATA\soloapps\organize
+organize.exe run
+
+call %VENV_PATH%\Scripts\deactivate.bat
 echo "Done"
-pause
+rem pause
