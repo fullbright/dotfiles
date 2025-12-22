@@ -12,4 +12,8 @@ organize.exe run
 
 call %VENV_PATH%\Scripts\deactivate.bat
 echo "Done"
+
+echo "Doing housekeeping"
+call C:\myAPPS\dotfiles\.mybin\ftj_computer_housekeeping\run_housekeeping.cmd
+
 rem pause

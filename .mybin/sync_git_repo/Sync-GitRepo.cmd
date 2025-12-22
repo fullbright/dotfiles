@@ -11,6 +11,8 @@ REM   Sync-GitRepo.cmd "C:\path\to\repo"
 REM   Sync-GitRepo.cmd "C:\path\to\repo" -DryRun
 REM   Sync-GitRepo.cmd "C:\path\to\repo" -Verbose
 REM   Sync-GitRepo.cmd "C:\path\to\repo" -CommitMessage "My message here"
+REM
+REM Last updated: 2025-12-22
 REM ============================================================================
 
 setlocal enabledelayedexpansion
