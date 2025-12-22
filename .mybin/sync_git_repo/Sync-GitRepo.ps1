@@ -152,6 +152,7 @@ function Invoke-GitCommand {
                 return "[DRY-RUN MODE]"
             }
             
+            # Capture both stdout and stderr
             $output = & git @Arguments 2>&1
             $exitCode = $LASTEXITCODE
             
@@ -159,17 +160,48 @@ function Invoke-GitCommand {
                 return $exitCode
             }
             
+            # Git often writes informational output to stderr (not errors)
+            # Only treat as error if exit code is non-zero AND output contains actual error indicators
             if ($exitCode -ne 0) {
-                $errorMsg = ($output | Out-String).Trim()
+                $outputText = ($output | Out-String).Trim()
+                
                 if (-not $AllowFailure) {
-                    throw "Git command failed (exit code: $exitCode)`n$errorMsg"
+                    throw "Git command failed (exit code: $exitCode)`n$outputText"
                 }
                 Write-Log "Git command returned non-zero exit code: $exitCode" -Level Warning
                 return $null
             }
             
-            $result = ($output | Out-String).Trim()
-            Write-Log "Command output: $result" -Level Debug
+            # Filter output to separate actual errors from informational stderr messages
+            $stdoutLines = @()
+            $stderrLines = @()
+            
+            foreach ($line in $output) {
+                if ($line -is [System.Management.Automation.ErrorRecord]) {
+                    # This is stderr output - check if it's actually an error
+                    $lineText = $line.Exception.Message
+                    # Git fetch/pull/push write progress to stderr - these are not errors
+                    if ($lineText -notmatch '^(From |To |remote:|Enumerating|Counting|Compressing|Writing|Total|Delta)') {
+                        $stderrLines += $lineText
+                    }
+                } else {
+                    # This is stdout
+                    $stdoutLines += $line
+                }
+            }
+            
+            # If there are actual error messages, log them as warnings
+            if ($stderrLines.Count -gt 0) {
+                $errorText = $stderrLines -join "`n"
+                Write-Log "Git stderr output: $errorText" -Level Warning
+            }
+            
+            $result = ($stdoutLines -join "`n").Trim()
+            if ($result) {
+                Write-Log "Command output: $result" -Level Debug
+            }
+            
+            # Return success even if there was stderr (Git uses stderr for progress info)
             return $result
         }
         catch {
