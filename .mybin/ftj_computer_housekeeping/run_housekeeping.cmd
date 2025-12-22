@@ -14,9 +14,9 @@ xcopy "C:\Users\AFANOUS\AppData\Local\organize" C:\myAPPS\dotfiles\.ftj_config_f
 
 echo "Copy done"
 
-echo "Clean outdated files in the todelete folder"
-call c:\myAPPS\dotfiles\.mybin\organize-tool\clean_old_files.cmd
-echo "Done"
+rem echo "Clean outdated files in the todelete folder"
+rem call c:\myAPPS\dotfiles\.mybin\organize-tool\clean_old_files.cmd
+rem echo "Done"
 
 echo "Backup my dotfiles"
 cd c:\myApps\dotfiles
