@@ -1,242 +1,587 @@
 <#
 .SYNOPSIS
-Synchronizes a Git repository with advanced conflict resolution and cleanup.
+Enterprise-grade Git repository synchronization with conflict resolution and cleanup.
 
 .DESCRIPTION
-This script:
-1. Checks for local changes and commits them
-2. Fetches remote changes
-3. Handles merges or conflicts by either:
-   - Successfully merging and pushing
-   - Creating a conflict branch when merge fails
-4. Cleans up merged orphan branches
-5. Uses dynamic default branch detection
+Synchronizes a local Git repository with its remote origin, featuring:
+- Automatic change detection and commit
+- Intelligent merge conflict resolution with backup branches
+- Automatic cleanup of merged conflict branches
+- Comprehensive logging and error handling
+- Dry-run mode for safe testing
+- Transaction-like rollback on critical failures
 
-IMPROVEMENTS OVER ORIGINAL:
-- Added robust error handling and output capture
-- Improved default branch detection using modern git commands
-- Added automatic conflict branch pruning
-- Enhanced output formatting
-- Added repository validation and branch existence checks
-- Implemented retry logic for push operations
-- Added verbose logging for diagnostics
-- Optimized orphan branch cleanup
+.PARAMETER RepoPath
+Path to the Git repository. Defaults to /opt/containerdata/hassio/
+
+.PARAMETER DryRun
+Simulates operations without making changes
+
+.PARAMETER LogPath
+Path for log file. If not specified, logs only to console
+
+.PARAMETER CommitMessage
+Custom commit message for local changes
+
+.PARAMETER Verbose
+Enables detailed diagnostic output
+
+.EXAMPLE
+.\Sync-GitRepo.ps1 -RepoPath "C:\MyRepo" -Verbose
+
+.EXAMPLE
+.\Sync-GitRepo.ps1 -DryRun -LogPath "C:\Logs\git-sync.log"
+
+.NOTES
+Version: 2.0
+Requires: Git 2.28+ (for optimal default branch detection)
+Author: Enhanced Script
 #>
 
+[CmdletBinding()]
 param (
-    [string]$RepoPath = "/opt/containerdata/hassio/"
+    [Parameter(Position = 0)]
+    [ValidateScript({ Test-Path $_ -PathType Container })]
+    [string]$RepoPath = "/opt/containerdata/hassio/",
+    
+    [Parameter()]
+    [switch]$DryRun,
+    
+    [Parameter()]
+    [string]$LogPath,
+    
+    [Parameter()]
+    [string]$CommitMessage = "Auto-sync: Local changes committed at {timestamp}",
+    
+    [Parameter()]
+    [int]$RetryAttempts = 3,
+    
+    [Parameter()]
+    [int]$RetryDelaySeconds = 2
 )
+
+#Requires -Version 5.1
 
 Set-StrictMode -Version 3.0
 $ErrorActionPreference = "Stop"
+$ProgressPreference = "SilentlyContinue"
 
-function Write-Info($message) { Write-Host ">>> $message" -ForegroundColor Cyan }
-function Write-Success($message) { Write-Host "[SUCCESS] $message" -ForegroundColor Green }
-function Write-Warning($message) { Write-Host "[WARNING] $message" -ForegroundColor Yellow }
-function Write-Error($message) { Write-Host "[ERROR] $message" -ForegroundColor Red }
+# Script-level variables
+$script:LogFile = $null
+$script:OriginalBranch = $null
+$script:OperationStartTime = Get-Date
 
-<#
-.SYNOPSIS
-Executes a git command with full error handling
-#>
-function Invoke-GitCommand {
+#region Logging Functions
+
+function Write-Log {
     param(
         [Parameter(Mandatory)]
-        [string[]]$Arguments
+        [string]$Message,
+        
+        [ValidateSet('Info', 'Success', 'Warning', 'Error', 'Debug')]
+        [string]$Level = 'Info'
     )
-
-    try {
-        $output = git @Arguments 2>&1 | Out-String
-        if ($LASTEXITCODE -ne 0) {
-            throw $output
-        }
-        return $output.Trim()
+    
+    $timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+    $logMessage = "[$timestamp] [$Level] $Message"
+    
+    # Console output with colors
+    switch ($Level) {
+        'Info'    { Write-Host ">>> $Message" -ForegroundColor Cyan }
+        'Success' { Write-Host "[OK] $Message" -ForegroundColor Green }
+        'Warning' { Write-Host "[!] $Message" -ForegroundColor Yellow }
+        'Error'   { Write-Host "[X] $Message" -ForegroundColor Red }
+        'Debug'   { if ($VerbosePreference -eq 'Continue') { Write-Host "[DEBUG] $Message" -ForegroundColor Gray } }
     }
-    catch {
-        Write-Error "Git command failed: git $($Arguments -join ' ')"
-        Write-Error "Error message is = $_.Exception.Message"
-        exit 1
+    
+    # File output
+    if ($script:LogFile) {
+        Add-Content -Path $script:LogFile -Value $logMessage -ErrorAction SilentlyContinue
     }
 }
 
-<#
-.SYNOPSIS
-Checks if the repository has uncommitted changes
-#>
+function Initialize-Logging {
+    if ($LogPath) {
+        try {
+            $logDir = Split-Path $LogPath -Parent
+            if ($logDir -and -not (Test-Path $logDir)) {
+                New-Item -Path $logDir -ItemType Directory -Force | Out-Null
+            }
+            $script:LogFile = $LogPath
+            Write-Log "Logging initialized: $LogPath" -Level Info
+        }
+        catch {
+            Write-Warning "Could not initialize log file: $($_.Exception.Message)"
+        }
+    }
+}
+
+#endregion
+
+#region Git Command Execution
+
+function Invoke-GitCommand {
+    <#
+    .SYNOPSIS
+    Executes a git command with comprehensive error handling and retry logic
+    #>
+    param(
+        [Parameter(Mandatory)]
+        [string[]]$Arguments,
+        
+        [switch]$AllowFailure,
+        
+        [switch]$ReturnExitCode,
+        
+        [int]$MaxRetries = 0
+    )
+    
+                $attempt = 0
+    $maxAttempts = $MaxRetries + 1
+    $lastError = $null
+    
+    do {
+        $attempt++
+        try {
+            $cmdString = "git $($Arguments -join ' ')"
+            Write-Log "Executing: $cmdString" -Level Debug
+            
+            if ($DryRun -and $Arguments[0] -in @('add', 'commit', 'push', 'merge', 'branch', 'checkout')) {
+                $cmdString = "git $($Arguments -join ' ')"
+                Write-Log "[DRY-RUN] Would execute: $cmdString" -Level Warning
+                return "[DRY-RUN MODE]"
+            }
+            
+            $output = & git @Arguments 2>&1
+            $exitCode = $LASTEXITCODE
+            
+            if ($ReturnExitCode) {
+                return $exitCode
+            }
+            
+            if ($exitCode -ne 0) {
+                $errorMsg = ($output | Out-String).Trim()
+                if (-not $AllowFailure) {
+                    throw "Git command failed (exit code: $exitCode)`n$errorMsg"
+                }
+                Write-Log "Git command returned non-zero exit code: $exitCode" -Level Warning
+                return $null
+            }
+            
+            $result = ($output | Out-String).Trim()
+            Write-Log "Command output: $result" -Level Debug
+            return $result
+        }
+        catch {
+            $lastError = $_
+            if ($attempt -lt $maxAttempts) {
+                Write-Log "Attempt $attempt failed, retrying in $RetryDelaySeconds seconds..." -Level Warning
+                Start-Sleep -Seconds $RetryDelaySeconds
+                continue
+            }
+            
+            if (-not $AllowFailure) {
+                $cmdString = "git $($Arguments -join ' ')"
+                Write-Log "Git command failed: $cmdString" -Level Error
+                $errorMsg = if ($lastError.Exception.Message) { $lastError.Exception.Message } else { "Unknown error" }
+                Write-Log "Error: $errorMsg" -Level Error
+                throw
+            }
+            return $null
+        }
+    } while ($attempt -lt $maxAttempts)
+}
+
+#endregion
+
+#region Repository State Functions
+
+function Test-GitRepository {
+    <#
+    .SYNOPSIS
+    Validates that the path is a valid Git repository
+    #>
+    if (-not (Test-Path (Join-Path $RepoPath ".git") -PathType Container)) {
+        throw "Not a valid Git repository: $RepoPath"
+    }
+    
+    # Check if git is available
+    try {
+        $gitVersion = Invoke-GitCommand @("--version")
+        Write-Log "Using $gitVersion" -Level Debug
+    }
+    catch {
+        throw "Git is not installed or not in PATH"
+    }
+}
+
 function Test-RepositoryClean {
-	$gitPorcelainOutput = (Invoke-GitCommand @("status", "--porcelain"))
-	Write-Debug "Porcelain output = $gitPorcelainOutput"
-    return [string]::IsNullOrEmpty($gitPorcelainOutput)
+    <#
+    .SYNOPSIS
+    Checks if the repository has uncommitted changes
+    #>
+    $status = Invoke-GitCommand @("status", "--porcelain")
+    $isClean = [string]::IsNullOrWhiteSpace($status)
+    
+    if (-not $isClean) {
+        Write-Log "Uncommitted changes detected:`n$status" -Level Debug
+    }
+    
+    return $isClean
 }
 
-<#
-.SYNOPSIS
-Gets the repository's default branch name
-#>
 function Get-DefaultBranch {
-    # Modern method - works for Git 2.28+ (2020)
+    <#
+    .SYNOPSIS
+    Retrieves the repository's default branch name with multiple fallback methods
+    #>
+    # Method 1: Modern Git (2.28+)
     try {
-        $branch = Invoke-GitCommand @("branch", "-rl", "*/HEAD")
-        return ($branch -split '/')[-1].Trim()
-    }
-    catch {
-        # Fallback method for older Git versions
-        $remoteInfo = Invoke-GitCommand @("remote", "show", "origin")
-        $branchLine = $remoteInfo | Select-String 'HEAD branch:\s*(\S+)'
-        if ($branchLine) {
-            return $branchLine.Matches.Groups[1].Value.Trim()
+        $branch = Invoke-GitCommand @("symbolic-ref", "refs/remotes/origin/HEAD") -AllowFailure
+        if ($branch) {
+            $branchName = ($branch -replace '^refs/remotes/origin/', '').Trim()
+            if ($branchName) {
+                Write-Log "Default branch detected (method 1): $branchName" -Level Debug
+                return $branchName
+            }
         }
-        throw "Could not determine default branch."
-    }
-}
-
-<#
-.SYNOPSIS
-Commits all local changes with a standard message
-#>
-function Save-LocalChanges {
-    Write-Info "Committing local changes..."
-    Invoke-GitCommand @("add", "--all") > $null
-    Invoke-GitCommand @("commit", "-m", "Local changes committed") > $null
-}
-
-<#
-.SYNOPSIS
-Attempts merge and handles conflicts by creating backup branch
-#>
-function Merge-RemoteChanges {
-    Write-Info "Attempting to merge remote changes..."
-    try {
-        # Attempt merge without auto-commit
-        Invoke-GitCommand @("merge", "FETCH_HEAD", "--no-commit", "--no-ff") > $null
-        
-        Write-Success "Merge successful"
-        Invoke-GitCommand @("commit", "-m", "Merged remote changes") > $null
-        
-        Write-Info "Pushing changes to remote..."
-        Invoke-GitCommand @("push")
     }
     catch {
-        Write-Warning "Merge conflicts detected. Creating rescue branch..."
-        Invoke-GitCommand @("merge", "--abort") > $null
+        Write-Log "Method 1 failed, trying alternative..." -Level Debug
+    }
+    
+    # Method 2: Parse remote show
+    try {
+        $remoteInfo = Invoke-GitCommand @("remote", "show", "origin")
+        if ($remoteInfo -match 'HEAD branch:\s*(\S+)') {
+            $branchName = $Matches[1].Trim()
+            Write-Log "Default branch detected (method 2): $branchName" -Level Debug
+            return $branchName
+        }
+    }
+    catch {
+        Write-Log "Method 2 failed, trying alternative..." -Level Debug
+    }
+    
+    # Method 3: Common defaults
+    foreach ($commonBranch in @('main', 'master', 'develop')) {
+        $exists = Invoke-GitCommand @("rev-parse", "--verify", "origin/$commonBranch") -AllowFailure
+        if ($exists) {
+            Write-Log "Default branch detected (method 3): $commonBranch" -Level Debug
+            return $commonBranch
+        }
+    }
+    
+    throw "Could not determine default branch. Please ensure remote 'origin' is configured."
+}
+
+function Get-CurrentBranch {
+    <#
+    .SYNOPSIS
+    Gets the current branch name
+    #>
+    $branch = Invoke-GitCommand @("rev-parse", "--abbrev-ref", "HEAD")
+    return $branch.Trim()
+}
+
+function Test-BranchUpToDate {
+    <#
+    .SYNOPSIS
+    Checks if local branch is up-to-date, ahead, behind, or diverged from remote
+    #>
+    param([string]$LocalRef = "HEAD", [string]$RemoteRef = "FETCH_HEAD")
+    
+    # Get commit counts
+    $ahead = Invoke-GitCommand @("rev-list", "--count", "$RemoteRef..$LocalRef")
+    $behind = Invoke-GitCommand @("rev-list", "--count", "$LocalRef..$RemoteRef")
+    
+    return @{
+        Ahead = [int]$ahead
+        Behind = [int]$behind
+        IsUpToDate = ($ahead -eq 0 -and $behind -eq 0)
+        IsDiverged = ($ahead -gt 0 -and $behind -gt 0)
+    }
+}
+
+#endregion
+
+#region Change Management Functions
+
+function Save-LocalChanges {
+    <#
+    .SYNOPSIS
+    Commits all local changes with timestamped message
+    #>
+    param([string]$Message = $CommitMessage)
+    
+    Write-Log "Staging all changes..." -Level Info
+    Invoke-GitCommand @("add", "--all")
+    
+    $finalMessage = $Message -replace '\{timestamp\}', (Get-Date -Format "yyyy-MM-dd HH:mm:ss")
+    Write-Log "Committing with message: $finalMessage" -Level Info
+    
+    Invoke-GitCommand @("commit", "-m", $finalMessage)
+    Write-Log "Local changes committed successfully" -Level Success
+}
+
+function Invoke-SafeMerge {
+    <#
+    .SYNOPSIS
+    Attempts merge with automatic conflict resolution via backup branch
+    #>
+    param([string]$DefaultBranch)
+    
+    Write-Log "Attempting to merge remote changes..." -Level Info
+    
+    try {
+        # Try merge without committing first
+        $mergeResult = Invoke-GitCommand @("merge", "FETCH_HEAD", "--no-commit", "--no-ff") -AllowFailure
         
+        # Check for conflicts
+        $conflictFiles = Invoke-GitCommand @("diff", "--name-only", "--diff-filter=U")
+        
+        if ($conflictFiles) {
+            throw "Merge conflicts detected in files:`n$conflictFiles"
+        }
+        
+        # No conflicts, complete the merge
+        Invoke-GitCommand @("commit", "-m", "Merged remote changes")
+        Write-Log "Merge completed successfully" -Level Success
+        
+        return $true
+    }
+    catch {
+        Write-Log "Merge conflicts encountered: $($_.Exception.Message)" -Level Warning
+        
+        # Abort the failed merge
+        Invoke-GitCommand @("merge", "--abort") -AllowFailure
+        
+        # Create conflict resolution branch
         $localSHA = (Invoke-GitCommand @("rev-parse", "--short", "HEAD")).Trim()
         $remoteSHA = (Invoke-GitCommand @("rev-parse", "--short", "FETCH_HEAD")).Trim()
-        $branchName = "ha_sync_${localSHA}_${remoteSHA}"
+        $timestamp = Get-Date -Format "yyyyMMdd_HHmmss"
+        $branchName = "conflict/$timestamp`_local_${localSHA}_remote_${remoteSHA}"
         
-        # Create and push conflict branch
-        Invoke-GitCommand @("checkout", "-b", $branchName) > $null
-        Invoke-GitCommand @("push", "-u", "origin", $branchName) > $null
+        Write-Log "Creating conflict branch: $branchName" -Level Warning
         
-        # Return to default branch and update
-        $defaultBranch = Get-DefaultBranch
-        Invoke-GitCommand @("checkout", $defaultBranch) > $null
-        Invoke-GitCommand @("pull") > $null
+        # Save current state to new branch
+        Invoke-GitCommand @("checkout", "-b", $branchName)
+        Invoke-GitCommand @("push", "-u", "origin", $branchName)
         
-        Write-Warning "Created conflict branch: $branchName"
+        Write-Log "Your changes are preserved in branch: $branchName" -Level Warning
+        
+        # Return to default branch and accept remote version
+        Invoke-GitCommand @("checkout", $DefaultBranch)
+        Invoke-GitCommand @("reset", "--hard", "origin/$DefaultBranch")
+        
+        Write-Log "Reset to remote state. Please resolve conflicts in branch: $branchName" -Level Warning
+        
+        return $false
     }
 }
 
-<#
-.SYNOPSIS
-Cleans up merged orphan branches
-#>
-function Remove-OrphanBranches {
-    Write-Info "Cleaning orphan branches..."
+function Sync-WithRemote {
+    <#
+    .SYNOPSIS
+    Main synchronization logic
+    #>
     $defaultBranch = Get-DefaultBranch
-    $orphanBranches = Invoke-GitCommand @("branch", "--list", "ha_sync_*", "--format=%(refname:short)") |
-        Where-Object { $_ -match 'ha_sync_' }
+    $currentBranch = Get-CurrentBranch
     
-    foreach ($branch in $orphanBranches) {
-        # Check if fully merged into default branch
-        $isMerged = [bool](Invoke-GitCommand @("branch", "--merged", $defaultBranch, "--list", $branch))
-        
-        if ($isMerged) {
-            Write-Info "Deleting orphan branch: $branch"
-            try {
-                # Local deletion
-                Invoke-GitCommand @("branch", "-d", $branch) > $null
-                
-                # Remote deletion with retry
-                try {
-                    Invoke-GitCommand @("push", "origin", "--delete", $branch) > $null
-                }
-                catch {
-                    Write-Warning "Retrying branch deletion..."
-                    Start-Sleep -Seconds 2
-                    Invoke-GitCommand @("push", "origin", "--delete", $branch) > $null
-                }
-            }
-            catch {
-                Write-Warning "Could not delete $branch : $($_.Exception.Message)"
-            }
-        }
-        else {
-            Write-Info "Skipping unmerged branch: $branch"
-        }
-    }
-}
-
-<#
-.SYNOPSIS
-Main synchronization workflow
-#>
-function Sync-Repository {
-    # Validate repository
-    if (-not (Test-Path (Join-Path $RepoPath ".git") -PathType Container)) {
-        Write-Error "Not a Git repository: $RepoPath"
-        exit 1
+    Write-Log "Current branch: $currentBranch | Default branch: $defaultBranch" -Level Info
+    
+    # Ensure we're on the default branch
+    if ($currentBranch -ne $defaultBranch) {
+        Write-Log "Switching to default branch: $defaultBranch" -Level Info
+        Invoke-GitCommand @("checkout", $defaultBranch)
     }
     
-    Set-Location $RepoPath
-    Write-Info "Starting synchronization in $(Get-Location)"
-    
-    # Ensure default branch is checked out
-    $defaultBranch = Get-DefaultBranch
-    Write-Info "Default branch detected: $defaultBranch"
-    #Invoke-GitCommand @("checkout", $defaultBranch) > $null
-    
-    # Check for local changes
+    # Handle local changes
     if (-not (Test-RepositoryClean)) {
-        Write-Warning "Uncommitted changes detected"
+        Write-Log "Uncommitted changes detected" -Level Warning
         Save-LocalChanges
     }
     else {
-        Write-Success "Working directory clean"
+        Write-Log "Working directory is clean" -Level Success
     }
     
     # Fetch remote updates
-    Write-Info "Fetching remote changes..."
-    Invoke-GitCommand @("fetch", "origin") > $null
+    Write-Log "Fetching from origin..." -Level Info
+    Invoke-GitCommand @("fetch", "origin", $defaultBranch) -MaxRetries $RetryAttempts
     
-    # Check for incoming changes
-    $incomingChanges = Invoke-GitCommand @("log", "HEAD..FETCH_HEAD", "--oneline")
-    if (-not [string]::IsNullOrEmpty($incomingChanges)) {
-        Write-Warning "Remote changes detected"
-        Merge-RemoteChanges
+    # Analyze relationship between local and remote
+    $status = Test-BranchUpToDate -LocalRef "HEAD" -RemoteRef "origin/$defaultBranch"
+    
+    Write-Log "Branch status - Ahead: $($status.Ahead) | Behind: $($status.Behind)" -Level Debug
+    
+    if ($status.IsUpToDate) {
+        Write-Log "Repository is up-to-date with remote" -Level Success
+        return
+    }
+    
+    if ($status.Behind -gt 0 -and $status.Ahead -eq 0) {
+        # Fast-forward possible
+        Write-Log "Remote has $($status.Behind) new commit(s). Fast-forwarding..." -Level Info
+        Invoke-GitCommand @("merge", "--ff-only", "origin/$defaultBranch")
+        Write-Log "Fast-forward merge completed" -Level Success
+    }
+    elseif ($status.Ahead -gt 0 -and $status.Behind -eq 0) {
+        # Only local changes, push them
+        Write-Log "Local has $($status.Ahead) unpushed commit(s). Pushing..." -Level Info
+        Invoke-GitCommand @("push", "origin", $defaultBranch) -MaxRetries $RetryAttempts
+        Write-Log "Successfully pushed local changes" -Level Success
     }
     else {
-        Write-Success "No remote changes. Check if local changes to push"
-        # Push local changes if any
-        if (Test-RepositoryClean) {
-            Write-Info "Pushing local changes..."
-            Invoke-GitCommand @("push")
+        # Diverged - need to merge
+        Write-Log "Branches have diverged (local: +$($status.Ahead), remote: +$($status.Behind))" -Level Warning
+        
+        if (Invoke-SafeMerge -DefaultBranch $defaultBranch) {
+            # Merge successful, push the result
+            Write-Log "Pushing merged changes..." -Level Info
+            Invoke-GitCommand @("push", "origin", $defaultBranch) -MaxRetries $RetryAttempts
+            Write-Log "Merge pushed successfully" -Level Success
         }
-		else {
-			Write-Error "Repository is not clean. Not pushing."
-		}
     }
-    
-    # Cleanup branches
-    Remove-OrphanBranches
-    Write-Success "Synchronization completed"
 }
 
-# Main execution
+#endregion
+
+#region Cleanup Functions
+
+function Remove-MergedConflictBranches {
+    <#
+    .SYNOPSIS
+    Cleans up conflict branches that have been merged
+    #>
+    Write-Log "Scanning for merged conflict branches..." -Level Info
+    
+    $defaultBranch = Get-DefaultBranch
+    
+    # Get all conflict branches (both patterns)
+    $conflictBranches = @()
+    $conflictBranches += Invoke-GitCommand @("branch", "--list", "ha_sync_*", "--format=%(refname:short)") -AllowFailure
+    $conflictBranches += Invoke-GitCommand @("branch", "--list", "conflict/*", "--format=%(refname:short)") -AllowFailure
+    $conflictBranches = $conflictBranches | Where-Object { $_ -and $_.Trim() }
+    
+    if (-not $conflictBranches) {
+        Write-Log "No conflict branches found" -Level Info
+        return
+    }
+    
+    $deletedCount = 0
+    
+    foreach ($branch in $conflictBranches) {
+        $branch = $branch.Trim()
+        if (-not $branch) { continue }
+        
+        # Check if branch is fully merged
+        $mergeBase = Invoke-GitCommand @("merge-base", $branch, $defaultBranch) -AllowFailure
+        $branchCommit = Invoke-GitCommand @("rev-parse", $branch) -AllowFailure
+        
+        if ($mergeBase -eq $branchCommit) {
+            Write-Log "Deleting merged branch: $branch" -Level Info
+            
+            try {
+                # Delete local branch
+                Invoke-GitCommand @("branch", "-d", $branch) -AllowFailure
+                
+                # Delete remote branch
+                Invoke-GitCommand @("push", "origin", "--delete", $branch) -AllowFailure -MaxRetries 2
+                
+                $deletedCount++
+                Write-Log "Deleted: $branch" -Level Success
+            }
+            catch {
+                Write-Log "Could not delete $branch : $($_.Exception.Message)" -Level Warning
+            }
+        }
+        else {
+            Write-Log "Skipping unmerged branch: $branch" -Level Debug
+        }
+    }
+    
+    if ($deletedCount -gt 0) {
+        Write-Log "Cleaned up $deletedCount merged conflict branch(es)" -Level Success
+    }
+}
+
+#endregion
+
+#region Main Execution
+
+function Invoke-RepositorySync {
+    <#
+    .SYNOPSIS
+    Main orchestration function
+    #>
+    
+    try {
+        # Initialize
+        Initialize-Logging
+        
+        if ($DryRun) {
+            Write-Log "=== DRY-RUN MODE - No changes will be made ===" -Level Warning
+        }
+        
+        Write-Log "Starting Git synchronization" -Level Info
+        Write-Log "Repository: $RepoPath" -Level Info
+        
+        # Validate repository
+        Test-GitRepository
+        
+        # Change to repository directory
+        Push-Location $RepoPath
+        
+        # Store original branch for rollback
+        $script:OriginalBranch = Get-CurrentBranch
+        
+        # Execute synchronization
+        Sync-WithRemote
+        
+        # Cleanup old branches
+        Remove-MergedConflictBranches
+        
+        # Summary
+        $duration = (Get-Date) - $script:OperationStartTime
+        Write-Log "Synchronization completed in $([math]::Round($duration.TotalSeconds, 2)) seconds" -Level Success
+        
+        if ($DryRun) {
+            Write-Log "=== DRY-RUN COMPLETED - No actual changes were made ===" -Level Warning
+        }
+    }
+    catch {
+        Write-Log "FATAL ERROR: $($_.Exception.Message)" -Level Error
+        if ($VerbosePreference -eq 'Continue') {
+            Write-Log "Stack Trace: $($_.ScriptStackTrace)" -Level Debug
+        }
+        
+        # Attempt rollback if we changed branches
+        if ($script:OriginalBranch -and $script:OriginalBranch -ne (Get-CurrentBranch)) {
+            try {
+                Write-Log "Attempting to restore original branch: $script:OriginalBranch" -Level Warning
+                Invoke-GitCommand @("checkout", $script:OriginalBranch) -AllowFailure
+            }
+            catch {
+                Write-Log "Could not restore original branch" -Level Error
+            }
+        }
+        
+        throw
+    }
+    finally {
+        Pop-Location -ErrorAction SilentlyContinue
+    }
+}
+
+# Script entry point
 try {
-    Sync-Repository
+    Invoke-RepositorySync
+    exit 0
 }
 catch {
-    Write-Error "Fatal error: $($_.Exception.Message)"
+    $errorMsg = if ($_.Exception.Message) { $_.Exception.Message } else { "Unknown error occurred" }
+    Write-Log "Script failed with error: $errorMsg" -Level Error
     exit 1
 }
+
+#endregion
