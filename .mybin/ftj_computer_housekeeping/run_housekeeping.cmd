@@ -21,7 +21,7 @@ echo "Done"
 echo "Backup my dotfiles"
 cd c:\myApps\dotfiles
 c:
-powershell c:\myApps\dotfiles\.mybin\sync_git_repo\Sync-GitRepo.ps1 -RepoPath "c:\myApps\dotfiles"
+call c:\myApps\dotfiles\.mybin\sync_git_repo\Sync-GitRepo.cmd "c:\myApps\dotfiles" -Verbose
 echo "dotfiles backup done"
 
 pause
