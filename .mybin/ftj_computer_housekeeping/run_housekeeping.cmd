@@ -24,4 +24,4 @@ c:
 call c:\myApps\dotfiles\.mybin\sync_git_repo\Sync-GitRepo.cmd "c:\myApps\dotfiles" -Verbose
 echo "dotfiles backup done"
 
-pause
+rem pause
