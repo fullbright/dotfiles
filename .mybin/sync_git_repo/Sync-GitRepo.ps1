@@ -54,7 +54,7 @@ function Invoke-GitCommand {
     }
     catch {
         Write-Error "Git command failed: git $($Arguments -join ' ')"
-        Write-Error $_.Exception.Message
+        Write-Error "Error message is = $_.Exception.Message"
         exit 1
     }
 }
