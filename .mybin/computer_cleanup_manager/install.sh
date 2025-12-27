@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/local/bin/bash
 #
 # install.sh - Installation script for Mac cleanup tools
 #

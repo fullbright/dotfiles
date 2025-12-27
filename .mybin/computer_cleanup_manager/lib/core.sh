@@ -1,4 +1,4 @@
-#!/bin/bash
+#! /usr/local/bin/bash
 #
 # lib/core.sh - Core utility functions with error handling and logging
 #
@@ -344,9 +344,11 @@ find_sensitive_files() {
     local found=()
     
     for pattern in "${SENSITIVE_PATTERNS[@]}"; do
+    log_debug "Finding sensitive files with pattern: $pattern"
         while IFS= read -r file; do
+            log_debug "Found sensitive file: $file"
             found+=("$file")
-        done < <(find "$folder" -maxdepth 2 -name "$pattern" 2>/dev/null)
+        done < <(find "$folder" -maxdepth 5 -name "$pattern" 2>/dev/null)
     done
     
     printf '%s\n' "${found[@]}"

@@ -1,0 +1,2432 @@
+=== Git Repository Inventory ===
+Scan Date: Sam 27 déc 2025 14:36:52 CET
+
+Processing 14 search dirs
+Search dirs = /Users/sergio/Desktop /Users/sergio/Documents /Users/sergio/Dev /Users/sergio/dev /Users/sergio/xubuntu_dev /Users/sergio/cam-truck /Users/sergio/portainer_container_data /Users/sergio/n8n-ai /Users/sergio/migration_from_heroku /Users/sergio/lionel_deliveries /Users/sergio/hognekaba /Users/sergio/hmarket /Users/sergio/dev_d_personal_from_windows /Users/sergio/dev_completed
+
+━━━ Scanning: /Users/sergio/Desktop ━━━
+
+Found 0 repositories in /Users/sergio/Desktop
+Repos are 
+
+
+━━━ Scanning: /Users/sergio/Documents ━━━
+
+Found 0 repositories in /Users/sergio/Documents
+Repos are 
+
+
+━━━ Scanning: /Users/sergio/Dev ━━━
+
+Found 2 repositories in /Users/sergio/Dev
+Repos are /Users/sergio/Dev/collectmeterdigits/neural-network-digital-counter-readout/.git /Users/sergio/Dev/duolingo-clone/.git
+
+Processing git_dir = /Users/sergio/Dev/collectmeterdigits/neural-network-digital-counter-readout/.git
+Repo dir = /Users/sergio/Dev/collectmeterdigits/neural-network-digital-counter-readout
+[1] Repository: /Users/sergio/Dev/collectmeterdigits/neural-network-digital-counter-readout
+    Size: 184M
+    Remote: https://github.com/jomjol/neural-network-digital-counter-readout.git
+    Branch: master
+    Status: ✓ Clean
+    4
+    Found remotes https://github.com/jomjol/neural-network-digital-counter-readout.git
+9
+    Found 0 unpushed commits
+    5
+    Last commit: 7060eb1b - v1910 (il y a 12 mois)
+Done with /Users/sergio/Dev/collectmeterdigits/neural-network-digital-counter-readout. Continue with next one.
+
+Processing git_dir = /Users/sergio/Dev/duolingo-clone/.git
+Repo dir = /Users/sergio/Dev/duolingo-clone
+[2] Repository: /Users/sergio/Dev/duolingo-clone
+    Size: 326M
+    Remote: https://github.com/BrightSoftwares/duolingo-clone.git
+    Branch: main
+    Status: ✓ Clean
+    4
+    Found remotes https://github.com/BrightSoftwares/duolingo-clone.git
+9
+    Found 0 unpushed commits
+    5
+    Last commit: c75050c - chore: archive legacy files for cleanup (il y a 2 mois)
+Done with /Users/sergio/Dev/duolingo-clone. Continue with next one.
+
+
+━━━ Scanning: /Users/sergio/dev ━━━
+
+Found 2 repositories in /Users/sergio/dev
+Repos are /Users/sergio/dev/collectmeterdigits/neural-network-digital-counter-readout/.git /Users/sergio/dev/duolingo-clone/.git
+
+Processing git_dir = /Users/sergio/dev/collectmeterdigits/neural-network-digital-counter-readout/.git
+Repo dir = /Users/sergio/dev/collectmeterdigits/neural-network-digital-counter-readout
+[3] Repository: /Users/sergio/dev/collectmeterdigits/neural-network-digital-counter-readout
+    Size: 184M
+    Remote: https://github.com/jomjol/neural-network-digital-counter-readout.git
+    Branch: master
+    Status: ✓ Clean
+    4
+    Found remotes https://github.com/jomjol/neural-network-digital-counter-readout.git
+9
+    Found 0 unpushed commits
+    5
+    Last commit: 7060eb1b - v1910 (il y a 12 mois)
+Done with /Users/sergio/dev/collectmeterdigits/neural-network-digital-counter-readout. Continue with next one.
+
+Processing git_dir = /Users/sergio/dev/duolingo-clone/.git
+Repo dir = /Users/sergio/dev/duolingo-clone
+[4] Repository: /Users/sergio/dev/duolingo-clone
+    Size: 326M
+    Remote: https://github.com/BrightSoftwares/duolingo-clone.git
+    Branch: main
+    Status: ✓ Clean
+    4
+    Found remotes https://github.com/BrightSoftwares/duolingo-clone.git
+9
+    Found 0 unpushed commits
+    5
+    Last commit: c75050c - chore: archive legacy files for cleanup (il y a 2 mois)
+Done with /Users/sergio/dev/duolingo-clone. Continue with next one.
+
+
+━━━ Scanning: /Users/sergio/xubuntu_dev ━━━
+
+Found 9 repositories in /Users/sergio/xubuntu_dev
+Repos are /Users/sergio/xubuntu_dev/home_hassio_backup/.git /Users/sergio/xubuntu_dev/fiverr-deliveries-1/bilalahmed125/messenger-bot/.git /Users/sergio/xubuntu_dev/fiverr-deliveries-1/cybernautycs/fleastore_bot/.git /Users/sergio/xubuntu_dev/fiverr-deliveries-1/cybernautycs/fleastore_bot_heroku/.git /Users/sergio/xubuntu_dev/fiverr-deliveries-1/enzogriffine/wordpress-nginx-docker-compose/.git /Users/sergio/xubuntu_dev/fiverr-deliveries-1/shopify_traffic/code_snippets/.git /Users/sergio/xubuntu_dev/fiverr-deliveries-1/.git /Users/sergio/xubuntu_dev/fiverr-deliveries-1/akki90/old-files/google-play-apps-crawler-scrapy/.git /Users/sergio/xubuntu_dev/httpsms/.git
+
+Processing git_dir = /Users/sergio/xubuntu_dev/home_hassio_backup/.git
+Repo dir = /Users/sergio/xubuntu_dev/home_hassio_backup
+[5] Repository: /Users/sergio/xubuntu_dev/home_hassio_backup
+    Size: 1,5G
+    Remote: https://github.com/sweethome33/home_hassio_backup
+    Branch: main
+    Status: ✓ Clean
+    4
+    Found remotes https://github.com/sweethome33/home_hassio_backup
+9
+    Found 0 unpushed commits
+    5
+    Last commit: 2957e0ef - Local changes committed (il y a 4 mois)
+Done with /Users/sergio/xubuntu_dev/home_hassio_backup. Continue with next one.
+
+Processing git_dir = /Users/sergio/xubuntu_dev/fiverr-deliveries-1/bilalahmed125/messenger-bot/.git
+Repo dir = /Users/sergio/xubuntu_dev/fiverr-deliveries-1/bilalahmed125/messenger-bot
+[6] Repository: /Users/sergio/xubuntu_dev/fiverr-deliveries-1/bilalahmed125/messenger-bot
+    Size: 244K
+    Remote: https://github.com/kostistsaprailis/messenger-bot-tutorial.git
+    Branch: master
+    Status: ⚠️  HAS UNCOMMITTED CHANGES
+    Modified files:
+ M echoserver.py
+?? Pipfile
+?? Pipfile.lock
+    Git status (showing top 10):
+ M echoserver.py
+?? Pipfile
+?? Pipfile.lock
+    8
+    6
+    7
+    4
+    Found remotes https://github.com/kostistsaprailis/messenger-bot-tutorial.git
+9
+    Found 0 unpushed commits
+    5
+    Last commit: bf9b5f1 - Update security vulnerability with old Jinja version (il y a 7 ans)
+Done with /Users/sergio/xubuntu_dev/fiverr-deliveries-1/bilalahmed125/messenger-bot. Continue with next one.
+
+Processing git_dir = /Users/sergio/xubuntu_dev/fiverr-deliveries-1/cybernautycs/fleastore_bot/.git
+Repo dir = /Users/sergio/xubuntu_dev/fiverr-deliveries-1/cybernautycs/fleastore_bot
+[7] Repository: /Users/sergio/xubuntu_dev/fiverr-deliveries-1/cybernautycs/fleastore_bot
+    Size:  62M
+    Remote: https://git.heroku.com/brightdjangoecommerce.git
+    Branch: master
+    Status: ✓ Clean
+    4
+    Found remotes https://git.heroku.com/brightdjangoecommerce.git
+9
+    Found 0 unpushed commits
+    5
+    Last commit: 3742afa - Add some other files (il y a 6 ans)
+Done with /Users/sergio/xubuntu_dev/fiverr-deliveries-1/cybernautycs/fleastore_bot. Continue with next one.
+
+Processing git_dir = /Users/sergio/xubuntu_dev/fiverr-deliveries-1/cybernautycs/fleastore_bot_heroku/.git
+Repo dir = /Users/sergio/xubuntu_dev/fiverr-deliveries-1/cybernautycs/fleastore_bot_heroku
+[8] Repository: /Users/sergio/xubuntu_dev/fiverr-deliveries-1/cybernautycs/fleastore_bot_heroku
+    Size: 1,5M
+    Remote: https://github.com/bluebird008/fleastore_bot.git
+    Branch: master
+    Status: ⚠️  HAS UNCOMMITTED CHANGES
+    Modified files:
+ M .env
+ M fleastore_bot/wsgi.py
+ M settings/development.py
+ M settings/production.py
+?? .DS_Store
+?? Pipfile
+?? Pipfile.lock
+?? bot/.DS_Store
+?? latest.dump
+?? mychanges.sql
+?? postgress_backup_20200508.dump.sql
+?? start_postgres_client.sh
+    Git status (showing top 10):
+ M .env
+ M fleastore_bot/wsgi.py
+ M settings/development.py
+ M settings/production.py
+?? .DS_Store
+?? Pipfile
+?? Pipfile.lock
+?? bot/.DS_Store
+?? latest.dump
+?? mychanges.sql
+    8
+    6
+    7
+    ... and 2 more files
+    4
+    Found remotes https://github.com/bluebird008/fleastore_bot.git
+9
+    Found 0 unpushed commits
+    5
+    Last commit: 389b9df - Update inline file to trigger deployment (il y a 6 ans)
+Done with /Users/sergio/xubuntu_dev/fiverr-deliveries-1/cybernautycs/fleastore_bot_heroku. Continue with next one.
+
+Processing git_dir = /Users/sergio/xubuntu_dev/fiverr-deliveries-1/enzogriffine/wordpress-nginx-docker-compose/.git
+Repo dir = /Users/sergio/xubuntu_dev/fiverr-deliveries-1/enzogriffine/wordpress-nginx-docker-compose
+[9] Repository: /Users/sergio/xubuntu_dev/fiverr-deliveries-1/enzogriffine/wordpress-nginx-docker-compose
+    Size: 8,9M
+    Remote: https://github.com/urre/wordpress-nginx-docker-compose.git
+    Branch: master
+    Status: ✓ Clean
+    4
+    Found remotes https://github.com/urre/wordpress-nginx-docker-compose.git
+9
+    Found 0 unpushed commits
+    5
+    Last commit: 2189779 - Readme fix (il y a 6 ans)
+Done with /Users/sergio/xubuntu_dev/fiverr-deliveries-1/enzogriffine/wordpress-nginx-docker-compose. Continue with next one.
+
+Processing git_dir = /Users/sergio/xubuntu_dev/fiverr-deliveries-1/shopify_traffic/code_snippets/.git
+Repo dir = /Users/sergio/xubuntu_dev/fiverr-deliveries-1/shopify_traffic/code_snippets
+[10] Repository: /Users/sergio/xubuntu_dev/fiverr-deliveries-1/shopify_traffic/code_snippets
+    Size: 492M
+    Remote: https://github.com/CoreyMSchafer/code_snippets.git
+    Branch: master
+    Status: ⚠️  HAS UNCOMMITTED CHANGES
+    Modified files:
+ D Django_Blog/05-Database-Models/django_project/blog/__init__.py
+ D Django_Blog/05-Database-Models/django_project/blog/admin.py
+ D Django_Blog/05-Database-Models/django_project/blog/apps.py
+ D Django_Blog/05-Database-Models/django_project/blog/migrations/0001_initial.py
+ D Django_Blog/05-Database-Models/django_project/blog/migrations/__init__.py
+ D Django_Blog/05-Database-Models/django_project/blog/models.py
+ D Django_Blog/05-Database-Models/django_project/blog/static/blog/main.css
+ D Django_Blog/05-Database-Models/django_project/blog/templates/blog/about.html
+ D Django_Blog/05-Database-Models/django_project/blog/templates/blog/base.html
+ D Django_Blog/05-Database-Models/django_project/blog/templates/blog/home.html
+ D Django_Blog/05-Database-Models/django_project/blog/tests.py
+ D Django_Blog/05-Database-Models/django_project/blog/urls.py
+ D Django_Blog/05-Database-Models/django_project/blog/views.py
+ D Django_Blog/05-Database-Models/django_project/db.sqlite3
+ D Django_Blog/05-Database-Models/django_project/django_project/__init__.py
+ D Django_Blog/05-Database-Models/django_project/django_project/settings.py
+ D Django_Blog/05-Database-Models/django_project/django_project/urls.py
+ D Django_Blog/05-Database-Models/django_project/django_project/wsgi.py
+ D Django_Blog/05-Database-Models/django_project/manage.py
+    Git status (showing top 10):
+ D Django_Blog/05-Database-Models/django_project/blog/__init__.py
+ D Django_Blog/05-Database-Models/django_project/blog/admin.py
+ D Django_Blog/05-Database-Models/django_project/blog/apps.py
+ D Django_Blog/05-Database-Models/django_project/blog/migrations/0001_initial.py
+ D Django_Blog/05-Database-Models/django_project/blog/migrations/__init__.py
+ D Django_Blog/05-Database-Models/django_project/blog/models.py
+ D Django_Blog/05-Database-Models/django_project/blog/static/blog/main.css
+ D Django_Blog/05-Database-Models/django_project/blog/templates/blog/about.html
+ D Django_Blog/05-Database-Models/django_project/blog/templates/blog/base.html
+ D Django_Blog/05-Database-Models/django_project/blog/templates/blog/home.html
+    8
+    6
+    7
+    ... and 9 more files
+    4
+    Found remotes https://github.com/CoreyMSchafer/code_snippets.git
+9
+    Found 0 unpushed commits
+    5
+    Last commit: 8a59f16 - Pandas Tutorial 11 (il y a 6 ans)
+Done with /Users/sergio/xubuntu_dev/fiverr-deliveries-1/shopify_traffic/code_snippets. Continue with next one.
+
+Processing git_dir = /Users/sergio/xubuntu_dev/fiverr-deliveries-1/.git
+Repo dir = /Users/sergio/xubuntu_dev/fiverr-deliveries-1
+[11] Repository: /Users/sergio/xubuntu_dev/fiverr-deliveries-1
+    Size: 2,0G
+    Remote: https://fullbright@bitbucket.org/fullbright/fiverr-deliveries-1.git
+    Branch: master
+    Status: ⚠️  HAS UNCOMMITTED CHANGES
+    Modified files:
+ ? cybernautycs/fleastore_bot
+ M cybernautycs/fleastore_bot_heroku
+ D meneses717/.~lock.MAPA_bot.xlsx#
+ D shopify_traffic/django_project_number_12/Makefile
+ D shopify_traffic/django_project_number_12/Pipfile
+ D shopify_traffic/django_project_number_12/Pipfile.lock.bkp
+ D shopify_traffic/django_project_number_12/Readme.md
+ D shopify_traffic/django_project_number_12/Readme.pdf
+ D shopify_traffic/django_project_number_12/blog/__init__.py
+ D shopify_traffic/django_project_number_12/blog/admin.py
+ D shopify_traffic/django_project_number_12/blog/apps.py
+ D shopify_traffic/django_project_number_12/blog/migrations/0001_initial.py
+ D shopify_traffic/django_project_number_12/blog/migrations/__init__.py
+ D shopify_traffic/django_project_number_12/blog/models.py
+ D shopify_traffic/django_project_number_12/blog/static/blog/main.css
+ D shopify_traffic/django_project_number_12/blog/templates/blog/about.html
+ D shopify_traffic/django_project_number_12/blog/templates/blog/base.html
+ D shopify_traffic/django_project_number_12/blog/templates/blog/home.html
+ D shopify_traffic/django_project_number_12/blog/templates/blog/post_confirm_delete.html
+ D shopify_traffic/django_project_number_12/blog/templates/blog/post_detail.html
+ D shopify_traffic/django_project_number_12/blog/templates/blog/post_form.html
+ D shopify_traffic/django_project_number_12/blog/templates/blog/user_posts.html
+ D shopify_traffic/django_project_number_12/blog/tests.py
+ D shopify_traffic/django_project_number_12/blog/urls.py
+ D shopify_traffic/django_project_number_12/blog/views.py
+ D shopify_traffic/django_project_number_12/django_project/__init__.py
+ D shopify_traffic/django_project_number_12/django_project/locale/zh-CN/LC_MESSAGES/django.mo
+ D shopify_traffic/django_project_number_12/django_project/locale/zh-CN/LC_MESSAGES/django.po
+ D shopify_traffic/django_project_number_12/django_project/locale/zh-hans/LC_MESSAGES/django.mo
+ D shopify_traffic/django_project_number_12/django_project/locale/zh-hans/LC_MESSAGES/django.po
+ D shopify_traffic/django_project_number_12/django_project/locale/zh_CN/LC_MESSAGES/django.mo
+ D shopify_traffic/django_project_number_12/django_project/locale/zh_CN/LC_MESSAGES/django.po
+ D shopify_traffic/django_project_number_12/django_project/locale/zh_hans/LC_MESSAGES/django.mo
+ D shopify_traffic/django_project_number_12/django_project/locale/zh_hans/LC_MESSAGES/django.po
+ D shopify_traffic/django_project_number_12/django_project/settings.py
+ D shopify_traffic/django_project_number_12/django_project/urls.py
+ D shopify_traffic/django_project_number_12/django_project/wsgi.py
+ D shopify_traffic/django_project_number_12/doctools/HEADER.YAML
+ D shopify_traffic/django_project_number_12/doctools/eisvogel.latex
+ D shopify_traffic/django_project_number_12/doctools/eisvogel_mod.latex
+ D shopify_traffic/django_project_number_12/doctools/pandoc-2-pdf-how-to.pdf
+ D shopify_traffic/django_project_number_12/drop_linebot_linebotprofile
+ D shopify_traffic/django_project_number_12/exclude.lst
+ D shopify_traffic/django_project_number_12/generate_pdf.sh
+ D shopify_traffic/django_project_number_12/linebot_old/__init__.py
+ D shopify_traffic/django_project_number_12/linebot_old/admin.py
+ D shopify_traffic/django_project_number_12/linebot_old/apps.py
+ D shopify_traffic/django_project_number_12/linebot_old/migrations/__init__.py
+ D shopify_traffic/django_project_number_12/linebot_old/models.py
+ D shopify_traffic/django_project_number_12/linebot_old/serializers.py
+ D shopify_traffic/django_project_number_12/linebot_old/tests.py
+ D shopify_traffic/django_project_number_12/linebot_old/urls.py
+ D shopify_traffic/django_project_number_12/linebot_old/views.py
+ D shopify_traffic/django_project_number_12/linegamebot.service
+ D shopify_traffic/django_project_number_12/linegamebot/__init__.py
+ D shopify_traffic/django_project_number_12/linegamebot/admin.py
+ D shopify_traffic/django_project_number_12/linegamebot/apps.py
+ D shopify_traffic/django_project_number_12/linegamebot/exceptions.py
+ D shopify_traffic/django_project_number_12/linegamebot/forms.py
+ D shopify_traffic/django_project_number_12/linegamebot/linegamebot_controller.py
+ D shopify_traffic/django_project_number_12/linegamebot/linegamebot_interactions.py
+ D shopify_traffic/django_project_number_12/linegamebot/locale/zh-cn/LC_MESSAGES/django.mo
+ D shopify_traffic/django_project_number_12/linegamebot/locale/zh-cn/LC_MESSAGES/django.po
+ D shopify_traffic/django_project_number_12/linegamebot/locale/zh-hans/LC_MESSAGES/django.mo
+ D shopify_traffic/django_project_number_12/linegamebot/locale/zh-hans/LC_MESSAGES/django.po
+ D shopify_traffic/django_project_number_12/linegamebot/locale/zh_CN/LC_MESSAGES/django.mo
+ D shopify_traffic/django_project_number_12/linegamebot/locale/zh_CN/LC_MESSAGES/django.po
+ D shopify_traffic/django_project_number_12/linegamebot/locale/zh_hans/LC_MESSAGES/django.mo
+ D shopify_traffic/django_project_number_12/linegamebot/locale/zh_hans/LC_MESSAGES/django.po
+ D shopify_traffic/django_project_number_12/linegamebot/migrations/0001_initial.py
+ D shopify_traffic/django_project_number_12/linegamebot/migrations/0002_auto_20200419_1736.py
+ D shopify_traffic/django_project_number_12/linegamebot/migrations/0003_auto_20200419_1827.py
+ D shopify_traffic/django_project_number_12/linegamebot/migrations/0004_auto_20200419_1833.py
+ D shopify_traffic/django_project_number_12/linegamebot/migrations/0005_linegamebotplayergroup_player_creditbalance.py
+ D shopify_traffic/django_project_number_12/linegamebot/migrations/0006_linegamebotplayergroup_player_role.py
+ D shopify_traffic/django_project_number_12/linegamebot/migrations/0007_auto_20200420_0016.py
+ D shopify_traffic/django_project_number_12/linegamebot/migrations/0008_auto_20200420_0121.py
+ D shopify_traffic/django_project_number_12/linegamebot/migrations/0009_auto_20200422_1129.py
+ D shopify_traffic/django_project_number_12/linegamebot/migrations/0010_auto_20200422_1150.py
+ D shopify_traffic/django_project_number_12/linegamebot/migrations/0011_auto_20200422_1151.py
+ D shopify_traffic/django_project_number_12/linegamebot/migrations/0012_auto_20200422_1412.py
+ D shopify_traffic/django_project_number_12/linegamebot/migrations/0013_auto_20200422_1412.py
+ D shopify_traffic/django_project_number_12/linegamebot/migrations/0014_auto_20200422_1814.py
+ D shopify_traffic/django_project_number_12/linegamebot/migrations/0015_auto_20200422_1815.py
+ D shopify_traffic/django_project_number_12/linegamebot/migrations/0016_auto_20200424_0952.py
+ D shopify_traffic/django_project_number_12/linegamebot/migrations/0017_auto_20200424_0953.py
+ D shopify_traffic/django_project_number_12/linegamebot/migrations/0018_linegamebotarea_control_key.py
+ D shopify_traffic/django_project_number_12/linegamebot/migrations/0019_remove_linegamebotplayergroup_player_creditbalance.py
+ D shopify_traffic/django_project_number_12/linegamebot/migrations/0020_linegamebotplayer_points.py
+ D shopify_traffic/django_project_number_12/linegamebot/migrations/__init__.py
+ D shopify_traffic/django_project_number_12/linegamebot/models.py
+ D shopify_traffic/django_project_number_12/linegamebot/serializers.py
+ D shopify_traffic/django_project_number_12/linegamebot/static/linegamebot/blog_main.css
+ D shopify_traffic/django_project_number_12/linegamebot/static/linegamebot/button.css
+ D shopify_traffic/django_project_number_12/linegamebot/static/linegamebot/css
+ D shopify_traffic/django_project_number_12/linegamebot/static/linegamebot/datatables.bundle.css
+ D shopify_traffic/django_project_number_12/linegamebot/static/linegamebot/datatables.bundle.js
+ D shopify_traffic/django_project_number_12/linegamebot/static/linegamebot/fonts/flaticon/Flaticon.woff
+ D shopify_traffic/django_project_number_12/linegamebot/static/linegamebot/fonts/fontawesome5/fa-solid-900.woff2
+ D shopify_traffic/django_project_number_12/linegamebot/static/linegamebot/fonts/line-awesome/line-awesome.woff2
+ D shopify_traffic/django_project_number_12/linegamebot/static/linegamebot/member.js
+ D shopify_traffic/django_project_number_12/linegamebot/static/linegamebot/scripts.bundle.js
+ D shopify_traffic/django_project_number_12/linegamebot/static/linegamebot/style.bundle.css
+ D shopify_traffic/django_project_number_12/linegamebot/static/linegamebot/style.css
+ D shopify_traffic/django_project_number_12/linegamebot/static/linegamebot/translateelement.css
+ D shopify_traffic/django_project_number_12/linegamebot/static/linegamebot/vendors.bundle.css
+ D shopify_traffic/django_project_number_12/linegamebot/static/linegamebot/vendors.bundle.js
+ D shopify_traffic/django_project_number_12/linegamebot/static/linegamebot/webfont.js
+ D shopify_traffic/django_project_number_12/linegamebot/templates/linegamebot/base.html
+ D shopify_traffic/django_project_number_12/linegamebot/templates/linegamebot/base_listitems_paginated.html
+ D shopify_traffic/django_project_number_12/linegamebot/templates/linegamebot/item_list.html
+ D shopify_traffic/django_project_number_12/linegamebot/templates/linegamebot/item_list_accounts.html
+ D shopify_traffic/django_project_number_12/linegamebot/templates/linegamebot/item_list_dealers.html
+ D shopify_traffic/django_project_number_12/linegamebot/templates/linegamebot/item_list_groups.html
+ D shopify_traffic/django_project_number_12/linegamebot/templates/linegamebot/item_list_players.html
+ D shopify_traffic/django_project_number_12/linegamebot/templates/linegamebot/item_list_rounds.html
+ D shopify_traffic/django_project_number_12/linegamebot/templates/linegamebot/linegamebotadministrator_list.html
+ D shopify_traffic/django_project_number_12/linegamebot/templates/linegamebot/linegamebotbettransation_form.html
+ D shopify_traffic/django_project_number_12/linegamebot/templates/linegamebot/linegamebotbettransation_list.html
+ D shopify_traffic/django_project_number_12/linegamebot/templates/linegamebot/linegamebotgroup_confirm_delete.html
+ D shopify_traffic/django_project_number_12/linegamebot/templates/linegamebot/linegamebotgroup_detail.html
+ D shopify_traffic/django_project_number_12/linegamebot/templates/linegamebot/linegamebotgroup_form.html
+ D shopify_traffic/django_project_number_12/linegamebot/templates/linegamebot/linegamebotgroup_list.html
+ D shopify_traffic/django_project_number_12/linegamebot/templates/linegamebot/linegamebotmanager_list.html
+ D shopify_traffic/django_project_number_12/linegamebot/templates/linegamebot/linegamebotplayer_confirm_delete.html
+ D shopify_traffic/django_project_number_12/linegamebot/templates/linegamebot/linegamebotplayer_detail.html
+ D shopify_traffic/django_project_number_12/linegamebot/templates/linegamebot/linegamebotplayer_form.html
+ D shopify_traffic/django_project_number_12/linegamebot/templates/linegamebot/linegamebotplayer_form_simulatebet.html
+ D shopify_traffic/django_project_number_12/linegamebot/templates/linegamebot/linegamebotplayer_form_transferpoints.html
+ D shopify_traffic/django_project_number_12/linegamebot/templates/linegamebot/linegamebotplayer_list.html
+ D shopify_traffic/django_project_number_12/linegamebot/templates/linegamebot/linegamebotplayergroup_list.html
+ D shopify_traffic/django_project_number_12/linegamebot/templates/linegamebot/linegamebotreports_list.html
+ D shopify_traffic/django_project_number_12/linegamebot/templates/linegamebot/linegamebotround_form.html
+ D shopify_traffic/django_project_number_12/linegamebot/templates/linegamebot/linegamebotround_form_enterkeys.html
+ D shopify_traffic/django_project_number_12/linegamebot/templates/linegamebot/linegamebotround_form_entertriplekeys.html
+ D shopify_traffic/django_project_number_12/linegamebot/templates/linegamebot/linegamebotround_form_setcreditlimit.html
+ D shopify_traffic/django_project_number_12/linegamebot/templates/linegamebot/linegamebotround_list.html
+ D shopify_traffic/django_project_number_12/linegamebot/test_data.py
+ D shopify_traffic/django_project_number_12/linegamebot/tests.py
+ D shopify_traffic/django_project_number_12/linegamebot/urls.py
+ D shopify_traffic/django_project_number_12/linegamebot/views.py
+ D shopify_traffic/django_project_number_12/manage.py
+ D shopify_traffic/django_project_number_12/posts.json
+ D shopify_traffic/django_project_number_12/requirements.txt
+ D shopify_traffic/django_project_number_12/users/__init__.py
+ D shopify_traffic/django_project_number_12/users/admin.py
+ D shopify_traffic/django_project_number_12/users/apps.py
+ D shopify_traffic/django_project_number_12/users/forms.py
+ D shopify_traffic/django_project_number_12/users/migrations/0001_initial.py
+ D shopify_traffic/django_project_number_12/users/migrations/__init__.py
+ D shopify_traffic/django_project_number_12/users/models.py
+ D shopify_traffic/django_project_number_12/users/signals.py
+ D shopify_traffic/django_project_number_12/users/templates/users/login.html
+ D shopify_traffic/django_project_number_12/users/templates/users/logout.html
+ D shopify_traffic/django_project_number_12/users/templates/users/password_reset.html
+ D shopify_traffic/django_project_number_12/users/templates/users/password_reset_complete.html
+ D shopify_traffic/django_project_number_12/users/templates/users/password_reset_confirm.html
+ D shopify_traffic/django_project_number_12/users/templates/users/password_reset_done.html
+ D shopify_traffic/django_project_number_12/users/templates/users/profile.html
+ D shopify_traffic/django_project_number_12/users/templates/users/register.html
+ D shopify_traffic/django_project_number_12/users/tests.py
+ D shopify_traffic/django_project_number_12/users/views.py
+?? akki90/
+?? bilalahmed125/
+?? "cybernautycs/Cointopay_API_v1.00 - 2018.pdf"
+?? cybernautycs/chem_eu_old/
+?? cybernautycs/python_automation/
+?? distract3456/
+?? sabrinatang941/
+?? "shopify_traffic/512.Second stage functional correction.pdf"
+?? "shopify_traffic/Bright Softwares - shopify_traffic - Project proposal.pdf"
+?? shopify_traffic/DNS_Configuration.csv
+?? shopify_traffic/Pipfile
+?? shopify_traffic/WhatsappBot.mp4
+?? shopify_traffic/botinstallation.pem
+?? shopify_traffic/code_snippets/Django_Blog/12-Password-Reset/
+?? "shopify_traffic/\346\226\260\345\242\236 Microsoft Word \346\226\207\344\273\266 (3).docx"
+    Git status (showing top 10):
+ ? cybernautycs/fleastore_bot
+ M cybernautycs/fleastore_bot_heroku
+ D meneses717/.~lock.MAPA_bot.xlsx#
+ D shopify_traffic/django_project_number_12/Makefile
+ D shopify_traffic/django_project_number_12/Pipfile
+ D shopify_traffic/django_project_number_12/Pipfile.lock.bkp
+ D shopify_traffic/django_project_number_12/Readme.md
+ D shopify_traffic/django_project_number_12/Readme.pdf
+ D shopify_traffic/django_project_number_12/blog/__init__.py
+ D shopify_traffic/django_project_number_12/blog/admin.py
+    8
+    6
+    7
+    ... and 167 more files
+    4
+    Found remotes https://fullbright@bitbucket.org/fullbright/fiverr-deliveries-1.git
+9
+    Found 0 unpushed commits
+    5
+    Last commit: 50c417b - Update locate (il y a 6 ans)
+Done with /Users/sergio/xubuntu_dev/fiverr-deliveries-1. Continue with next one.
+
+Processing git_dir = /Users/sergio/xubuntu_dev/fiverr-deliveries-1/akki90/old-files/google-play-apps-crawler-scrapy/.git
+Repo dir = /Users/sergio/xubuntu_dev/fiverr-deliveries-1/akki90/old-files/google-play-apps-crawler-scrapy
+[12] Repository: /Users/sergio/xubuntu_dev/fiverr-deliveries-1/akki90/old-files/google-play-apps-crawler-scrapy
+    Size: 2,7M
+    Remote: https://github.com/manojps/google-play-apps-crawler-scrapy.git
+    Branch: master
+    Status: ✓ Clean
+    4
+    Found remotes https://github.com/manojps/google-play-apps-crawler-scrapy.git
+9
+    Found 0 unpushed commits
+    5
+    Last commit: 8656419 - Link update (il y a 10 ans)
+Done with /Users/sergio/xubuntu_dev/fiverr-deliveries-1/akki90/old-files/google-play-apps-crawler-scrapy. Continue with next one.
+
+Processing git_dir = /Users/sergio/xubuntu_dev/httpsms/.git
+Repo dir = /Users/sergio/xubuntu_dev/httpsms
+[13] Repository: /Users/sergio/xubuntu_dev/httpsms
+    Size:  45M
+    Remote: https://github.com/NdoleStudio/httpsms
+    Branch: main
+    Status: ✓ Clean
+    4
+    Found remotes https://github.com/NdoleStudio/httpsms
+9
+    Found 0 unpushed commits
+    5
+    Last commit: bc2f348 - Merge pull request #735 from NdoleStudio/dependabot/go_modules/api/go.opentelemetry.io/otel/sdk-1.38.0 (il y a 4 mois)
+Done with /Users/sergio/xubuntu_dev/httpsms. Continue with next one.
+
+
+━━━ Scanning: /Users/sergio/cam-truck ━━━
+
+Found 1 repositories in /Users/sergio/cam-truck
+Repos are /Users/sergio/cam-truck/camtruck/.git
+
+Processing git_dir = /Users/sergio/cam-truck/camtruck/.git
+Repo dir = /Users/sergio/cam-truck/camtruck
+[14] Repository: /Users/sergio/cam-truck/camtruck
+    Size: 482M
+    Remote: https://github.com/BrightSoftwares/cam-truck.git
+    Branch: dev
+    Status: ✓ Clean
+    4
+    Found remotes https://github.com/BrightSoftwares/cam-truck.git
+9
+    Found 0 unpushed commits
+    5
+    Last commit: 4595302 - add last updates from macos (il y a 1 an et 1 mois)
+Done with /Users/sergio/cam-truck/camtruck. Continue with next one.
+
+
+━━━ Scanning: /Users/sergio/portainer_container_data ━━━
+
+Found 2 repositories in /Users/sergio/portainer_container_data
+Repos are /Users/sergio/portainer_container_data/data/compose/70/.git /Users/sergio/portainer_container_data/data/compose/71/.git
+
+Processing git_dir = /Users/sergio/portainer_container_data/data/compose/70/.git
+Repo dir = /Users/sergio/portainer_container_data/data/compose/70
+[15] Repository: /Users/sergio/portainer_container_data/data/compose/70
+    Size:  40K
+    Remote: https://github.com/fullbright/portainer-compose/
+    Branch: main
+    Status: ✓ Clean
+    4
+    Found remotes https://github.com/fullbright/portainer-compose/
+9
+    Found 0 unpushed commits
+    5
+    Last commit: 023839d - Update docker-compose.yml (il y a 2 ans et 1 mois)
+Done with /Users/sergio/portainer_container_data/data/compose/70. Continue with next one.
+
+Processing git_dir = /Users/sergio/portainer_container_data/data/compose/71/.git
+Repo dir = /Users/sergio/portainer_container_data/data/compose/71
+[16] Repository: /Users/sergio/portainer_container_data/data/compose/71
+    Size:  40K
+    Remote: https://github.com/fullbright/portainer-compose/
+    Branch: main
+    Status: ✓ Clean
+    4
+    Found remotes https://github.com/fullbright/portainer-compose/
+9
+    Found 0 unpushed commits
+    5
+    Last commit: 023839d - Update docker-compose.yml (il y a 2 ans et 1 mois)
+Done with /Users/sergio/portainer_container_data/data/compose/71. Continue with next one.
+
+
+━━━ Scanning: /Users/sergio/n8n-ai ━━━
+
+Found 0 repositories in /Users/sergio/n8n-ai
+Repos are 
+
+
+━━━ Scanning: /Users/sergio/migration_from_heroku ━━━
+
+Found 0 repositories in /Users/sergio/migration_from_heroku
+Repos are 
+
+
+━━━ Scanning: /Users/sergio/lionel_deliveries ━━━
+
+Found 10 repositories in /Users/sergio/lionel_deliveries
+Repos are /Users/sergio/lionel_deliveries/ansible-vagrant-examples/.git /Users/sergio/lionel_deliveries/whatsapp_ecommerce/.git /Users/sergio/lionel_deliveries/whatsappbot-dialogflow-integrations/.git /Users/sergio/lionel_deliveries/whatsapp_ecommerce2/.git /Users/sergio/lionel_deliveries/bright-parkings-homeassistant/.git /Users/sergio/lionel_deliveries/foobar-kiosk/deploy/roles/ansible-role-lightdm/.git /Users/sergio/lionel_deliveries/foobar-kiosk/deploy/roles/ansible-role-nodejs-raspbian/.git /Users/sergio/lionel_deliveries/foobar-kiosk/.git /Users/sergio/lionel_deliveries/bright-car-finder-experiments/.git /Users/sergio/lionel_deliveries/WebWhatsapp-Wrapper/.git
+
+Processing git_dir = /Users/sergio/lionel_deliveries/ansible-vagrant-examples/.git
+Repo dir = /Users/sergio/lionel_deliveries/ansible-vagrant-examples
+[17] Repository: /Users/sergio/lionel_deliveries/ansible-vagrant-examples
+    Size: 768K
+    Remote: https://github.com/geerlingguy/ansible-vagrant-examples.git
+    Branch: master
+    Status: ✓ Clean
+    4
+    Found remotes https://github.com/geerlingguy/ansible-vagrant-examples.git
+9
+    Found 0 unpushed commits
+    5
+    Last commit: 126e87f - PR #84 follow-up: Clean up AWX example further. Make it shiny. (il y a 5 ans)
+Done with /Users/sergio/lionel_deliveries/ansible-vagrant-examples. Continue with next one.
+
+Processing git_dir = /Users/sergio/lionel_deliveries/whatsapp_ecommerce/.git
+Repo dir = /Users/sergio/lionel_deliveries/whatsapp_ecommerce
+[18] Repository: /Users/sergio/lionel_deliveries/whatsapp_ecommerce
+    Size:  52M
+    Remote: https://github.com/BrightSoftwares/django-ecommerce.git
+    Branch: HEAD
+    Status: ⚠️  HAS UNCOMMITTED CHANGES
+    Modified files:
+ M .DS_Store
+    Git status (showing top 10):
+ M .DS_Store
+    8
+    6
+    7
+    4
+    Found remotes https://github.com/BrightSoftwares/django-ecommerce.git
+d826283 data migrated from my mac
+89e295a data migrated from my mac
+e31599a data migrated from my mac
+0eb3348 force adding changes on the macbook
+0b4f02a data migrated from my mac
+9
+    Found 5 unpushed commits
+    Unpushed: ⚠️  5 commit(s) not pushed
+    5
+    Last commit: 610b1d0 - force adding changes on the macbook (il y a 2 ans et 1 mois)
+Done with /Users/sergio/lionel_deliveries/whatsapp_ecommerce. Continue with next one.
+
+Processing git_dir = /Users/sergio/lionel_deliveries/whatsappbot-dialogflow-integrations/.git
+Repo dir = /Users/sergio/lionel_deliveries/whatsappbot-dialogflow-integrations
+[19] Repository: /Users/sergio/lionel_deliveries/whatsappbot-dialogflow-integrations
+    Size: 3,1M
+    Remote: https://github.com/GoogleCloudPlatform/dialogflow-integrations.git
+    Branch: master
+    Status: ⚠️  HAS UNCOMMITTED CHANGES
+    Modified files:
+ M Dockerfile
+ M twilio/server.js
+?? .DS_Store
+?? dialogflow-twilio-app.url
+?? twilio/attendance-bot-257313-0c55a0cadf51.json
+    Git status (showing top 10):
+ M Dockerfile
+ M twilio/server.js
+?? .DS_Store
+?? dialogflow-twilio-app.url
+?? twilio/attendance-bot-257313-0c55a0cadf51.json
+    8
+    6
+    7
+    4
+    Found remotes https://github.com/GoogleCloudPlatform/dialogflow-integrations.git
+9
+    Found 0 unpushed commits
+    5
+    Last commit: 350d364 - Merge pull request #27 from svetlanap-Google/master (il y a 6 ans)
+Done with /Users/sergio/lionel_deliveries/whatsappbot-dialogflow-integrations. Continue with next one.
+
+Processing git_dir = /Users/sergio/lionel_deliveries/whatsapp_ecommerce2/.git
+Repo dir = /Users/sergio/lionel_deliveries/whatsapp_ecommerce2
+[20] Repository: /Users/sergio/lionel_deliveries/whatsapp_ecommerce2
+    Size:  50M
+    Remote: https://github.com/BrightSoftwares/django-ecommerce.git
+    Branch: HEAD
+    Status: ⚠️  HAS UNCOMMITTED CHANGES
+    Modified files:
+ M .DS_Store
+    Git status (showing top 10):
+ M .DS_Store
+    8
+    6
+    7
+    4
+    Found remotes https://github.com/BrightSoftwares/django-ecommerce.git
+d554e3e data migrated from my mac
+5fe9e9a force adding changes on the macbook
+1be7ce6 data migrated from my mac
+9
+    Found 3 unpushed commits
+    Unpushed: ⚠️  3 commit(s) not pushed
+    5
+    Last commit: e9d2d9c - force adding changes on the macbook (il y a 2 ans et 1 mois)
+Done with /Users/sergio/lionel_deliveries/whatsapp_ecommerce2. Continue with next one.
+
+Processing git_dir = /Users/sergio/lionel_deliveries/bright-parkings-homeassistant/.git
+Repo dir = /Users/sergio/lionel_deliveries/bright-parkings-homeassistant
+[21] Repository: /Users/sergio/lionel_deliveries/bright-parkings-homeassistant
+    Size: 144K
+    Remote: https://github.com/BrightSoftwares/bright-parkings-homeassistant.git
+    Branch: main
+    Status: ✓ Clean
+    4
+    Found remotes https://github.com/BrightSoftwares/bright-parkings-homeassistant.git
+9
+    Found 0 unpushed commits
+    5
+    Last commit: 2cb92df - first commit (il y a 1 an et 5 mois)
+Done with /Users/sergio/lionel_deliveries/bright-parkings-homeassistant. Continue with next one.
+
+Processing git_dir = /Users/sergio/lionel_deliveries/foobar-kiosk/deploy/roles/ansible-role-lightdm/.git
+Repo dir = /Users/sergio/lionel_deliveries/foobar-kiosk/deploy/roles/ansible-role-lightdm
+[22] Repository: /Users/sergio/lionel_deliveries/foobar-kiosk/deploy/roles/ansible-role-lightdm
+    Size: 356K
+    Remote: https://github.com/gantsign/ansible-role-lightdm.git
+    Branch: master
+    Status: ✓ Clean
+    4
+    Found remotes https://github.com/gantsign/ansible-role-lightdm.git
+9
+    Found 0 unpushed commits
+    5
+    Last commit: 8a6a434 - Updated Molecule to 3.0.8 (#84) (il y a 5 ans)
+Done with /Users/sergio/lionel_deliveries/foobar-kiosk/deploy/roles/ansible-role-lightdm. Continue with next one.
+
+Processing git_dir = /Users/sergio/lionel_deliveries/foobar-kiosk/deploy/roles/ansible-role-nodejs-raspbian/.git
+Repo dir = /Users/sergio/lionel_deliveries/foobar-kiosk/deploy/roles/ansible-role-nodejs-raspbian
+[23] Repository: /Users/sergio/lionel_deliveries/foobar-kiosk/deploy/roles/ansible-role-nodejs-raspbian
+    Size: 200K
+    Remote: https://github.com/soplakanets/ansible-role-nodejs-raspbian.git
+    Branch: master
+    Status: ⚠️  HAS UNCOMMITTED CHANGES
+    Modified files:
+ M tasks/main.yml
+    Git status (showing top 10):
+ M tasks/main.yml
+    8
+    6
+    7
+    4
+    Found remotes https://github.com/soplakanets/ansible-role-nodejs-raspbian.git
+9
+    Found 0 unpushed commits
+    5
+    Last commit: 9fb08a9 - Merge pull request #1 from madmod/master (il y a 10 ans)
+Done with /Users/sergio/lionel_deliveries/foobar-kiosk/deploy/roles/ansible-role-nodejs-raspbian. Continue with next one.
+
+Processing git_dir = /Users/sergio/lionel_deliveries/foobar-kiosk/.git
+Repo dir = /Users/sergio/lionel_deliveries/foobar-kiosk
+[24] Repository: /Users/sergio/lionel_deliveries/foobar-kiosk
+    Size: 172M
+    Remote: https://github.com/uppsaladatavetare/foobar-kiosk.git
+    Branch: master
+    Status: ⚠️  HAS UNCOMMITTED CHANGES
+    Modified files:
+ M deploy/ansible.cfg
+ M deploy/group_vars/live/vars.yml
+ D deploy/group_vars/live/vault.yml
+ D deploy/inventory.cfg
+ M deploy/playbook.yml
+ M deploy/roles/raspi-expanded-rootfs/tasks/main.yml
+ M deploy/roles/raspi-information-radiator/tasks/main.yml
+ M deploy/templates/supervisor/foobar.conf
+ M deploy/templates/wpa_supplicant.conf
+ M drivers/requirements.pip
+?? .vagrant/
+?? Vagrantfile
+?? deploy/roles/ansible-role-lightdm/
+?? deploy/roles/ansible-role-nodejs-raspbian/
+?? deploy/templates/gdm3_autologin.conf
+?? deploy/vagrant_inventory
+    Git status (showing top 10):
+ M deploy/ansible.cfg
+ M deploy/group_vars/live/vars.yml
+ D deploy/group_vars/live/vault.yml
+ D deploy/inventory.cfg
+ M deploy/playbook.yml
+ M deploy/roles/raspi-expanded-rootfs/tasks/main.yml
+ M deploy/roles/raspi-information-radiator/tasks/main.yml
+ M deploy/templates/supervisor/foobar.conf
+ M deploy/templates/wpa_supplicant.conf
+ M drivers/requirements.pip
+    8
+    6
+    7
+    ... and 6 more files
+    4
+    Found remotes https://github.com/uppsaladatavetare/foobar-kiosk.git
+9
+    Found 0 unpushed commits
+    5
+    Last commit: 1263d12 - Fix the broken video URL (il y a 5 ans)
+Done with /Users/sergio/lionel_deliveries/foobar-kiosk. Continue with next one.
+
+Processing git_dir = /Users/sergio/lionel_deliveries/bright-car-finder-experiments/.git
+Repo dir = /Users/sergio/lionel_deliveries/bright-car-finder-experiments
+[25] Repository: /Users/sergio/lionel_deliveries/bright-car-finder-experiments
+    Size: 148K
+    Remote: https://github.com/BrightSoftwares/bright-car-finder-experiments.git
+    Branch: main
+    Status: ✓ Clean
+    4
+    Found remotes https://github.com/BrightSoftwares/bright-car-finder-experiments.git
+9
+    Found 0 unpushed commits
+    5
+    Last commit: 5bb613b - first commit (il y a 1 an et 5 mois)
+Done with /Users/sergio/lionel_deliveries/bright-car-finder-experiments. Continue with next one.
+
+Processing git_dir = /Users/sergio/lionel_deliveries/WebWhatsapp-Wrapper/.git
+Repo dir = /Users/sergio/lionel_deliveries/WebWhatsapp-Wrapper
+[26] Repository: /Users/sergio/lionel_deliveries/WebWhatsapp-Wrapper
+    Size:  46M
+    Remote: https://github.com/mukulhase/WebWhatsapp-Wrapper.git
+    Branch: master
+    Status: ⚠️  HAS UNCOMMITTED CHANGES
+    Modified files:
+ M Dockerfile
+ M docker-compose.yml
+ M docker-entrypoint.sh
+ M webwhatsapi/__init__.py
+?? README.rst
+?? python_automation/
+    Git status (showing top 10):
+ M Dockerfile
+ M docker-compose.yml
+ M docker-entrypoint.sh
+ M webwhatsapi/__init__.py
+?? README.rst
+?? python_automation/
+    8
+    6
+    7
+    4
+    Found remotes https://github.com/mukulhase/WebWhatsapp-Wrapper.git
+9
+    Found 0 unpushed commits
+    5
+    Last commit: 7abcdce - All working well, super pull request! (#880) (il y a 6 ans)
+Done with /Users/sergio/lionel_deliveries/WebWhatsapp-Wrapper. Continue with next one.
+
+
+━━━ Scanning: /Users/sergio/hognekaba ━━━
+
+Found 5 repositories in /Users/sergio/hognekaba
+Repos are /Users/sergio/hognekaba/hognekaba-mobile-expo/.git /Users/sergio/hognekaba/hognekaba-mobile-expo-v7/.git /Users/sergio/hognekaba/hognekaba-mobile-expo-v2/.git /Users/sergio/hognekaba/hognekaba-mobile-expo-v4/.git /Users/sergio/hognekaba/hognekaba-backend/.git
+
+Processing git_dir = /Users/sergio/hognekaba/hognekaba-mobile-expo/.git
+Repo dir = /Users/sergio/hognekaba/hognekaba-mobile-expo
+[27] Repository: /Users/sergio/hognekaba/hognekaba-mobile-expo
+    ⚠️  Not a valid git repo
+
+Processing git_dir = /Users/sergio/hognekaba/hognekaba-mobile-expo-v7/.git
+Repo dir = /Users/sergio/hognekaba/hognekaba-mobile-expo-v7
+[28] Repository: /Users/sergio/hognekaba/hognekaba-mobile-expo-v7
+    Size: 767M
+    Remote: https://github.com/BrightSoftwares/hognekaba-mobile-expo-v7.git
+    Branch: generate-screenshots
+    Status: ⚠️  HAS UNCOMMITTED CHANGES
+    Modified files:
+ M app/screens/Home/index.js
+    Git status (showing top 10):
+ M app/screens/Home/index.js
+    8
+    6
+    7
+    4
+    Found remotes https://github.com/BrightSoftwares/hognekaba-mobile-expo-v7.git
+6fbc0c5 remove commented code
+195d592 add Feedback screen back
+9
+    Found 2 unpushed commits
+    Unpushed: ⚠️  2 commit(s) not pushed
+    5
+    Last commit: 7ce57c7 - remove sentry and fix notification channel (il y a 2 ans et 3 mois)
+    Stashes: ⚠️  1 stashed change(s)
+Done with /Users/sergio/hognekaba/hognekaba-mobile-expo-v7. Continue with next one.
+
+Processing git_dir = /Users/sergio/hognekaba/hognekaba-mobile-expo-v2/.git
+Repo dir = /Users/sergio/hognekaba/hognekaba-mobile-expo-v2
+[29] Repository: /Users/sergio/hognekaba/hognekaba-mobile-expo-v2
+    ⚠️  Not a valid git repo
+
+Processing git_dir = /Users/sergio/hognekaba/hognekaba-mobile-expo-v4/.git
+Repo dir = /Users/sergio/hognekaba/hognekaba-mobile-expo-v4
+[30] Repository: /Users/sergio/hognekaba/hognekaba-mobile-expo-v4
+    Size: 294M
+    Remote: No remotes
+    Branch: main
+    Status: ✓ Clean
+    4
+    5
+    Last commit: 91393ae - Initial commit (il y a 2 ans et 11 mois)
+Done with /Users/sergio/hognekaba/hognekaba-mobile-expo-v4. Continue with next one.
+
+Processing git_dir = /Users/sergio/hognekaba/hognekaba-backend/.git
+Repo dir = /Users/sergio/hognekaba/hognekaba-backend
+[31] Repository: /Users/sergio/hognekaba/hognekaba-backend
+    Size: 518M
+    Remote: https://github.com/BrightSoftwares/hognekaba-backend.git
+    Branch: main
+    Status: ✓ Clean
+    4
+    Found remotes https://github.com/BrightSoftwares/hognekaba-backend.git
+9
+    Found 0 unpushed commits
+    5
+    Last commit: eda710f - Update rollbar access token in base.py (il y a 2 ans et 3 mois)
+Done with /Users/sergio/hognekaba/hognekaba-backend. Continue with next one.
+
+
+━━━ Scanning: /Users/sergio/hmarket ━━━
+
+Found 0 repositories in /Users/sergio/hmarket
+Repos are 
+
+
+━━━ Scanning: /Users/sergio/dev_d_personal_from_windows ━━━
+
+Found 13 repositories in /Users/sergio/dev_d_personal_from_windows
+Repos are /Users/sergio/dev_d_personal_from_windows/gquestions/.git /Users/sergio/dev_d_personal_from_windows/freelance-work-automation/.git /Users/sergio/dev_d_personal_from_windows/keep-to-markdown/.git /Users/sergio/dev_d_personal_from_windows/eagles-techs.com/.git /Users/sergio/dev_d_personal_from_windows/akaunting-docker/.git /Users/sergio/dev_d_personal_from_windows/evernote-to-obsidian/.git /Users/sergio/dev_d_personal_from_windows/full-bright-latexcv/.git /Users/sergio/dev_d_personal_from_windows/accelerated-text-old/.git /Users/sergio/dev_d_personal_from_windows/cam-truck/.git /Users/sergio/dev_d_personal_from_windows/hognekaba-backend/.git /Users/sergio/dev_d_personal_from_windows/keke.li/.git /Users/sergio/dev_d_personal_from_windows/kibitzr/pages/Kibitzr_release/.git /Users/sergio/dev_d_personal_from_windows/kibitzr/kibitzr/.git
+
+Processing git_dir = /Users/sergio/dev_d_personal_from_windows/gquestions/.git
+Repo dir = /Users/sergio/dev_d_personal_from_windows/gquestions
+[32] Repository: /Users/sergio/dev_d_personal_from_windows/gquestions
+    Size:  32M
+    Remote: https://github.com/nittolese/gquestions.git
+    Branch: master
+    Status: ⚠️  HAS UNCOMMITTED CHANGES
+    Modified files:
+ M README.md
+ M csv/flights_25-06-2019_21-21-20-237094.csv
+ M csv/vuelos_25-06-2019_20-38-14-746485.csv
+ M gquestions.py
+ M html/SEO_16-06-2019_14-19-02-257390.html
+ M "html/amazon net worth_16-06-2019_14-07-55-212877.html"
+ M "html/how many season in mad men_16-06-2019_13-52-59-874430.html"
+ M "html/what is affiliate marketing_16-06-2019_15-07-53-555584.html"
+ M "html/why buy a new car_16-06-2019_15-28-12-437060.html"
+ M license.txt
+ M requirements.txt
+ M templates/index.html
+?? .DS_Store
+?? "Icon\r"
+?? Pipfile
+?? Pipfile.lock
+?? "csv/Icon\r"
+?? "driver/Icon\r"
+?? driver/chromedriver.exe
+?? driver/chromedriver_win32.zip
+?? "html/Icon\r"
+?? "templates/Icon\r"
+    Git status (showing top 10):
+ M README.md
+ M csv/flights_25-06-2019_21-21-20-237094.csv
+ M csv/vuelos_25-06-2019_20-38-14-746485.csv
+ M gquestions.py
+ M html/SEO_16-06-2019_14-19-02-257390.html
+ M "html/amazon net worth_16-06-2019_14-07-55-212877.html"
+ M "html/how many season in mad men_16-06-2019_13-52-59-874430.html"
+ M "html/what is affiliate marketing_16-06-2019_15-07-53-555584.html"
+ M "html/why buy a new car_16-06-2019_15-28-12-437060.html"
+ M license.txt
+    8
+    6
+    7
+    ... and 12 more files
+    4
+    Found remotes https://github.com/nittolese/gquestions.git
+9
+    Found 0 unpushed commits
+    5
+    Last commit: b30140e - Merge pull request #2 from danyaljj/patch-1 (il y a 6 ans)
+Done with /Users/sergio/dev_d_personal_from_windows/gquestions. Continue with next one.
+
+Processing git_dir = /Users/sergio/dev_d_personal_from_windows/freelance-work-automation/.git
+Repo dir = /Users/sergio/dev_d_personal_from_windows/freelance-work-automation
+[33] Repository: /Users/sergio/dev_d_personal_from_windows/freelance-work-automation
+    Size: 128M
+    Remote: https://github.com/BrightSoftwares/freelance-work-automation
+    Branch: main
+    Status: ⚠️  HAS UNCOMMITTED CHANGES
+    Modified files:
+ M .gitignore
+ M Pipfile
+ M README.md
+ M firefox_profile/SiteSecurityServiceState.txt
+ M firefox_profile/compatibility.ini
+ M firefox_profile/gmp-gmpopenh264/1.8.1.1/gmpopenh264.info
+ M firefox_profile/gmp-widevinecdm/4.10.1582.2/LICENSE.txt
+ M firefox_profile/gmp-widevinecdm/4.10.1582.2/manifest.json
+ M firefox_profile/pkcs11.txt
+ M firefox_profile/pluginreg.dat
+ M firefox_profile/prefs.js
+ M firefox_profile/user.js
+ M kibitzr.yml
+ M old/__init__.py
+ M old/__main__.py
+ M old/app.py
+ M old/bash.py
+ M old/bootstrap.py
+ M old/checker.py
+ M old/cli.py
+ M old/compat.py
+ M old/conf.py
+ M old/exceptions.py
+ M old/fetcher/__init__.py
+ M old/fetcher/base.py
+ M old/fetcher/browser/fetcher.py
+ M old/fetcher/browser/launcher.py
+ M old/fetcher/browser/trigger.py
+ M old/fetcher/factory.py
+ M old/fetcher/loader.py
+ M old/fetcher/script.py
+ M old/fetcher/simple.py
+ M old/notifier/__init__.py
+ M old/notifier/bash.py
+ M old/notifier/custom.py
+ M old/notifier/factory.py
+ M old/notifier/gitter.py
+ M old/notifier/mailgun.py
+ M old/notifier/slack.py
+ M old/notifier/smtp.py
+ M old/notifier/stash.py
+ M old/notifier/telegram.py
+ M old/notifier/webhook.py
+ M old/notifier/zapier.py
+ D old/pages/Kibitzr_release
+ M old/stash.py
+ M old/storage.py
+ M old/timeline.py
+ M old/transformer/__init__.py
+ M old/transformer/factory.py
+ M old/transformer/html.py
+ M old/transformer/jinja_transform.py
+ M old/transformer/json_transforms.py
+ M old/transformer/plain_text.py
+ M old/transformer/utils.py
+ M old/transformer/xpath.py
+ M old/utils.py
+ M start_kibitzr.sh
+?? "Icon\r"
+?? "firefox_profile/Icon\r"
+?? "firefox_profile/cache2/Icon\r"
+?? "firefox_profile/cache2/entries/Icon\r"
+?? "firefox_profile/crashes/Icon\r"
+?? "firefox_profile/datareporting/Icon\r"
+?? "firefox_profile/datareporting/archived/2021-02/Icon\r"
+?? "firefox_profile/datareporting/archived/Icon\r"
+?? "firefox_profile/datareporting/glean/Icon\r"
+?? "firefox_profile/datareporting/glean/db/Icon\r"
+?? "firefox_profile/features/Icon\r"
+?? "firefox_profile/features/{d52af6cd-2d90-4040-b49e-99362840d0cb}/Icon\r"
+?? "firefox_profile/gmp-gmpopenh264/1.8.1.1/Icon\r"
+?? "firefox_profile/gmp-gmpopenh264/Icon\r"
+?? "firefox_profile/gmp-widevinecdm/4.10.1582.2/Icon\r"
+?? "firefox_profile/gmp-widevinecdm/Icon\r"
+?? "firefox_profile/saved-telemetry-pings/Icon\r"
+?? "firefox_profile/security_state/Icon\r"
+?? "firefox_profile/sessionstore-backups/Icon\r"
+?? "firefox_profile/startupCache/Icon\r"
+?? "firefox_profile/storage/Icon\r"
+?? "firefox_profile/storage/default/Icon\r"
+?? "firefox_profile/storage/default/moz-extension+++0a649d36-2623-044f-be53-0203e818b0c9^userContextId=4294967295/Icon\r"
+?? "firefox_profile/storage/default/moz-extension+++0a649d36-2623-044f-be53-0203e818b0c9^userContextId=4294967295/idb/Icon\r"
+?? "firefox_profile/storage/permanent/Icon\r"
+?? "firefox_profile/storage/permanent/chrome/Icon\r"
+?? "firefox_profile/storage/permanent/chrome/idb/Icon\r"
+?? "firefox_profile/thumbnails/Icon\r"
+?? "firefox_profile/weave/Icon\r"
+?? "firefox_profile/weave/failed/Icon\r"
+?? "firefox_profile/weave/toFetch/Icon\r"
+?? "old/Icon\r"
+?? "old/fetcher/Icon\r"
+?? "old/fetcher/browser/Icon\r"
+?? "old/notifier/Icon\r"
+?? "old/transformer/Icon\r"
+    Git status (showing top 10):
+ M .gitignore
+ M Pipfile
+ M README.md
+ M firefox_profile/SiteSecurityServiceState.txt
+ M firefox_profile/compatibility.ini
+ M firefox_profile/gmp-gmpopenh264/1.8.1.1/gmpopenh264.info
+ M firefox_profile/gmp-widevinecdm/4.10.1582.2/LICENSE.txt
+ M firefox_profile/gmp-widevinecdm/4.10.1582.2/manifest.json
+ M firefox_profile/pkcs11.txt
+ M firefox_profile/pluginreg.dat
+    8
+    6
+    7
+    ... and 84 more files
+    4
+    Found remotes https://github.com/BrightSoftwares/freelance-work-automation
+9
+    Found 0 unpushed commits
+    5
+    Last commit: 524bb29 - Add pipfile and a script to automate the statup of the work (il y a 4 ans et 10 mois)
+Done with /Users/sergio/dev_d_personal_from_windows/freelance-work-automation. Continue with next one.
+
+Processing git_dir = /Users/sergio/dev_d_personal_from_windows/keep-to-markdown/.git
+Repo dir = /Users/sergio/dev_d_personal_from_windows/keep-to-markdown
+[34] Repository: /Users/sergio/dev_d_personal_from_windows/keep-to-markdown
+    Size: 490M
+    Remote: https://github.com/erikelisath/keep-to-markdown.git
+    Branch: master
+    Status: ⚠️  HAS UNCOMMITTED CHANGES
+    Modified files:
+ M .gitignore
+ M README.md
+ M keep-to-markdown.py
+ M "test_data/content and different tag.json"
+ M "test_data/content and tag and title.json"
+ M "test_data/content and tag.json"
+ M "test_data/content and two tags.json"
+ M test_data/content.json
+ M "test_data/image and tag.json"
+ M "test_data/image and title and tag.json"
+ M test_data/image.json
+ M "test_data/title and tag (Kopie 1).json"
+ M "test_data/title and tag (Kopie 2).json"
+ M "test_data/title and tag (Kopie 3).json"
+ M "test_data/title and tag.json"
+ M "test_data/title and two tags.json"
+?? .DS_Store
+?? "Icon\r"
+?? Pipfile
+?? Pipfile.lock
+?? afanousergio_Takeout/
+?? takeout-20220621T143756Z-001.zip
+?? takeout-20220621T144550Z-001.zip
+?? "test_data/Icon\r"
+    Git status (showing top 10):
+ M .gitignore
+ M README.md
+ M keep-to-markdown.py
+ M "test_data/content and different tag.json"
+ M "test_data/content and tag and title.json"
+ M "test_data/content and tag.json"
+ M "test_data/content and two tags.json"
+ M test_data/content.json
+ M "test_data/image and tag.json"
+ M "test_data/image and title and tag.json"
+    8
+    6
+    7
+    ... and 14 more files
+    4
+    Found remotes https://github.com/erikelisath/keep-to-markdown.git
+9
+    Found 0 unpushed commits
+    5
+    Last commit: 6fc7df7 - Merge pull request #11 from erikelisath/dev (il y a 4 ans et 2 mois)
+Done with /Users/sergio/dev_d_personal_from_windows/keep-to-markdown. Continue with next one.
+
+Processing git_dir = /Users/sergio/dev_d_personal_from_windows/eagles-techs.com/.git
+Repo dir = /Users/sergio/dev_d_personal_from_windows/eagles-techs.com
+[35] Repository: /Users/sergio/dev_d_personal_from_windows/eagles-techs.com
+    Size: 376M
+    Remote: https://github.com/BrightSoftwares/eagles-techs.com.git
+    Branch: save_from_my_mac_20251227
+    Status: ✓ Clean
+    4
+    Found remotes https://github.com/BrightSoftwares/eagles-techs.com.git
+9
+    Found 0 unpushed commits
+    5
+    Last commit: 3bfa80df - saved work from my mac on 2025-12-27 (il y a 62 minutes)
+Done with /Users/sergio/dev_d_personal_from_windows/eagles-techs.com. Continue with next one.
+
+Processing git_dir = /Users/sergio/dev_d_personal_from_windows/akaunting-docker/.git
+Repo dir = /Users/sergio/dev_d_personal_from_windows/akaunting-docker
+[36] Repository: /Users/sergio/dev_d_personal_from_windows/akaunting-docker
+    Size: 108M
+    Remote: https://github.com/akaunting/docker
+    Branch: save_from_my_mac_20251227
+    Status: ✓ Clean
+    4
+    Found remotes https://github.com/akaunting/docker
+4d8da32 saved work from my mac on 2025-12-27
+9
+    Found 1 unpushed commits
+    Unpushed: ⚠️  1 commit(s) not pushed
+    5
+    Last commit: 4d8da32 - saved work from my mac on 2025-12-27 (il y a 47 minutes)
+Done with /Users/sergio/dev_d_personal_from_windows/akaunting-docker. Continue with next one.
+
+Processing git_dir = /Users/sergio/dev_d_personal_from_windows/evernote-to-obsidian/.git
+Repo dir = /Users/sergio/dev_d_personal_from_windows/evernote-to-obsidian
+[37] Repository: /Users/sergio/dev_d_personal_from_windows/evernote-to-obsidian
+    Size: 250M
+    Remote: https://github.com/dmuth/evernote-to-obsidian
+    Branch: main
+    Status: ⚠️  HAS UNCOMMITTED CHANGES
+    Modified files:
+ M .github/FUNDING.yml
+ M .gitignore
+ M CODE_OF_CONDUCT.md
+ M LICENSE
+ M README.md
+ M config.json.in
+ M convert-evernote-to-markdown.sh
+ M template.tmpl
+?? ".github/Icon\r"
+?? "Icon\r"
+?? "img/Icon\r"
+?? package-lock.json
+    Git status (showing top 10):
+ M .github/FUNDING.yml
+ M .gitignore
+ M CODE_OF_CONDUCT.md
+ M LICENSE
+ M README.md
+ M config.json.in
+ M convert-evernote-to-markdown.sh
+ M template.tmpl
+?? ".github/Icon\r"
+?? "Icon\r"
+    8
+    6
+    7
+    ... and 2 more files
+    4
+    Found remotes https://github.com/dmuth/evernote-to-obsidian
+9
+    Found 0 unpushed commits
+    5
+    Last commit: 60ccad4 - Merge pull request #4 from mattstanford/yarle-output-format (il y a 4 ans et 2 mois)
+Done with /Users/sergio/dev_d_personal_from_windows/evernote-to-obsidian. Continue with next one.
+
+Processing git_dir = /Users/sergio/dev_d_personal_from_windows/full-bright-latexcv/.git
+Repo dir = /Users/sergio/dev_d_personal_from_windows/full-bright-latexcv
+[38] Repository: /Users/sergio/dev_d_personal_from_windows/full-bright-latexcv
+    Size:  20M
+    Remote: https://github.com/fullbright/full-bright-latexcv.git
+    Branch: master
+    Status: ⚠️  HAS UNCOMMITTED CHANGES
+    Modified files:
+ M .github/workflows/blank.yml
+ M .github/workflows/generate-my-cv.yml
+ M .gitignore
+ M .travis.yml
+ M CONTRIBUTING.md
+ M FUNDING.yml
+ M LICENSE
+ M classic/main.tex
+ M docs/cjk/README.md
+ M docs/cjk/cjk.tex
+ M infographics/README.md
+ M infographics/g/barchart.tex
+ M infographics/g/bubbles.tex
+ M infographics/g/factbubble.tex
+ M infographics/g/piechart.tex
+ M infographics/g/squares.tex
+ M infographics/g/timeline.tex
+ M infographics/main.tex
+ M infographics2/README.md
+ M infographics2/en/README.md
+ M infographics2/en/main.tex
+ M infographics2/fr/README.md
+ M infographics2/fr/main.pdf
+ M infographics2/fr/main.tex
+ M infographics2/g/barchart.tex
+ M infographics2/g/bubbles.tex
+ M infographics2/g/factbubble.tex
+ M infographics2/g/piechart.tex
+ M infographics2/g/squares.tex
+ M infographics2/g/timeline.tex
+ M logo.svg
+ M modern/README.md
+ M modern/main.tex
+ M rows/README.md
+ M rows/main.tex
+ M sidebar/README.md
+ M sidebar/main.tex
+ M sidebarleft/README.md
+ M sidebarleft/main.tex
+ M tests/test.sh
+ M tests/testall.sh
+ M texlive.profile
+ M two_column/main.tex
+?? .DS_Store
+?? ".github/Icon\r"
+?? ".github/workflows/Icon\r"
+?? "Icon\r"
+?? "classic/Icon\r"
+?? docs/.DS_Store
+?? "docs/Icon\r"
+?? "docs/cjk/Icon\r"
+?? "docs/media/Icon\r"
+?? "infographics/Icon\r"
+?? "infographics/g/Icon\r"
+?? infographics2/.DS_Store
+?? "infographics2/Icon\r"
+?? "infographics2/en/Icon\r"
+?? "infographics2/fr/Icon\r"
+?? "infographics2/g/Icon\r"
+?? "modern/Icon\r"
+?? "rows/Icon\r"
+?? "sidebar/Icon\r"
+?? "sidebarleft/Icon\r"
+?? "tests/Icon\r"
+?? "two_column/Icon\r"
+    Git status (showing top 10):
+ M .github/workflows/blank.yml
+ M .github/workflows/generate-my-cv.yml
+ M .gitignore
+ M .travis.yml
+ M CONTRIBUTING.md
+ M FUNDING.yml
+ M LICENSE
+ M classic/main.tex
+ M docs/cjk/README.md
+ M docs/cjk/cjk.tex
+    8
+    6
+    7
+    ... and 55 more files
+    4
+    Found remotes https://github.com/fullbright/full-bright-latexcv.git
+9
+    Found 0 unpushed commits
+    5
+    Last commit: 4c35cc3 - Update blank.yml (il y a 2 ans et 10 mois)
+Done with /Users/sergio/dev_d_personal_from_windows/full-bright-latexcv. Continue with next one.
+
+Processing git_dir = /Users/sergio/dev_d_personal_from_windows/accelerated-text-old/.git
+Repo dir = /Users/sergio/dev_d_personal_from_windows/accelerated-text-old
+[39] Repository: /Users/sergio/dev_d_personal_from_windows/accelerated-text-old
+    Size: 112M
+    Remote: https://github.com/fullbright/accelerated-text-old.git
+    Branch: save_from_my_mac_20251227
+    Status: ✓ Clean
+    4
+    Found remotes https://github.com/fullbright/accelerated-text-old.git
+9
+    Found 0 unpushed commits
+    5
+    Last commit: f97c1b8 - saved work from my mac on 2025-12-27 (il y a 23 minutes)
+Done with /Users/sergio/dev_d_personal_from_windows/accelerated-text-old. Continue with next one.
+
+Processing git_dir = /Users/sergio/dev_d_personal_from_windows/cam-truck/.git
+Repo dir = /Users/sergio/dev_d_personal_from_windows/cam-truck
+[40] Repository: /Users/sergio/dev_d_personal_from_windows/cam-truck
+    Size: 174M
+    Remote: https://github.com/BrightSoftwares/cam-truck.git
+    Branch: main
+    Status: ⚠️  HAS UNCOMMITTED CHANGES
+    Modified files:
+ D ubold/static/libs/raphael/dev/banner.txt
+ D ubold/static/libs/raphael/dev/raphael.amd.js
+ D ubold/static/libs/raphael/dev/raphael.core.js
+ D ubold/static/libs/raphael/dev/raphael.svg.js
+ D ubold/static/libs/raphael/dev/raphael.vml.js
+ D ubold/static/libs/raphael/dev/raphaelTest.html
+?? "Icon\r"
+?? "config/Icon\r"
+?? "config/settings/Icon\r"
+?? "docs/Icon\r"
+?? "docs/_static/Icon\r"
+?? "locale/Icon\r"
+?? "requirements/Icon\r"
+?? "ubold/Icon\r"
+?? "ubold/accounts/Icon\r"
+?? "ubold/accounts/migrations/Icon\r"
+?? "ubold/apps/Icon\r"
+?? "ubold/apps/data/Icon\r"
+?? "ubold/apps/migrations/Icon\r"
+?? "ubold/apps/templatetags/Icon\r"
+?? "ubold/components/Icon\r"
+?? "ubold/components/migrations/Icon\r"
+?? "ubold/contrib/Icon\r"
+?? "ubold/contrib/sites/Icon\r"
+?? "ubold/contrib/sites/migrations/Icon\r"
+?? "ubold/dashboard/Icon\r"
+?? "ubold/dashboard/data/Icon\r"
+?? "ubold/dashboard/migrations/Icon\r"
+?? "ubold/layouts/Icon\r"
+?? "ubold/layouts/migrations/Icon\r"
+?? "ubold/pages/Icon\r"
+?? "ubold/pages/migrations/Icon\r"
+?? "ubold/static/Icon\r"
+?? "ubold/static/css/Icon\r"
+?? "ubold/static/css/config/Icon\r"
+?? "ubold/static/css/config/creative/Icon\r"
+?? "ubold/static/css/config/default/Icon\r"
+?? "ubold/static/css/config/material/Icon\r"
+?? "ubold/static/css/config/modern/Icon\r"
+?? "ubold/static/css/config/purple/Icon\r"
+?? "ubold/static/css/config/saas/Icon\r"
+?? "ubold/static/data/Icon\r"
+?? "ubold/static/fonts/Icon\r"
+?? "ubold/static/images/Icon\r"
+?? "ubold/static/images/attached-files/Icon\r"
+?? "ubold/static/images/brands/Icon\r"
+?? "ubold/static/images/cards/Icon\r"
+?? "ubold/static/images/companies/Icon\r"
+?? "ubold/static/images/email/Icon\r"
+?? "ubold/static/images/flags/Icon\r"
+?? "ubold/static/images/landing/Icon\r"
+?? "ubold/static/images/landing/demo/Icon\r"
+?? "ubold/static/images/landing/icons/Icon\r"
+?? "ubold/static/images/products/Icon\r"
+?? "ubold/static/images/small/Icon\r"
+?? "ubold/static/images/users/Icon\r"
+?? "ubold/static/js/Icon\r"
+?? "ubold/static/js/pages/Icon\r"
+?? "ubold/static/libs/@popperjs/Icon\r"
+?? "ubold/static/libs/@popperjs/core/Icon\r"
+?? "ubold/static/libs/@popperjs/core/cjs/Icon\r"
+?? "ubold/static/libs/@popperjs/core/esm/Icon\r"
+?? "ubold/static/libs/@popperjs/core/esm/dom-utils/Icon\r"
+?? "ubold/static/libs/@popperjs/core/esm/modifiers/Icon\r"
+?? "ubold/static/libs/@popperjs/core/esm/utils/Icon\r"
+?? "ubold/static/libs/@popperjs/core/umd/Icon\r"
+?? "ubold/static/libs/Icon\r"
+?? "ubold/static/libs/admin-resources/Icon\r"
+?? "ubold/static/libs/admin-resources/bootstrap-datepicker/Icon\r"
+?? "ubold/static/libs/admin-resources/bootstrap-datepicker/css/Icon\r"
+?? "ubold/static/libs/admin-resources/bootstrap-datepicker/js/Icon\r"
+?? "ubold/static/libs/admin-resources/jquery.vectormap/Icon\r"
+?? "ubold/static/libs/admin-resources/jquery.vectormap/maps/Icon\r"
+?? "ubold/static/libs/admin-resources/ratings/Icon\r"
+?? "ubold/static/libs/admin-resources/rwd-table/Icon\r"
+?? "ubold/static/libs/animate.css/Icon\r"
+?? "ubold/static/libs/animate.css/source/Icon\r"
+?? "ubold/static/libs/animate.css/source/attention_seekers/Icon\r"
+?? "ubold/static/libs/animate.css/source/back_entrances/Icon\r"
+?? "ubold/static/libs/animate.css/source/back_exits/Icon\r"
+?? "ubold/static/libs/animate.css/source/bouncing_entrances/Icon\r"
+?? "ubold/static/libs/animate.css/source/bouncing_exits/Icon\r"
+?? "ubold/static/libs/animate.css/source/fading_entrances/Icon\r"
+?? "ubold/static/libs/animate.css/source/fading_exits/Icon\r"
+?? "ubold/static/libs/animate.css/source/flippers/Icon\r"
+?? "ubold/static/libs/animate.css/source/lightspeed/Icon\r"
+?? "ubold/static/libs/animate.css/source/rotating_entrances/Icon\r"
+?? "ubold/static/libs/animate.css/source/rotating_exits/Icon\r"
+?? "ubold/static/libs/animate.css/source/sliding_entrances/Icon\r"
+?? "ubold/static/libs/animate.css/source/sliding_exits/Icon\r"
+?? "ubold/static/libs/animate.css/source/specials/Icon\r"
+?? "ubold/static/libs/animate.css/source/zooming_entrances/Icon\r"
+?? "ubold/static/libs/animate.css/source/zooming_exits/Icon\r"
+?? "ubold/static/libs/apexcharts/Icon\r"
+?? "ubold/static/libs/apexcharts/locales/Icon\r"
+?? "ubold/static/libs/autonumeric/Icon\r"
+?? "ubold/static/libs/bootstrap-datepicker/Icon\r"
+?? "ubold/static/libs/bootstrap-datepicker/css/Icon\r"
+?? "ubold/static/libs/bootstrap-datepicker/js/Icon\r"
+?? "ubold/static/libs/bootstrap-datepicker/locales/Icon\r"
+?? "ubold/static/libs/bootstrap-maxlength/Icon\r"
+?? "ubold/static/libs/bootstrap-select/Icon\r"
+?? "ubold/static/libs/bootstrap-select/css/Icon\r"
+?? "ubold/static/libs/bootstrap-select/js/Icon\r"
+?? "ubold/static/libs/bootstrap-select/js/i18n/Icon\r"
+?? "ubold/static/libs/bootstrap-table/Icon\r"
+?? "ubold/static/libs/bootstrap-table/extensions/Icon\r"
+?? "ubold/static/libs/bootstrap-table/extensions/addrbar/Icon\r"
+?? "ubold/static/libs/bootstrap-table/extensions/auto-refresh/Icon\r"
+?? "ubold/static/libs/bootstrap-table/extensions/cookie/Icon\r"
+?? "ubold/static/libs/bootstrap-table/extensions/copy-rows/Icon\r"
+?? "ubold/static/libs/bootstrap-table/extensions/custom-view/Icon\r"
+?? "ubold/static/libs/bootstrap-table/extensions/defer-url/Icon\r"
+?? "ubold/static/libs/bootstrap-table/extensions/editable/Icon\r"
+?? "ubold/static/libs/bootstrap-table/extensions/export/Icon\r"
+?? "ubold/static/libs/bootstrap-table/extensions/filter-control/Icon\r"
+?? "ubold/static/libs/bootstrap-table/extensions/fixed-columns/Icon\r"
+?? "ubold/static/libs/bootstrap-table/extensions/group-by-v2/Icon\r"
+?? "ubold/static/libs/bootstrap-table/extensions/i18n-enhance/Icon\r"
+?? "ubold/static/libs/bootstrap-table/extensions/key-events/Icon\r"
+?? "ubold/static/libs/bootstrap-table/extensions/mobile/Icon\r"
+?? "ubold/static/libs/bootstrap-table/extensions/multiple-sort/Icon\r"
+?? "ubold/static/libs/bootstrap-table/extensions/page-jump-to/Icon\r"
+?? "ubold/static/libs/bootstrap-table/extensions/pipeline/Icon\r"
+?? "ubold/static/libs/bootstrap-table/extensions/print/Icon\r"
+?? "ubold/static/libs/bootstrap-table/extensions/reorder-columns/Icon\r"
+?? "ubold/static/libs/bootstrap-table/extensions/reorder-rows/Icon\r"
+?? "ubold/static/libs/bootstrap-table/extensions/resizable/Icon\r"
+?? "ubold/static/libs/bootstrap-table/extensions/sticky-header/Icon\r"
+?? "ubold/static/libs/bootstrap-table/extensions/toolbar/Icon\r"
+?? "ubold/static/libs/bootstrap-table/extensions/treegrid/Icon\r"
+?? "ubold/static/libs/bootstrap-table/locale/Icon\r"
+?? "ubold/static/libs/bootstrap-table/themes/Icon\r"
+?? "ubold/static/libs/bootstrap-table/themes/bootstrap-table/Icon\r"
+?? "ubold/static/libs/bootstrap-table/themes/bootstrap-table/fonts/Icon\r"
+?? "ubold/static/libs/bootstrap-table/themes/bulma/Icon\r"
+?? "ubold/static/libs/bootstrap-table/themes/foundation/Icon\r"
+?? "ubold/static/libs/bootstrap-table/themes/materialize/Icon\r"
+?? "ubold/static/libs/bootstrap-table/themes/semantic/Icon\r"
+?? "ubold/static/libs/bootstrap-touchspin/Icon\r"
+?? "ubold/static/libs/bootstrap/Icon\r"
+?? "ubold/static/libs/bootstrap/css/Icon\r"
+?? "ubold/static/libs/bootstrap/js/Icon\r"
+?? "ubold/static/libs/c3/Icon\r"
+?? "ubold/static/libs/chart.js/Icon\r"
+?? "ubold/static/libs/chartist-plugin-tooltips/Icon\r"
+?? "ubold/static/libs/chartist/Icon\r"
+?? "ubold/static/libs/clockpicker/Icon\r"
+?? "ubold/static/libs/cropper/Icon\r"
+?? "ubold/static/libs/d3/Icon\r"
+?? "ubold/static/libs/datatables.net-bs4/Icon\r"
+?? "ubold/static/libs/datatables.net-bs4/css/Icon\r"
+?? "ubold/static/libs/datatables.net-bs4/js/Icon\r"
+?? "ubold/static/libs/datatables.net-buttons-bs4/Icon\r"
+?? "ubold/static/libs/datatables.net-buttons-bs4/css/Icon\r"
+?? "ubold/static/libs/datatables.net-buttons-bs4/js/Icon\r"
+?? "ubold/static/libs/datatables.net-buttons/Icon\r"
+?? "ubold/static/libs/datatables.net-buttons/js/Icon\r"
+?? "ubold/static/libs/datatables.net-buttons/swf/Icon\r"
+?? "ubold/static/libs/datatables.net-keytable-bs4/Icon\r"
+?? "ubold/static/libs/datatables.net-keytable-bs4/css/Icon\r"
+?? "ubold/static/libs/datatables.net-keytable-bs4/js/Icon\r"
+?? "ubold/static/libs/datatables.net-keytable/Icon\r"
+?? "ubold/static/libs/datatables.net-keytable/js/Icon\r"
+?? "ubold/static/libs/datatables.net-responsive-bs4/Icon\r"
+?? "ubold/static/libs/datatables.net-responsive-bs4/css/Icon\r"
+?? "ubold/static/libs/datatables.net-responsive-bs4/js/Icon\r"
+?? "ubold/static/libs/datatables.net-responsive/Icon\r"
+?? "ubold/static/libs/datatables.net-responsive/js/Icon\r"
+?? "ubold/static/libs/datatables.net-select-bs4/Icon\r"
+?? "ubold/static/libs/datatables.net-select-bs4/css/Icon\r"
+?? "ubold/static/libs/datatables.net-select-bs4/js/Icon\r"
+?? "ubold/static/libs/datatables.net-select/Icon\r"
+?? "ubold/static/libs/datatables.net-select/js/Icon\r"
+?? "ubold/static/libs/datatables.net/Icon\r"
+?? "ubold/static/libs/datatables.net/js/Icon\r"
+?? "ubold/static/libs/devbridge-autocomplete/Icon\r"
+?? "ubold/static/libs/dragula/Icon\r"
+?? "ubold/static/libs/dropify/Icon\r"
+?? "ubold/static/libs/dropify/css/Icon\r"
+?? "ubold/static/libs/dropify/fonts/Icon\r"
+?? "ubold/static/libs/dropify/js/Icon\r"
+?? "ubold/static/libs/dropzone/Icon\r"
+?? "ubold/static/libs/dropzone/min/Icon\r"
+?? "ubold/static/libs/feather-icons/Icon\r"
+?? "ubold/static/libs/feather-icons/icons/Icon\r"
+?? "ubold/static/libs/flatpickr/Icon\r"
+?? "ubold/static/libs/flatpickr/esm/Icon\r"
+?? "ubold/static/libs/flatpickr/esm/l10n/Icon\r"
+?? "ubold/static/libs/flatpickr/esm/plugins/Icon\r"
+?? "ubold/static/libs/flatpickr/esm/plugins/confirmDate/Icon\r"
+?? "ubold/static/libs/flatpickr/esm/plugins/labelPlugin/Icon\r"
+?? "ubold/static/libs/flatpickr/esm/plugins/monthSelect/Icon\r"
+?? "ubold/static/libs/flatpickr/esm/plugins/weekSelect/Icon\r"
+?? "ubold/static/libs/flatpickr/esm/types/Icon\r"
+?? "ubold/static/libs/flatpickr/esm/utils/Icon\r"
+?? "ubold/static/libs/flatpickr/l10n/Icon\r"
+?? "ubold/static/libs/flatpickr/plugins/Icon\r"
+?? "ubold/static/libs/flatpickr/plugins/confirmDate/Icon\r"
+?? "ubold/static/libs/flatpickr/plugins/labelPlugin/Icon\r"
+?? "ubold/static/libs/flatpickr/plugins/monthSelect/Icon\r"
+?? "ubold/static/libs/flatpickr/plugins/weekSelect/Icon\r"
+?? "ubold/static/libs/flatpickr/themes/Icon\r"
+?? "ubold/static/libs/flot-charts/Icon\r"
+?? "ubold/static/libs/flot-orderbars/Icon\r"
+?? "ubold/static/libs/flot-orderbars/js/Icon\r"
+?? "ubold/static/libs/footable/Icon\r"
+?? "ubold/static/libs/fullcalendar/Icon\r"
+?? "ubold/static/libs/fullcalendar/locales/Icon\r"
+?? "ubold/static/libs/gmaps/Icon\r"
+?? "ubold/static/libs/gulp-minify/Icon\r"
+?? "ubold/static/libs/gulp-rtlcss/Icon\r"
+?? "ubold/static/libs/hopscotch/Icon\r"
+?? "ubold/static/libs/hopscotch/css/Icon\r"
+?? "ubold/static/libs/hopscotch/img/Icon\r"
+?? "ubold/static/libs/hopscotch/js/Icon\r"
+?? "ubold/static/libs/ion-rangeslider/Icon\r"
+?? "ubold/static/libs/ion-rangeslider/css/Icon\r"
+?? "ubold/static/libs/ion-rangeslider/js/Icon\r"
+?? "ubold/static/libs/jquery-countdown/Icon\r"
+?? "ubold/static/libs/jquery-datatables-checkboxes/Icon\r"
+?? "ubold/static/libs/jquery-datatables-checkboxes/css/Icon\r"
+?? "ubold/static/libs/jquery-datatables-checkboxes/js/Icon\r"
+?? "ubold/static/libs/jquery-knob/Icon\r"
+?? "ubold/static/libs/jquery-mapael/Icon\r"
+?? "ubold/static/libs/jquery-mapael/js/Icon\r"
+?? "ubold/static/libs/jquery-mapael/js/maps/Icon\r"
+?? "ubold/static/libs/jquery-mask-plugin/Icon\r"
+?? "ubold/static/libs/jquery-mockjax/Icon\r"
+?? "ubold/static/libs/jquery-sparkline/Icon\r"
+?? "ubold/static/libs/jquery-tabledit/Icon\r"
+?? "ubold/static/libs/jquery-toast-plugin/Icon\r"
+?? "ubold/static/libs/jquery.counterup/Icon\r"
+?? "ubold/static/libs/jquery.flot.tooltip/Icon\r"
+?? "ubold/static/libs/jquery.flot.tooltip/js/Icon\r"
+?? "ubold/static/libs/jquery.scrollto/Icon\r"
+?? "ubold/static/libs/jquery/Icon\r"
+?? "ubold/static/libs/jsgrid/Icon\r"
+?? "ubold/static/libs/jsgrid/i18n/Icon\r"
+?? "ubold/static/libs/ladda/Icon\r"
+?? "ubold/static/libs/magnific-popup/Icon\r"
+?? "ubold/static/libs/minimist/Icon\r"
+?? "ubold/static/libs/mohithg-switchery/Icon\r"
+?? "ubold/static/libs/moment/Icon\r"
+?? "ubold/static/libs/moment/locale/Icon\r"
+?? "ubold/static/libs/moment/min/Icon\r"
+?? "ubold/static/libs/morris.js06/Icon\r"
+?? "ubold/static/libs/multiselect/Icon\r"
+?? "ubold/static/libs/multiselect/css/Icon\r"
+?? "ubold/static/libs/multiselect/img/Icon\r"
+?? "ubold/static/libs/multiselect/js/Icon\r"
+?? "ubold/static/libs/nestable2/Icon\r"
+?? "ubold/static/libs/node-waves/Icon\r"
+?? "ubold/static/libs/parsleyjs/Icon\r"
+?? "ubold/static/libs/parsleyjs/i18n/Icon\r"
+?? ubold/static/libs/pdfmake/
+?? "ubold/static/libs/peity/Icon\r"
+?? "ubold/static/libs/popper.js/Icon\r"
+?? "ubold/static/libs/popper.js/esm/Icon\r"
+?? "ubold/static/libs/popper.js/umd/Icon\r"
+?? ubold/static/libs/postcss/
+?? "ubold/static/libs/quill/Icon\r"
+?? "ubold/static/libs/raphael/Icon\r"
+?? "ubold/static/libs/select2/Icon\r"
+?? "ubold/static/libs/select2/css/Icon\r"
+?? "ubold/static/libs/select2/js/Icon\r"
+?? "ubold/static/libs/select2/js/i18n/Icon\r"
+?? "ubold/static/libs/selectize/Icon\r"
+?? "ubold/static/libs/selectize/css/Icon\r"
+?? "ubold/static/libs/selectize/js/Icon\r"
+?? "ubold/static/libs/selectize/js/standalone/Icon\r"
+?? "ubold/static/libs/simplebar/Icon\r"
+?? "ubold/static/libs/sortablejs/Icon\r"
+?? "ubold/static/libs/sortablejs/modular/Icon\r"
+?? "ubold/static/libs/spectrum-colorpicker2/Icon\r"
+?? "ubold/static/libs/sweetalert2/Icon\r"
+?? "ubold/static/libs/tablesaw/Icon\r"
+?? "ubold/static/libs/tablesaw/dependencies/Icon\r"
+?? "ubold/static/libs/tablesaw/stackonly/Icon\r"
+?? "ubold/static/libs/tippy.js/Icon\r"
+?? "ubold/static/libs/tippy.js/themes/Icon\r"
+?? "ubold/static/libs/toastr/Icon\r"
+?? "ubold/static/libs/toastr/nuget/Icon\r"
+?? "ubold/static/libs/toastr/nuget/content/Icon\r"
+?? "ubold/static/libs/toastr/nuget/content/content/Icon\r"
+?? "ubold/static/libs/toastr/nuget/content/scripts/Icon\r"
+?? "ubold/static/libs/twitter-bootstrap-wizard/Icon\r"
+?? "ubold/static/libs/twitter-bootstrap-wizard/bootstrap/Icon\r"
+?? "ubold/static/libs/twitter-bootstrap-wizard/bootstrap/css/Icon\r"
+?? "ubold/static/libs/twitter-bootstrap-wizard/bootstrap/fonts/Icon\r"
+?? "ubold/static/libs/twitter-bootstrap-wizard/bootstrap/img/Icon\r"
+?? "ubold/static/libs/twitter-bootstrap-wizard/bootstrap/js/Icon\r"
+?? "ubold/static/libs/waypoints/Icon\r"
+?? "ubold/static/libs/x-editable/Icon\r"
+?? "ubold/static/libs/x-editable/bootstrap-editable/Icon\r"
+?? "ubold/static/libs/x-editable/bootstrap-editable/css/Icon\r"
+?? "ubold/static/libs/x-editable/bootstrap-editable/img/Icon\r"
+?? "ubold/static/libs/x-editable/bootstrap-editable/js/Icon\r"
+?? "ubold/static/libs/x-editable/bootstrap3-editable/Icon\r"
+?? "ubold/static/libs/x-editable/bootstrap3-editable/css/Icon\r"
+?? "ubold/static/libs/x-editable/bootstrap3-editable/img/Icon\r"
+?? "ubold/static/libs/x-editable/bootstrap3-editable/js/Icon\r"
+?? "ubold/static/libs/x-editable/inputs-ext/Icon\r"
+?? "ubold/static/libs/x-editable/inputs-ext/address/Icon\r"
+?? "ubold/static/libs/x-editable/inputs-ext/typeaheadjs/Icon\r"
+?? "ubold/static/libs/x-editable/inputs-ext/wysihtml5/Icon\r"
+?? "ubold/static/libs/x-editable/inputs-ext/wysihtml5/bootstrap-wysihtml5-0.0.2/Icon\r"
+?? "ubold/static/libs/x-editable/jquery-editable/Icon\r"
+?? "ubold/static/libs/x-editable/jquery-editable/css/Icon\r"
+?? "ubold/static/libs/x-editable/jquery-editable/img/Icon\r"
+?? "ubold/static/libs/x-editable/jquery-editable/jquery-ui-datepicker/Icon\r"
+?? "ubold/static/libs/x-editable/jquery-editable/jquery-ui-datepicker/css/Icon\r"
+?? "ubold/static/libs/x-editable/jquery-editable/jquery-ui-datepicker/css/redmond/Icon\r"
+?? "ubold/static/libs/x-editable/jquery-editable/jquery-ui-datepicker/css/redmond/images/Icon\r"
+?? "ubold/static/libs/x-editable/jquery-editable/jquery-ui-datepicker/js/Icon\r"
+?? "ubold/static/libs/x-editable/jquery-editable/js/Icon\r"
+?? "ubold/static/libs/x-editable/jqueryui-editable/Icon\r"
+?? "ubold/static/libs/x-editable/jqueryui-editable/css/Icon\r"
+?? "ubold/static/libs/x-editable/jqueryui-editable/img/Icon\r"
+?? "ubold/static/libs/x-editable/jqueryui-editable/js/Icon\r"
+?? "ubold/static/scss/Icon\r"
+?? "ubold/static/scss/config/Icon\r"
+?? "ubold/static/scss/config/creative/Icon\r"
+?? "ubold/static/scss/config/default/Icon\r"
+?? "ubold/static/scss/config/material/Icon\r"
+?? "ubold/static/scss/config/modern/Icon\r"
+?? "ubold/static/scss/config/purple/Icon\r"
+?? "ubold/static/scss/config/saas/Icon\r"
+?? "ubold/static/scss/custom/Icon\r"
+?? "ubold/static/scss/custom/components/Icon\r"
+?? "ubold/static/scss/custom/fonts/Icon\r"
+?? "ubold/static/scss/custom/pages/Icon\r"
+?? "ubold/static/scss/custom/plugins/Icon\r"
+?? "ubold/static/scss/custom/plugins/icons/Icon\r"
+?? "ubold/static/scss/custom/structure/Icon\r"
+?? "ubold/static/src-js/Icon\r"
+?? "ubold/static/src-js/pages/Icon\r"
+?? "ubold/templates/Icon\r"
+?? "ubold/templates/account/Icon\r"
+?? "ubold/templates/apps/Icon\r"
+?? "ubold/templates/apps/calendar/Icon\r"
+?? "ubold/templates/apps/chat/Icon\r"
+?? "ubold/templates/apps/companies/Icon\r"
+?? "ubold/templates/apps/contacts/Icon\r"
+?? "ubold/templates/apps/crm/Icon\r"
+?? "ubold/templates/apps/ecommerce/Icon\r"
+?? "ubold/templates/apps/email/Icon\r"
+?? "ubold/templates/apps/manager/Icon\r"
+?? "ubold/templates/apps/project/Icon\r"
+?? "ubold/templates/apps/social/Icon\r"
+?? "ubold/templates/apps/task/Icon\r"
+?? "ubold/templates/apps/tickets/Icon\r"
+?? "ubold/templates/auth/Icon\r"
+?? "ubold/templates/components/Icon\r"
+?? "ubold/templates/components/base-ui/Icon\r"
+?? "ubold/templates/components/charts/Icon\r"
+?? "ubold/templates/components/extended/Icon\r"
+?? "ubold/templates/components/forms/Icon\r"
+?? "ubold/templates/components/icons/Icon\r"
+?? "ubold/templates/components/maps/Icon\r"
+?? "ubold/templates/components/tables/Icon\r"
+?? "ubold/templates/dashboard/Icon\r"
+?? "ubold/templates/demos/Icon\r"
+?? "ubold/templates/extra/Icon\r"
+?? "ubold/templates/layouts/Icon\r"
+?? "ubold/templates/pages/Icon\r"
+?? "ubold/templates/partials/Icon\r"
+?? "ubold/templates/users/Icon\r"
+?? "ubold/users/Icon\r"
+?? "ubold/users/migrations/Icon\r"
+?? "ubold/users/tests/Icon\r"
+?? "ubold/utils/Icon\r"
+?? "utility/Icon\r"
+    Git status (showing top 10):
+ D ubold/static/libs/raphael/dev/banner.txt
+ D ubold/static/libs/raphael/dev/raphael.amd.js
+ D ubold/static/libs/raphael/dev/raphael.core.js
+ D ubold/static/libs/raphael/dev/raphael.svg.js
+ D ubold/static/libs/raphael/dev/raphael.vml.js
+ D ubold/static/libs/raphael/dev/raphaelTest.html
+?? "Icon\r"
+?? "config/Icon\r"
+?? "config/settings/Icon\r"
+?? "docs/Icon\r"
+    8
+    6
+    7
+    ... and 363 more files
+    4
+    Found remotes https://github.com/BrightSoftwares/cam-truck.git
+9
+    Found 0 unpushed commits
+    5
+    Last commit: e4a7a86 - feat: initial commit (il y a 2 ans et 9 mois)
+Done with /Users/sergio/dev_d_personal_from_windows/cam-truck. Continue with next one.
+
+Processing git_dir = /Users/sergio/dev_d_personal_from_windows/hognekaba-backend/.git
+Repo dir = /Users/sergio/dev_d_personal_from_windows/hognekaba-backend
+[41] Repository: /Users/sergio/dev_d_personal_from_windows/hognekaba-backend
+    Size:  40M
+    Remote: https://github.com/BrightSoftwares/hognekaba-backend.git
+    Branch: main
+    Status: ⚠️  HAS UNCOMMITTED CHANGES
+    Modified files:
+ M .env.sample
+ M .gitignore
+ M LICENSE
+ M Makefile
+ M Pipfile
+ M Pipfile.lock
+ M Procfile
+ M README.md
+ M blog/admin.py
+ M blog/apps.py
+ M blog/migrations/0001_initial.py
+ M blog/models.py
+ M blog/static/blog/main.css
+ M blog/templates/blog/about.html
+ M blog/templates/blog/base.html
+ M blog/templates/blog/home.html
+ M blog/templates/blog/post_confirm_delete.html
+ M blog/templates/blog/post_detail.html
+ M blog/templates/blog/post_form.html
+ M blog/templates/blog/user_posts.html
+ M blog/tests.py
+ M blog/urls.py
+ M blog/views.py
+ M bright_ecommerce/admin.py
+ M bright_ecommerce/apps.py
+ M bright_ecommerce/models.py
+ M bright_ecommerce/tests.py
+ M bright_ecommerce/views.py
+ M core/admin.py
+ M core/apps.py
+ M core/controller.py
+ M core/forms.py
+ M core/management/commands/rename.py
+ M core/menu_text.py
+ M core/migrations/0001_initial.py
+ M core/migrations/0002_auto_20190616_2144.py
+ M core/migrations/0003_userprofile.py
+ M core/migrations/0004_auto_20190630_1408.py
+ M core/migrations/0005_auto_20210908_2100.py
+ M core/models.py
+ M core/serializers.py
+ M core/tasks.py
+ M core/templatetags/cart_template_tags.py
+ M core/tests.py
+ M core/urls.py
+ M core/views.py
+ M core/vinted.py
+ M django_project/settings.py
+ M django_project/urls.py
+ M django_project/wsgi.py
+ M emailnotifications/admin.py
+ M emailnotifications/apps.py
+ M emailnotifications/email_utils.py
+ M emailnotifications/models.py
+ M emailnotifications/tasks.py
+ M emailnotifications/tests.py
+ M emailnotifications/views.py
+ M exponotifications/admin.py
+ M exponotifications/apps.py
+ M exponotifications/models.py
+ M exponotifications/tasks.py
+ M exponotifications/tests.py
+ M exponotifications/views.py
+ M fsm/__init__.py
+ M fsm/states.py
+ M fsm/storage/__init__.py
+ M fsm/storage/base.py
+ M fsm/storage/memory.py
+ M fsm/storage/redis.py
+ M fsm/storage/rethinkdb.py
+ M hognekaba/.DS_Store
+ M hognekaba/admin.py
+ M hognekaba/apps.py
+ M hognekaba/fixtures/0001_initial_objects.json
+ M hognekaba/fixtures/0001_testdata.json
+ M hognekaba/fixtures/0001_testdata2.json
+ M hognekaba/fixtures/0001_testdata3.json
+ M hognekaba/fixtures/0001_testdata4.json
+ M hognekaba/fixtures/0002_properties.json
+ M hognekaba/migrations/0001_initial.py
+ M hognekaba/migrations/0002_auto_20210909_1806.py
+ M hognekaba/migrations/0003_auto_20210909_1840.py
+ M hognekaba/migrations/0004_auto_20210909_1858.py
+ M hognekaba/migrations/0005_auto_20210922_2008.py
+ M hognekaba/migrations/0006_auto_20210922_2011.py
+ M hognekaba/migrations/0007_auto_20210922_2013.py
+ M hognekaba/migrations/0008_auto_20210923_2139.py
+ M hognekaba/migrations/0009_auto_20210930_0416.py
+ M hognekaba/migrations/0010_auto_20210930_1956.py
+ M hognekaba/migrations/0011_auto_20210930_2022.py
+ M hognekaba/migrations/0012_auto_20210930_2022.py
+ M hognekaba/migrations/0013_auto_20211001_2102.py
+ M hognekaba/migrations/0014_auto_20211001_2141.py
+ M hognekaba/migrations/0015_auto_20211009_1557.py
+ M hognekaba/migrations/0016_auto_20211009_1609.py
+ M hognekaba/migrations/0017_auto_20211014_1447.py
+ M hognekaba/migrations/0018_auto_20211014_1611.py
+ M hognekaba/migrations/0019_auto_20211016_1214.py
+ M hognekaba/migrations/0020_auto_20211016_1214.py
+ M hognekaba/migrations/0021_auto_20211017_1118.py
+ M hognekaba/migrations/0022_auto_20211017_1146.py
+ M hognekaba/migrations/0023_auto_20211023_0802.py
+ M hognekaba/migrations/0024_auto_20211023_0805.py
+ M hognekaba/migrations/0025_auto_20211031_1332.py
+ M hognekaba/migrations/0026_auto_20211031_1557.py
+ M hognekaba/migrations/0027_auto_20211104_1943.py
+ M hognekaba/migrations/0028_auto_20211104_2043.py
+ M hognekaba/migrations/0029_alter_reservation_date_expiration.py
+ M hognekaba/migrations/0030_auto_20211105_0028.py
+ M hognekaba/migrations/0031_auto_20211105_0039.py
+ M hognekaba/migrations/0032_auto_20211105_2248.py
+ M hognekaba/migrations/0033_auto_20211105_2309.py
+ M hognekaba/migrations/0034_auto_20211105_2320.py
+ M hognekaba/migrations/0035_auto_20211105_2328.py
+ M hognekaba/migrations/0036_auto_20211105_2359.py
+ M hognekaba/migrations/0037_auto_20211106_0005.py
+ M hognekaba/migrations/0038_auto_20211106_1650.py
+ M hognekaba/migrations/0039_auto_20211106_1737.py
+ M hognekaba/migrations/0040_auto_20211107_0939.py
+ M hognekaba/migrations/0041_auto_20211108_1958.py
+ M hognekaba/migrations/0042_auto_20211108_1959.py
+ M hognekaba/migrations/0043_auto_20211109_2248.py
+ M hognekaba/migrations/0044_auto_20211112_1422.py
+ M hognekaba/migrations/0045_auto_20211112_1641.py
+ M hognekaba/migrations/0046_alter_reservation_date_expiration.py
+ M hognekaba/models.py
+ M hognekaba/serializers.py
+ M hognekaba/tasks.py
+ M hognekaba/tests.py
+ M hognekaba/urls.py
+ M hognekaba/views.py
+ M hognekaba_core/__init__.py
+ M hognekaba_core/celery.py
+ M hognekaba_core/settings/base.py
+ M hognekaba_core/settings/development.py
+ M hognekaba_core/settings/production.py
+ M hognekaba_core/urls.py
+ M hognekaba_core/wsgi.py
+ M manage.py
+ M posts.json
+ M runtime.txt
+ M static/css/admin_color.css
+ M static_in_env/css/addons/datatables-select.css
+ M static_in_env/css/addons/datatables.css
+ M static_in_env/css/addons/directives.css
+ M static_in_env/css/bootstrap.css
+ M static_in_env/css/bootstrap.min.css
+ M static_in_env/css/mdb.css
+ M static_in_env/css/mdb.lite.css
+ M static_in_env/css/mdb.lite.min.css
+ M static_in_env/css/mdb.min.css
+ M static_in_env/css/modules/animations-extended.css
+ M static_in_env/css/modules/animations-extended.min.css
+ M static_in_env/css/style.css
+ M static_in_env/js/addons/datatables-select.js
+ M static_in_env/js/addons/datatables-select.min.js
+ M static_in_env/js/addons/datatables.js
+ M static_in_env/js/addons/datatables.min.js
+ M static_in_env/js/addons/rating.js
+ M static_in_env/js/bootstrap.js
+ M static_in_env/js/bootstrap.min.js
+ M static_in_env/js/jquery-3.3.1.min.js
+ M static_in_env/js/mdb.js
+ M static_in_env/js/modules/chart.js
+ M static_in_env/js/modules/default-file-input.js
+ M static_in_env/js/modules/enhanced-modals.js
+ M static_in_env/js/modules/forms-free.js
+ M static_in_env/js/modules/jquery.easing.js
+ M static_in_env/js/modules/scrolling-navbar.js
+ M static_in_env/js/modules/treeview.js
+ M static_in_env/js/modules/velocity.js
+ M static_in_env/js/modules/velocity.min.js
+ M static_in_env/js/modules/waves.js
+ M static_in_env/js/modules/wow.js
+ M static_in_env/js/popper.min.js
+ M static_in_env/scss/_custom-skin.scss
+ M static_in_env/scss/addons/_datatables-select.scss
+ M static_in_env/scss/addons/_datatables.scss
+ M static_in_env/scss/addons/_directives.scss
+ M static_in_env/scss/core/_colors.scss
+ M static_in_env/scss/core/_global.scss
+ M static_in_env/scss/core/_helpers.scss
+ M static_in_env/scss/core/_masks.scss
+ M static_in_env/scss/core/_mixins.scss
+ M static_in_env/scss/core/_typography.scss
+ M static_in_env/scss/core/_variables.scss
+ M static_in_env/scss/core/_waves.scss
+ M static_in_env/scss/core/bootstrap/_functions.scss
+ M static_in_env/scss/core/bootstrap/_rfs.scss
+ M static_in_env/scss/core/bootstrap/_variables.scss
+ M static_in_env/scss/free/_animations-basic.scss
+ M static_in_env/scss/free/_badges.scss
+ M static_in_env/scss/free/_buttons.scss
+ M static_in_env/scss/free/_cards.scss
+ M static_in_env/scss/free/_carousels.scss
+ M static_in_env/scss/free/_depreciated.scss
+ M static_in_env/scss/free/_dropdowns.scss
+ M static_in_env/scss/free/_footers.scss
+ M static_in_env/scss/free/_forms.scss
+ M static_in_env/scss/free/_input-group.scss
+ M static_in_env/scss/free/_list-group.scss
+ M static_in_env/scss/free/_loader.scss
+ M static_in_env/scss/free/_modals.scss
+ M static_in_env/scss/free/_msc.scss
+ M static_in_env/scss/free/_navbars.scss
+ M static_in_env/scss/free/_pagination.scss
+ M static_in_env/scss/free/_steppers.scss
+ M static_in_env/scss/free/_switch.scss
+ M static_in_env/scss/free/_tables.scss
+ M static_in_env/scss/free/_treeview.scss
+ M static_in_env/scss/free/modules/animations-extended/_module.scss
+ M static_in_env/scss/free/modules/animations-extended/animations-extended.scss
+ M static_in_env/scss/mdb.lite.scss
+ M static_in_env/scss/mdb.scss
+ M templates/account/account_inactive.html
+ M templates/account/base.html
+ M templates/account/email.html
+ M templates/account/email/email_confirmation_message.txt
+ M templates/account/email/email_confirmation_signup_message.txt
+ M templates/account/email/email_confirmation_signup_subject.txt
+ M templates/account/email/email_confirmation_subject.txt
+ M templates/account/email/password_reset_key_message.txt
+ M templates/account/email/password_reset_key_subject.txt
+ M templates/account/email_confirm.html
+ M templates/account/login.html
+ M templates/account/logout.html
+ M templates/account/messages/cannot_delete_primary_email.txt
+ M templates/account/messages/email_confirmation_sent.txt
+ M templates/account/messages/email_confirmed.txt
+ M templates/account/messages/email_deleted.txt
+ M templates/account/messages/logged_in.txt
+ M templates/account/messages/logged_out.txt
+ M templates/account/messages/password_changed.txt
+ M templates/account/messages/password_set.txt
+ M templates/account/messages/primary_email_set.txt
+ M templates/account/messages/unverified_primary_email.txt
+ M templates/account/password_change.html
+ M templates/account/password_reset.html
+ M templates/account/password_reset_done.html
+ M templates/account/password_reset_from_key.html
+ M templates/account/password_reset_from_key_done.html
+ M templates/account/password_set.html
+ M templates/account/signup.html
+ M templates/account/signup_closed.html
+ M templates/account/snippets/already_logged_in.html
+ M templates/account/verification_sent.html
+ M templates/account/verified_email_required.html
+ M templates/admin/base_side.html
+ M templates/base.html
+ M templates/checkout.html
+ M templates/email/account_validated.html
+ M templates/email/customer_accepted_reservation.html
+ M templates/email/customer_accepted_reservation.txt
+ M templates/email/invoice_email.html
+ M templates/footer.html
+ M templates/home.html
+ M templates/navbar.html
+ M templates/openid/base.html
+ M templates/openid/login.html
+ M templates/order_snippet.html
+ M templates/order_summary.html
+ M templates/payment.html
+ M templates/product.html
+ M templates/request_refund.html
+ M templates/scripts.html
+ M templates/socialaccount/authentication_error.html
+ M templates/socialaccount/base.html
+ M templates/socialaccount/connections.html
+ M templates/socialaccount/login_cancelled.html
+ M templates/socialaccount/messages/account_connected.txt
+ M templates/socialaccount/messages/account_connected_other.txt
+ M templates/socialaccount/messages/account_disconnected.txt
+ M templates/socialaccount/signup.html
+ M templates/socialaccount/snippets/login_extra.html
+ M templates/socialaccount/snippets/provider_list.html
+ M users/admin.py
+ M users/apps.py
+ M users/forms.py
+ M users/migrations/0001_initial.py
+ M users/models.py
+ M users/signals.py
+ M users/templates/users/login.html
+ M users/templates/users/logout.html
+ M users/templates/users/password_reset.html
+ M users/templates/users/password_reset_complete.html
+ M users/templates/users/password_reset_confirm.html
+ M users/templates/users/password_reset_done.html
+ M users/templates/users/profile.html
+ M users/templates/users/register.html
+ M users/tests.py
+ M users/views.py
+ M whatsapp/admin.py
+ M whatsapp/apps.py
+ M whatsapp/models.py
+ M whatsapp/tasks.py
+ M whatsapp/tests.py
+ M whatsapp/views.py
+?? .DS_Store
+?? "Icon\r"
+?? blog/.DS_Store
+?? "blog/Icon\r"
+?? "blog/migrations/Icon\r"
+?? "blog/static/Icon\r"
+?? "blog/static/blog/Icon\r"
+?? "blog/templates/Icon\r"
+?? "blog/templates/blog/Icon\r"
+?? "bright_ecommerce/Icon\r"
+?? "bright_ecommerce/migrations/Icon\r"
+?? core/.DS_Store
+?? "core/Icon\r"
+?? "core/management/Icon\r"
+?? "core/management/commands/Icon\r"
+?? "core/migrations/Icon\r"
+?? "core/templatetags/Icon\r"
+?? "django_project/Icon\r"
+?? "emailnotifications/Icon\r"
+?? "emailnotifications/migrations/Icon\r"
+?? "exponotifications/Icon\r"
+?? "exponotifications/migrations/Icon\r"
+?? "fsm/Icon\r"
+?? "fsm/storage/Icon\r"
+?? "hognekaba/Icon\r"
+?? "hognekaba/fixtures/Icon\r"
+?? "hognekaba/migrations/Icon\r"
+?? "hognekaba_core/Icon\r"
+?? "hognekaba_core/settings/Icon\r"
+?? "media/Icon\r"
+?? "media/profile_pics/Icon\r"
+?? "media_root/Icon\r"
+?? "static/Icon\r"
+?? "static/css/Icon\r"
+?? static_in_env/.DS_Store
+?? "static_in_env/Icon\r"
+?? "static_in_env/css/Icon\r"
+?? "static_in_env/css/addons/Icon\r"
+?? "static_in_env/css/modules/Icon\r"
+?? "static_in_env/font/Icon\r"
+?? "static_in_env/font/roboto/Icon\r"
+?? "static_in_env/img/Icon\r"
+?? "static_in_env/img/lightbox/Icon\r"
+?? "static_in_env/img/overlays/Icon\r"
+?? "static_in_env/img/svg/Icon\r"
+?? "static_in_env/js/Icon\r"
+?? "static_in_env/js/addons/Icon\r"
+?? "static_in_env/js/modules/Icon\r"
+?? "static_in_env/scss/Icon\r"
+?? "static_in_env/scss/addons/Icon\r"
+?? "static_in_env/scss/core/Icon\r"
+?? "static_in_env/scss/core/bootstrap/Icon\r"
+?? "static_in_env/scss/free/Icon\r"
+?? "static_in_env/scss/free/modules/Icon\r"
+?? "static_in_env/scss/free/modules/animations-extended/Icon\r"
+?? templates/.DS_Store
+?? "templates/Icon\r"
+?? "templates/account/Icon\r"
+?? "templates/account/email/Icon\r"
+?? "templates/account/messages/Icon\r"
+?? "templates/account/snippets/Icon\r"
+?? "templates/admin/Icon\r"
+?? "templates/email/Icon\r"
+?? "templates/openid/Icon\r"
+?? "templates/socialaccount/Icon\r"
+?? "templates/socialaccount/messages/Icon\r"
+?? "templates/socialaccount/snippets/Icon\r"
+?? users/.DS_Store
+?? "users/Icon\r"
+?? "users/migrations/Icon\r"
+?? "users/templates/Icon\r"
+?? "users/templates/users/Icon\r"
+?? "whatsapp/Icon\r"
+?? "whatsapp/migrations/Icon\r"
+    Git status (showing top 10):
+ M .env.sample
+ M .gitignore
+ M LICENSE
+ M Makefile
+ M Pipfile
+ M Pipfile.lock
+ M Procfile
+ M README.md
+ M blog/admin.py
+ M blog/apps.py
+    8
+    6
+    7
+    ... and 361 more files
+    4
+    Found remotes https://github.com/BrightSoftwares/hognekaba-backend.git
+9
+    Found 0 unpushed commits
+    5
+    Last commit: 6fc668f - Merge pull request #7 from BrightSoftwares/dev (il y a 4 ans et 1 mois)
+Done with /Users/sergio/dev_d_personal_from_windows/hognekaba-backend. Continue with next one.
+
+Processing git_dir = /Users/sergio/dev_d_personal_from_windows/keke.li/.git
+Repo dir = /Users/sergio/dev_d_personal_from_windows/keke.li
+[42] Repository: /Users/sergio/dev_d_personal_from_windows/keke.li
+    Size:  64M
+    Remote: https://github.com/BrightSoftwares/keke.li.git
+    Branch: main
+    Status: ⚠️  HAS UNCOMMITTED CHANGES
+    Modified files:
+ M .github/workflows/jekyll.yml
+ M .gitignore
+ M 404.html
+ M Gemfile
+ M Gemfile.lock
+ M README.md
+ M _config.yml
+ M _i18n/de.yml
+ M _i18n/en.yml
+ M _i18n/es.yml
+ M _i18n/fr.yml
+ M _layouts/index.html
+ M _posts/2022-05-16-welcome-to-jekyll.markdown
+ M about.markdown
+ M assets/css/style.css
+ M "assets/img-svg/Black logo - no background.svg"
+ M "assets/img-svg/Color logo - no background.svg"
+ M "assets/img-svg/Color logo with background.svg"
+ M "assets/img-svg/White logo - no background.svg"
+ M assets/js/main.js
+ M assets/vendor/php-email-form/validate.js
+ M forms/Readme.txt
+ M forms/contact.php
+ M forms/notify.php
+ M index.markdown
+?? ".github/Icon\r"
+?? ".github/workflows/Icon\r"
+?? "Icon\r"
+?? "_i18n/Icon\r"
+?? "_layouts/Arsha/Icon\r"
+?? "_layouts/Arsha/assets/Icon\r"
+?? "_layouts/Arsha/assets/css/Icon\r"
+?? "_layouts/Arsha/assets/img/Icon\r"
+?? "_layouts/Arsha/assets/img/clients/Icon\r"
+?? "_layouts/Arsha/assets/img/portfolio/Icon\r"
+?? "_layouts/Arsha/assets/img/team/Icon\r"
+?? "_layouts/Arsha/assets/js/Icon\r"
+?? "_layouts/Arsha/forms/Icon\r"
+?? "_layouts/Icon\r"
+?? "_posts/Icon\r"
+?? "assets/Icon\r"
+?? "assets/css/Icon\r"
+?? "assets/img-png/Icon\r"
+?? "assets/img-svg/Icon\r"
+?? "assets/img/Icon\r"
+?? "assets/js/Icon\r"
+?? "assets/vendor/Icon\r"
+?? "assets/vendor/bootstrap-icons/Icon\r"
+?? "assets/vendor/bootstrap-icons/fonts/Icon\r"
+?? "assets/vendor/bootstrap/Icon\r"
+?? "assets/vendor/bootstrap/css/Icon\r"
+?? "assets/vendor/bootstrap/js/Icon\r"
+?? "assets/vendor/php-email-form/Icon\r"
+?? "forms/Icon\r"
+    Git status (showing top 10):
+ M .github/workflows/jekyll.yml
+ M .gitignore
+ M 404.html
+ M Gemfile
+ M Gemfile.lock
+ M README.md
+ M _config.yml
+ M _i18n/de.yml
+ M _i18n/en.yml
+ M _i18n/es.yml
+    8
+    6
+    7
+    ... and 44 more files
+    4
+    Found remotes https://github.com/BrightSoftwares/keke.li.git
+9
+    Found 0 unpushed commits
+    5
+    Last commit: 6547b2a - Saving even more computation time (il y a 3 ans)
+Done with /Users/sergio/dev_d_personal_from_windows/keke.li. Continue with next one.
+
+Processing git_dir = /Users/sergio/dev_d_personal_from_windows/kibitzr/pages/Kibitzr_release/.git
+Repo dir = /Users/sergio/dev_d_personal_from_windows/kibitzr/pages/Kibitzr_release
+[43] Repository: /Users/sergio/dev_d_personal_from_windows/kibitzr/pages/Kibitzr_release
+    Size: 260K
+    Remote: No remotes
+    Branch: master
+    Status: ✓ Clean
+    4
+    5
+    Last commit: ff1d7c0 - Kibitzr release at https://pypi.python.org/pypi/kibitzr/json (il y a 5 ans)
+Done with /Users/sergio/dev_d_personal_from_windows/kibitzr/pages/Kibitzr_release. Continue with next one.
+
+Processing git_dir = /Users/sergio/dev_d_personal_from_windows/kibitzr/kibitzr/.git
+Repo dir = /Users/sergio/dev_d_personal_from_windows/kibitzr/kibitzr
+[44] Repository: /Users/sergio/dev_d_personal_from_windows/kibitzr/kibitzr
+    Size: 3,9M
+    Remote: https://github.com/kibitzr/kibitzr.git
+    Branch: master
+    Status: ⚠️  HAS UNCOMMITTED CHANGES
+    Modified files:
+ M .editorconfig
+ M .gitignore
+ M .travis.yml
+ M AUTHORS.rst
+ M CHANGELOG.md
+ M CONTRIBUTING.rst
+ M Dockerfile
+ M LICENSE
+ M MANIFEST.in
+ M Makefile
+ M PITCHME.md
+ M README.rst
+ M docs/Makefile
+ M docs/authors.rst
+ M docs/aws.rst
+ M docs/comparison.rst
+ M docs/conf.py
+ M docs/configuration.rst
+ M docs/contributing.rst
+ M docs/contributors.rst
+ M docs/credentials.rst
+ M docs/daemon.rst
+ M docs/extensions.rst
+ M docs/firefox.rst
+ M docs/gcp.rst
+ M docs/history.rst
+ M docs/index.rst
+ M docs/installation.rst
+ M docs/kibitzr.fetcher.browser.rst
+ M docs/kibitzr.fetcher.rst
+ M docs/kibitzr.notifier.rst
+ M docs/kibitzr.rst
+ M docs/kibitzr.transformer.rst
+ M docs/make.bat
+ M docs/modules.rst
+ M docs/notifiers.rst
+ M docs/python.rst
+ M docs/readme.rst
+ M docs/recipes.rst
+ M docs/scenario.rst
+ M docs/schedule.rst
+ M docs/shell.rst
+ M docs/smtp.rst
+ M docs/stash.rst
+ M docs/telegram.rst
+ M docs/transforms.rst
+ M docs/usage.rst
+ M kibitzr/__init__.py
+ M kibitzr/__main__.py
+ M kibitzr/app.py
+ M kibitzr/bash.py
+ M kibitzr/bootstrap.py
+ M kibitzr/checker.py
+ M kibitzr/cli.py
+ M kibitzr/compat.py
+ M kibitzr/conf.py
+ M kibitzr/exceptions.py
+ M kibitzr/fetcher/__init__.py
+ M kibitzr/fetcher/base.py
+ M kibitzr/fetcher/browser/fetcher.py
+ M kibitzr/fetcher/browser/launcher.py
+ M kibitzr/fetcher/browser/trigger.py
+ M kibitzr/fetcher/factory.py
+ M kibitzr/fetcher/loader.py
+ M kibitzr/fetcher/script.py
+ M kibitzr/fetcher/simple.py
+ M kibitzr/notifier/__init__.py
+ M kibitzr/notifier/bash.py
+ M kibitzr/notifier/custom.py
+ M kibitzr/notifier/factory.py
+ M kibitzr/notifier/gitter.py
+ M kibitzr/notifier/mailgun.py
+ M kibitzr/notifier/slack.py
+ M kibitzr/notifier/smtp.py
+ M kibitzr/notifier/stash.py
+ M kibitzr/notifier/telegram.py
+ M kibitzr/notifier/webhook.py
+ M kibitzr/notifier/zapier.py
+ M kibitzr/stash.py
+ M kibitzr/storage.py
+ M kibitzr/timeline.py
+ M kibitzr/transformer/__init__.py
+ M kibitzr/transformer/factory.py
+ M kibitzr/transformer/html.py
+ M kibitzr/transformer/jinja_transform.py
+ M kibitzr/transformer/json_transforms.py
+ M kibitzr/transformer/plain_text.py
+ M kibitzr/transformer/utils.py
+ M kibitzr/transformer/xpath.py
+ M kibitzr/utils.py
+ M pylintrc
+ M requirements/base.in
+ M requirements/base.txt
+ M requirements/dev.in
+ M requirements/dev.txt
+ M setup.cfg
+ M setup.py
+ M tests/__init__.py
+ M tests/compat.py
+ M tests/helpers.py
+ M tests/simulation/conftest.py
+ M tests/simulation/target/server.py
+ M tests/simulation/target/www/api.json
+ M tests/simulation/target/www/form.html
+ M tests/simulation/target/www/index.html
+ M tests/simulation/target/www/page.html
+ M tests/simulation/target/www/params.html
+ M tests/simulation/test_fetcher.py
+ M tests/simulation/test_forms.py
+ M tests/unit/conftest.py
+ M tests/unit/fetchers/test_script.py
+ M tests/unit/helpers.py
+ M tests/unit/notifiers/test_bash.py
+ M tests/unit/notifiers/test_mailgun.py
+ M tests/unit/notifiers/test_python.py
+ M tests/unit/notifiers/test_smtp.py
+ M tests/unit/notifiers/test_stash.py
+ M tests/unit/notifiers/test_webhook.py
+ M tests/unit/test_app.py
+ M tests/unit/test_conf.py
+ M tests/unit/test_timeline.py
+ M tests/unit/transforms/helpers.py
+ M tests/unit/transforms/test_changes.py
+ M tests/unit/transforms/test_html.py
+ M tests/unit/transforms/test_jinja.py
+ M tests/unit/transforms/test_json.py
+ M tests/unit/transforms/test_script.py
+ M tests/unit/transforms/test_xpath.py
+ M tox.ini
+ M travis_pypi_setup.py
+?? .DS_Store
+?? "Icon\r"
+?? "docs/Icon\r"
+?? kibitzr/.DS_Store
+?? "kibitzr/Icon\r"
+?? "kibitzr/fetcher/Icon\r"
+?? "kibitzr/fetcher/browser/Icon\r"
+?? "kibitzr/notifier/Icon\r"
+?? "kibitzr/transformer/Icon\r"
+?? "requirements/Icon\r"
+?? tests/.DS_Store
+?? "tests/Icon\r"
+?? "tests/simulation/Icon\r"
+?? "tests/simulation/target/Icon\r"
+?? "tests/simulation/target/www/Icon\r"
+?? "tests/unit/Icon\r"
+?? "tests/unit/fetchers/Icon\r"
+?? "tests/unit/notifiers/Icon\r"
+?? "tests/unit/transforms/Icon\r"
+    Git status (showing top 10):
+ M .editorconfig
+ M .gitignore
+ M .travis.yml
+ M AUTHORS.rst
+ M CHANGELOG.md
+ M CONTRIBUTING.rst
+ M Dockerfile
+ M LICENSE
+ M MANIFEST.in
+ M Makefile
+    8
+    6
+    7
+    ... and 139 more files
+    4
+    Found remotes https://github.com/kibitzr/kibitzr.git
+9
+    Found 0 unpushed commits
+    5
+    Last commit: 255c115 - pip-compile-multi (il y a 5 ans)
+Done with /Users/sergio/dev_d_personal_from_windows/kibitzr/kibitzr. Continue with next one.
+
+
+━━━ Scanning: /Users/sergio/dev_completed ━━━
+
+Found 1 repositories in /Users/sergio/dev_completed
+Repos are /Users/sergio/dev_completed/accelerated-text-fullbright/.git
+
+Processing git_dir = /Users/sergio/dev_completed/accelerated-text-fullbright/.git
+Repo dir = /Users/sergio/dev_completed/accelerated-text-fullbright
+[45] Repository: /Users/sergio/dev_completed/accelerated-text-fullbright
+    Size: 112M
+    Remote: https://github.com/fullbright/accelerated-text.git
+    Branch: migration-20251009-232623
+    Status: ✓ Clean
+    4
+    Found remotes https://github.com/fullbright/accelerated-text.git
+9
+    Found 0 unpushed commits
+    5
+    Last commit: 5c05204 - Automated migration from Mac cleanup (il y a 3 mois)
+Done with /Users/sergio/dev_completed/accelerated-text-fullbright. Continue with next one.
+
+
+═══════════════════════════════════════════════════════════
+SUMMARY
+═══════════════════════════════════════════════════════════
+Total repositories found: 45
+Repositories with uncommitted changes: 20
+Repositories with unpushed commits: 4
+Clean repositories: 23
+
+⚠️  WARNING: You have repositories that need attention!
+   Please commit and push changes before reinstalling.

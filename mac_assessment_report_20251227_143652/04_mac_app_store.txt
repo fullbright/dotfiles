@@ -1,0 +1,59 @@
+mas-cli not installed
+
+Install with: brew install mas
+
+=== Applications folder ===
+drwxrwxr-x@  3 sergio  admin     96 23 sep  2020 Android Studio.app
+drwxr-xr-x   3 sergio  admin     96 17 sep  2023 Arc.app
+drwxr-xr-x@  3 sergio  admin     96 19 mai  2020 Audacity.app
+drwxr-xr-x@  3 sergio  admin     96 12 sep  2021 Brave Browser.app
+drwxr-xr-x@  3 sergio  admin     96  8 oct  2022 CH34xVCPDriver.app
+drwxr-xr-x@  3 sergio  staff     96 15 oct  2021 CP210xVCPDriver.app
+drwxr-xr-x   3 sergio  staff     96 17 sep 22:20 Claude.app
+drwxr-xr-x@  3 sergio  staff     96 10 oct  2018 Clipy.app
+drwxr-xr-x   3 sergio  staff     96  1 jan  1980 Cursor.app
+drwxr-xr-x   3 sergio  staff     96  6 mai  2025 Cyberduck.app
+drwxr-xr-x   3 root    wheel     96  3 mai  2023 DisplayLink Manager.app
+drwxr-xr-x   3 sergio  staff     96 16 nov  2024 Docker.app
+drwxr-xr-x   3 sergio  staff     96 19 oct  2021 Figma.app
+drwxr-xr-x@  3 sergio  staff     96 30 nov  2018 FileZilla.app
+drwxr-xr-x@  3 sergio  staff     96 20 fév  2022 Firefox.app
+drwxr-xr-x@  3 sergio  admin     96 30 oct  2019 GIMP-2.10.app
+drwxrwxr-x@  3 sergio  admin     96 15 mai  2024 Google Chrome.app
+drwxr-xr-x   3 root    wheel     96 15 déc 18:50 Google Docs.app
+drwxrwxr-x   3 root    wheel     96 15 déc 18:50 Google Drive.app
+drwxr-xr-x   3 root    wheel     96 15 déc 18:50 Google Sheets.app
+drwxr-xr-x   3 root    wheel     96 15 déc 18:50 Google Slides.app
+drwxr-xr-x   3 sergio  staff     96 23 nov 17:42 Grammarly Desktop.app
+drwxr-xr-x@  3 sergio  admin     96  1 fév  2015 HandBrakeBatch.app
+drwxr-xr-x@  3 sergio  staff     96 30 aoû  2023 Inkscape.app
+drwxr-xr-x@  3 sergio  staff     96 17 déc  2019 Insomnia.app
+drwxr-xr-x   3 root    wheel     96 26 nov  2024 Install macOS Monterey.app
+drwxr-xr-x@  4 sergio  staff    128  9 oct  2013 KeePass2.23.app
+drwxr-xr-x@  3 sergio  admin     96 16 aoû  2023 KeePassXC.app
+drwxr-xr-x@  3 root    wheel     96 27 avr  2025 LINE.app
+drwxr-xr-x@  3 sergio  staff     96 30 aoû  2023 LibreOffice.app
+drwxr-xr-x@  3 sergio  admin     96 10 oct  2020 McGimp-2.10.22.app
+drwxrwxr-x   3 root    admin     96 18 déc 10:47 Microsoft Edge.app
+drwxr-xr-x@  3 sergio  staff     96 30 aoû  2023 MusicBrainz Picard.app
+drwxr-xr-x@  3 sergio  admin     96  3 mar  2025 Obsidian.app
+lrwxr-xr-x   1 root    admin     49 29 jul  2022 OpenVPN Connect.app -> /Applications/OpenVPN Connect/OpenVPN Connect.app
+drwxr-xr-x   3 sergio  staff     96 21 mai  2024 Postman.app
+drwxr-xr-x   3 sergio  staff     96 31 jul  2023 React Native Debugger.app
+drwxr-xr-x@  3 sergio  admin     96 29 oct  2024 RustDesk.app
+drwxr-xr-x@  3 root    wheel     96 11 aoû  2024 Safari.app
+drwxr-xr-x   3 sergio  staff     96 30 jul  2020 Skype.app
+drwxr-xr-x   3 root    wheel     96  5 nov  2024 TeamViewer.app
+drwxr-xr-x   3 sergio  admin     96 25 mai  2020 TogglDesktop.app
+drwxr-xr-x@  3 sergio  admin     96 29 avr  2020 Ultimaker Cura.app
+drwxr-xr-x   3 root    admin     96 13 jan  2020 UniFi-Discover.app
+drwxr-xr-x   3 root    wheel     96 13 jan  2020 UniFi.app
+drwxr-xr-x@  3 root    wheel     96 19 avr  2025 Unzip - RAR ZIP 7Z Unarchiver.app
+drwxr-xr-x   3 sergio  staff     96  2 déc  2023 VLC.app
+drwxr-xr-x@  3 sergio  staff     96  6 déc  2019 Vagrant Manager.app
+drwxr-xr-x   3 root    admin     96  3 nov  2024 VirtualBox.app
+drwxr-xr-x@  3 sergio  staff     96  9 oct  2024 Wireshark.app
+drwxr-xr-x@  3 root    wheel     96 18 déc  2022 Xcode.app
+drwxr-xr-x@  3 sergio  staff     96 30 aoû  2023 balenaEtcher.app
+drwxr-xr-x@  3 root    wheel     96  2 aoû  2023 iMovie.app
+drwxr-xr-x   3 sergio  wheel     96  4 jan  2022 zoom.us.app

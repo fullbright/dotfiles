@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/local/bin/bash
 #
 # cleanup_manager.sh - Main orchestrator for Mac cleanup and GitHub organization
 # Production-ready version with error handling, logging, and state management
@@ -409,7 +409,7 @@ main() {
         
         # Analyze folder
         if ! analyze_folder "$folder"; then
-            ((skipped++))
+            skipped=$((skipped+1))
             continue
         fi
         
@@ -419,16 +419,16 @@ main() {
         
         if [[ "$ANALYZE_ONLY" == "true" ]]; then
             log_info "Category: $category"
-            ((processed++))
+            processed=$((processed+1))
             continue
         fi
         
         # Process folder (capture return code properly)
         if process_folder_by_category "$folder" "$category"; then
-            ((processed++))
+            processed=$((processed+1))
             state_save_checkpoint
         else
-            ((failed++))
+            failed=$((failed+1))
             log_error "Failed to process: $folder_name"
             
             # Only prompt if not in batch mode

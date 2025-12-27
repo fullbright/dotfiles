@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/local/bin/bash
 #
 # lib/github.sh - GitHub repository operations
 #

@@ -13,6 +13,19 @@ CUSTOM_GIT_SEARCH_DIRS=(
     # "${HOME}/Work"
     # "${HOME}/Clients"
     # "${HOME}/OldProjects"
+    /Users/sergio/dev
+    /Users/sergio/xubuntu_dev
+    # /Users/sergio
+    /Users/sergio/cam-truck
+    /Users/sergio/portainer_container_data
+    /Users/sergio/n8n-ai
+    /Users/sergio/migration_from_heroku
+    /Users/sergio/lionel_deliveries
+    /Users/sergio/hognekaba
+    /Users/sergio/hmarket
+    /Users/sergio/dev_d_personal_from_windows
+    /Users/sergio/dev_completed
+    
 
     # Uncomment and add your directories below:
     # "${HOME}/path/to/your/repos"
@@ -28,6 +41,7 @@ CUSTOM_OFFICE_SEARCH_DIRS=(
 
     # Uncomment and add your directories below:
     # "${HOME}/path/to/your/documents"
+    "${HOME}/MyDocuments_documents"
 )
 
 # FTP Configuration (for remote backup)

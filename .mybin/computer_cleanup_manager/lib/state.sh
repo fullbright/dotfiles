@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/local/bin/bash
 #
 # lib/state.sh - State management for resumable operations
 #
@@ -251,6 +251,13 @@ generate_summary_report() {
         declare -A category_counts
         for folder in "${!FOLDER_CATEGORIES[@]}"; do
             local category="${FOLDER_CATEGORIES[$folder]}"
+            if [[ -v category_counts["$category"] ]]; then
+                echo "Key '$category' exists"
+            else
+                echo "Key '$category' does not exist"
+                category_counts[$category]=0
+            fi
+            # category_counts[$category]=$((category_counts[$category]+1))
             ((category_counts[$category]++))
         done
         

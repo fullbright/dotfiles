@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/local/bin/bash
 #
 # version_dotfiles.sh - Version home directory folders in dotfiles repository
 # Manages symlinks and tracks important configuration directories
