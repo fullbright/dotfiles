@@ -1,0 +1,115 @@
+sudo apt-get update -y && sudo apt-get dist-upgrade -y
+sudo apt install xfce4 xfce4-goodies novnc python3-websockify python3-numpy tightvncserver htop nano neofetch -y
+
+mv ~/.vnc/xstartup ~/.vnc/xstartup.bak
+nano ~/.vnc/xstartup
+
+``` 
+#!/bin/bash
+xrdb $HOME/.Xresources
+startxfce4 &
+```
+
+sudo chmod + ~/.vnc/xstartup
+
+touch $HOME/.Xresources
+
+
+
+
+    1  openssl req -x509 -nodes -newkey rsa:3072 -keyout novnc.pem -out novnc.pem -days 3650
+    2  websockify -D --web=/usr/share/novnc/ --cert=/home/ubuntu/novnc.pem 6080 localhost:5901
+    3  ll /usr/share/ | grep vnc
+    5  websockify -D --web=/usr/share/novnc/ --cert=/home/ubuntu/novnc.pem 6080 localhost:5901
+    6  vncserver 
+    7  history >> desktop_install_commands.txt
+
+
+
+Hello guys, today i will show you the way to get desktop (xfce4)
+If you seen this helpful, you can subscribe!
+
+--------------------------------------------------------------
+Script install Desktop and VNC to Github Codespaces! (xfce4) -
+sudo apt update
+sudo apt install xfce4 xfce4-goodies novnc python3-websockify python3-numpy tightvncserver htop nano neofetch -y
+openssl req -x509 -nodes -newkey rsa:3072 -keyout novnc.pem -out novnc.pem -days 3650
+USER=root vncserver
+vncserver -kill :1
+mv ~/.vnc/xstartup ~/.vnc/xstartup.bak
+nano ~/.vnc/xstartup
+USER=root vncserver
+websockify -D --web=/usr/share/novnc/ --cert=/home/ubuntu/novnc.pem 6080 localhost:5901
+
+_________________________________________
+
+
+
+Additional guidance
+
+Make sure you have chown all the files in the .vnc folder
+sudo chown -R codespace:codespace /home/codespace/.vnc/
+
+Start a vncserver on screen 3 and start websokify on the same screen and adapt the port numbers
+USER=root vncserver :3
+
+websockify -D --web=/usr/share/novnc/ --cert=/home/ubuntu/novnc.pem 6083 localhost:5903
+
+An alternative I read
+Try with cinnamon desktop
+
+
+  1  sudo bash install_gui_env.sh 
+    2  bash install_android_studio.sh 
+    3  bash start_ubuntu_desktop.sh 
+    4  /home/codespace/.vnc/xstartup
+    5  ps -ef
+    6  kill -9 26582
+    7  ps -ef
+    8  cat /home/codespace/.vnc/xstartup
+    9  USER=root /home/codespace/.vnc/xstartup
+   10  ps -ef
+   11  websockify -D --web=/usr/share/novnc/ --cert=/home/ubuntu/novnc.pem 6080 localhost:5901
+   12  vncserver
+   13  sudo vncserver
+   14  ps -ef
+   15  kill -9 31096
+   16  kill -9 31174
+   17  ps -ef
+   18  startxfce4 &
+   19  sudo startxfce4 &
+   20  vncserver -kill :1
+   21  sudo chmod +x /home/codespace/.vnc/xstartup
+   22  USER=codespace vncserver :1
+   23  cat /home/codespace/.vnc
+   24  ll /home/codespace/.vnc
+   25  USER=root vncserver :1
+   26  vncserver :1
+   27  chown -R codespace:codespace 
+   28  chown -R codespace:codespace .
+   29  chown -R codespace:codespace /home/codespace/.vnc/
+
+Make sure you have chown all the files in the .vnc folder
+
+   30  sudo chown -R codespace:codespace /home/codespace/.vnc/
+   31  ll /home/codespace/.vnc
+   32  USER=codespace vncserver :1
+   33  USER=codespace vncserver :2
+   34  cat /home/codespace/.vnc/codespaces-03b4b0:2.log
+
+Start a vncserver on screen 3 and start websokify on the same screen and adapt the port numbers
+
+   35  USER=root vncserver :3
+   36  USER=root vncserver :1
+   37  ps -aux
+   38  websockify -D --web=/usr/share/novnc/ --cert=/home/ubuntu/novnc.pem 6083 localhost:5903
+   39  history
+
+
+
+
+
+
+#!/bin/bash
+xrdb $HOME/.Xresources
+startxfce4 &
