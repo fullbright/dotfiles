@@ -34,5 +34,8 @@ dev/
 dev_d_personal_from_windows/
 
 
+# SSH keys
+id_rsa*
+*.pub
 
 
