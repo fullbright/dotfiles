@@ -1,0 +1,20 @@
+[2025-10-09 23:24:26] [DEBUG] Loading configuration from: /Users/sergio/.mybin/computer_cleanup_manager/.cleanup.config
+[2025-10-09 23:24:26] [OK]    Configuration loaded
+[2025-10-09 23:24:26] [INFO]  DRY RUN MODE ENABLED - No changes will be made
+[2025-10-09 23:24:27] [DEBUG] State initialized for: ../../dev_d_personal_from_windows
+[2025-10-09 23:24:27] [DEBUG] State file: /Users/sergio/.cleanup_state/state_e4fca35e1007e225538206ecf6b705e0.json
+[2025-10-09 23:24:27] [INFO]  Starting new cleanup session
+[2025-10-09 23:24:27] [DEBUG] Resetting state
+[2025-10-09 23:24:27] [INFO]  Found 22 folders to process
+[2025-10-09 23:24:27] [INFO]  [1/22] accelerated-text-fullbright
+[2025-10-09 23:24:27] [DEBUG] Analyzing folder: ../../dev_d_personal_from_windows/accelerated-text-fullbright
+[2025-10-09 23:24:27] [DEBUG] Categorized ../../dev_d_personal_from_windows/accelerated-text-fullbright as: my_repo_with_changes
+[2025-10-09 23:24:28] [INFO]  Repository Status:
+[2025-10-09 23:25:46] [INFO]  Generating/updating .gitignore
+[2025-10-09 23:25:46] [OK]    .gitignore updated
+[2025-10-09 23:25:46] [WARN]  Found 1 sensitive file(s):
+[2025-10-09 23:26:07] [INFO]  Skipping encryption
+[2025-10-09 23:26:07] [INFO]  [DRY RUN] Would create branch: migration-20251009-232426
+[2025-10-09 23:26:07] [INFO]  [DRY RUN] Would commit and push changes
+[2025-10-09 23:26:07] [ERROR] Script exited with error code: 1
+[2025-10-09 23:26:07] [DEBUG] Saving checkpoint

@@ -1,0 +1,25 @@
+[2025-10-09 23:26:23] [DEBUG] Loading configuration from: /Users/sergio/.mybin/computer_cleanup_manager/.cleanup.config
+[2025-10-09 23:26:23] [OK]    Configuration loaded
+[2025-10-09 23:26:24] [DEBUG] State initialized for: ../../dev_d_personal_from_windows
+[2025-10-09 23:26:24] [DEBUG] State file: /Users/sergio/.cleanup_state/state_e4fca35e1007e225538206ecf6b705e0.json
+[2025-10-09 23:26:24] [INFO]  Starting new cleanup session
+[2025-10-09 23:26:24] [DEBUG] Resetting state
+[2025-10-09 23:26:24] [INFO]  Found 22 folders to process
+[2025-10-09 23:26:24] [INFO]  [1/22] accelerated-text-fullbright
+[2025-10-09 23:26:24] [DEBUG] Analyzing folder: ../../dev_d_personal_from_windows/accelerated-text-fullbright
+[2025-10-09 23:26:24] [DEBUG] Categorized ../../dev_d_personal_from_windows/accelerated-text-fullbright as: my_repo_with_changes
+[2025-10-09 23:26:24] [INFO]  Repository Status:
+[2025-10-09 23:26:27] [INFO]  Generating/updating .gitignore
+[2025-10-09 23:26:27] [OK]    .gitignore updated
+[2025-10-09 23:26:27] [WARN]  Found 1 sensitive file(s):
+[2025-10-09 23:26:31] [INFO]  Skipping encryption
+[2025-10-09 23:26:31] [INFO]  Creating branch: migration-20251009-232623
+[2025-10-09 23:26:31] [INFO]  Adding files to git
+[2025-10-09 23:26:32] [INFO]  Committing changes
+[2025-10-09 23:26:33] [INFO]  Pushing to origin
+[2025-10-09 23:26:57] [OK]    Successfully pushed to migration-20251009-232623
+[2025-10-09 23:26:57] [OK]    Changes pushed to branch: migration-20251009-232623
+[2025-10-09 23:26:57] [OK]    Moved to: /Users/sergio/dev_completed/accelerated-text-fullbright
+[2025-10-09 23:26:57] [DEBUG] Marked as completed: ../../dev_d_personal_from_windows/accelerated-text-fullbright
+[2025-10-09 23:26:57] [ERROR] Script exited with error code: 1
+[2025-10-09 23:26:57] [DEBUG] Saving checkpoint

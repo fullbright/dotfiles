@@ -1,0 +1,189 @@
+#!/bin/bash
+
+# Define constants for GPG passphrase and branch name format
+#GPG_PASSPHRASE="your_predefined_passphrase"
+[ ! -f .env ] || export $(sed 's/#.*//g' .env | xargs)
+
+BRANCH_PREFIX="migratingmacos-$(date +'%Y%m%d-%H%M%S')"
+
+# Array of common sensitive files to detect
+SENSITIVE_FILES=(".env" "config.json" "config.yaml" "secrets.yml" "keys.json")
+
+# Array to store previous owners/orgs
+PREVIOUS_OWNERS=()
+
+# Function to detect project type and generate .gitignore
+generate_gitignore() {
+    local folder=$1
+    echo "Detecting project type for '$folder' and generating .gitignore..."
+    if [ -f "$folder/package.json" ]; then
+        echo "node_modules/" > "$folder/.gitignore"
+        echo "Node.js project detected. Adding 'node_modules/' to .gitignore."
+    elif [ -f "$folder/requirements.txt" ]; then
+        echo "__pycache__/" > "$folder/.gitignore"
+        echo "Python project detected. Adding '__pycache__/' to .gitignore."
+    elif [ -f "$folder/composer.json" ]; then
+        echo "vendor/" > "$folder/.gitignore"
+        echo "PHP project detected. Adding 'vendor/' to .gitignore."
+    else
+        echo "# General .gitignore template" > "$folder/.gitignore"
+        echo "Project type undetermined. Adding a general .gitignore template."
+    fi
+}
+
+# Function to encrypt sensitive files
+encrypt_sensitive_files() {
+    local folder=$1
+    for file in "${SENSITIVE_FILES[@]}"; do
+        if [ -f "$folder/$file" ]; then
+            echo "Encrypting sensitive file '$file' in folder '$folder'..."
+            gpg --symmetric --batch --passphrase "$GPG_PASSPHRASE" "$folder/$file"
+            echo "$file" >> "$folder/.gitignore"  # Add unencrypted file to .gitignore
+            echo "Added '$file' to .gitignore to exclude unencrypted version."
+        fi
+    done
+}
+
+# Function to check if a folder is a Git repository
+is_git_repo() {
+    local folder=$1
+    [ -d "$folder/.git" ]
+}
+
+# Function to prompt for GitHub owner/org from a list of previous values
+choose_owner() {
+    echo "Selecting GitHub owner/org for this repository..."
+    if [ ${#PREVIOUS_OWNERS[@]} -gt 0 ]; then
+        echo "Choose from the previous owners/orgs below:"
+        for i in "${!PREVIOUS_OWNERS[@]}"; do
+            echo "$((i+1))) ${PREVIOUS_OWNERS[i]}"
+        done
+        echo "$(( ${#PREVIOUS_OWNERS[@]} + 1 ))) Enter a new owner/org"
+    else
+        echo "No previous owners/orgs available. Please enter a new owner/org."
+    fi
+
+    read -r selection
+    if [[ "$selection" =~ ^[0-9]+$ ]] && (( selection > 0 && selection <= ${#PREVIOUS_OWNERS[@]} )); then
+        owner=${PREVIOUS_OWNERS[$((selection - 1))]}
+        echo "Selected existing owner/org: $owner"
+    else
+        echo "Enter the GitHub owner/org name:"
+        read -r owner
+        if [[ ! " ${PREVIOUS_OWNERS[@]} " =~ " $owner " ]]; then
+            PREVIOUS_OWNERS+=("$owner")
+            echo "Added '$owner' to the list of previous owners/orgs."
+        fi
+    fi
+    echo "$owner"
+}
+
+# Function to create a GitHub repository and link it
+create_github_repo() {
+    local repo_name=$1
+    local owner=$2
+    echo "Creating new GitHub repository '$owner/$repo_name'..."
+    gh repo create "$owner/$repo_name" --public --source="$folder" --remote=origin --confirm
+    echo "Repository '$owner/$repo_name' created and linked."
+}
+
+# Function to open file explorer for user navigation
+explore_folder() {
+    local folder=$1
+    echo "Opening file explorer for '$folder'. Please review the contents..."
+    if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+        xdg-open "$folder"
+    elif [[ "$OSTYPE" == "darwin"* ]]; then
+        open "$folder"
+    elif [[ "$OSTYPE" == "win32" ]]; then
+        explorer "$folder"
+    fi
+}
+
+# Main workflow function for processing each folder
+process_folder() {
+    local folder=$1
+    local repo_name=$(basename "$folder")
+
+    echo "Processing folder '$folder'..."
+
+    # Step 1: Check if folder is a Git repository
+    if is_git_repo "$folder"; then
+        echo "Folder '$folder' is already a Git repository."
+
+        # Prompt user for owner/org selection
+        local owner
+        owner=$(choose_owner)
+        local full_repo_name="$owner/$repo_name"
+
+        # Check if it belongs to the user, or fork if not
+        if gh repo view "$full_repo_name" &>/dev/null; then
+            echo "Repository '$full_repo_name' exists in your GitHub account. Creating new branch '$BRANCH_PREFIX'..."
+            git -C "$folder" checkout -b "$BRANCH_PREFIX"
+        else
+            echo "Repository '$full_repo_name' does not belong to you. Forking repository..."
+            gh repo fork "$full_repo_name" --clone=false
+            git -C "$folder" remote add fork "https://github.com/$owner/$repo_name"
+            git -C "$folder" checkout -b "$BRANCH_PREFIX"
+        fi
+    else
+        echo "Folder '$folder' is not a Git repository. Do you want to keep this code? (y/n)"
+        read -r keep
+        if [ "$keep" != "y" ]; then
+            echo "Skipping folder '$folder'."
+            return
+        fi
+
+        # Open file explorer to navigate contents
+        explore_folder "$folder"
+
+        # Check for similar repositories in user account
+        echo "Checking for similar repositories in your account..."
+        local owner
+        owner=$(choose_owner)
+        local full_repo_name="$owner/$repo_name"
+        
+        gh repo list "$owner" --limit 100 | grep -i "$repo_name"
+        if [ $? -eq 0 ]; then
+            echo "A similar repository named '$repo_name' was found. Link to this repository? (y/n)"
+            read -r link_existing
+            if [ "$link_existing" == "y" ]; then
+                echo "Cloning existing repository '$full_repo_name' to '$folder'..."
+                gh repo clone "$full_repo_name" "$folder"
+            else
+                create_github_repo "$repo_name" "$owner"
+            fi
+        else
+            create_github_repo "$repo_name" "$owner"
+        fi
+    fi
+
+    # Step 2: Generate .gitignore and encrypt sensitive files
+    generate_gitignore "$folder"
+    encrypt_sensitive_files "$folder"
+
+    # Step 3: Commit and push changes
+    echo "Committing changes in '$folder' and pushing to branch '$BRANCH_PREFIX'..."
+    cd "$folder" || exit
+    git add .
+    git commit -m "Automated migration commit"
+    git push origin "$BRANCH_PREFIX"
+    echo "Changes pushed to branch '$BRANCH_PREFIX' in '$full_repo_name'."
+
+    # Step 4: Clean up local folder after successful push
+    cd ..
+    #rm -rf "$folder"
+    echo "Deleted local folder '$folder' after successful migration."
+}
+
+# Loop over each folder in the target directory
+TARGET_DIR="$1"
+echo "Starting migration for all folders in '$TARGET_DIR'..."
+for folder in "$TARGET_DIR"/*; do
+    if [ -d "$folder" ]; then
+        process_folder "$folder"
+    else
+        echo "Skipping '$folder' as it is not a directory."
+    fi
+done
+echo "Migration process completed."

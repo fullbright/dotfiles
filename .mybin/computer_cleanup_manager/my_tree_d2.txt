@@ -1,0 +1,1593 @@
+.
+├── .CFUserTextEncoding
+├── .DS_Store
+├── .EasyOCR
+│   ├── model
+│   └── user_network
+├── .Genymobile
+│   ├── Genymotion
+│   ├── genymotion.log
+│   └── stats.db
+├── .ScreamingFrogSEOSpider
+│   ├── ProjectInstanceData
+│   ├── chrome
+│   ├── crash.txt
+│   ├── history.log
+│   ├── javafx
+│   ├── log4j2.xml
+│   ├── machine-id.txt
+│   ├── pid_info
+│   ├── prefs
+│   ├── renderinit.lck
+│   ├── running.lck
+│   ├── safety.lck
+│   ├── spellCheckIgnoreWords.txt
+│   ├── spider.config
+│   └── trace.txt
+├── .Trash  [error opening dir]
+├── .actrc
+├── .android
+│   ├── adbkey
+│   ├── adbkey.pub
+│   ├── analytics.settings
+│   ├── avd
+│   ├── breakpad
+│   ├── build-cache
+│   ├── build-cache.lock
+│   ├── cache
+│   ├── debug.keystore
+│   ├── debug.keystore.lock
+│   ├── emu-last-feature-flags.protobuf
+│   ├── emu-update-last-check.ini
+│   ├── maps.key
+│   ├── modem-nv-ram-5554
+│   └── modem-nv-ram-5556
+├── .angular-config.json
+├── .ansible
+│   ├── collections
+│   ├── cp
+│   ├── galaxy_token
+│   ├── roles
+│   └── tmp
+├── .anydesk
+│   ├── .anydesk.trace
+│   ├── AnyDesk
+│   ├── anydesk.trace
+│   ├── chat
+│   ├── connection_trace.txt
+│   ├── incoming
+│   ├── service.conf
+│   ├── system.conf
+│   ├── thumbnails
+│   └── user.conf
+├── .app-store
+│   ├── auth
+│   └── itunes_service_key.txt
+├── .appinventor
+│   └── emulator
+├── .aws
+│   └── credentials
+├── .babel.json
+├── .bash_history
+├── .boto
+├── .bundle
+│   └── cache
+├── .cache
+│   ├── act
+│   ├── babl
+│   ├── ctrlp
+│   ├── gdown
+│   ├── gegl-0.4
+│   ├── tooling
+│   └── youtube-dl
+├── .clasprc.json
+├── .cockroachsql_history
+├── .cocoapods
+│   └── repos
+├── .composer
+│   ├── .htaccess
+│   └── cache
+├── .config
+│   ├── MusicBrainz
+│   ├── configstore
+│   ├── filezilla
+│   ├── flutter
+│   ├── gcloud
+│   ├── gh
+│   ├── gtk-2.0
+│   ├── lftp
+│   ├── rclone
+│   ├── stripe
+│   ├── wireshark
+│   └── yarn
+├── .credentials
+│   └── drivesync.yaml
+├── .cups
+│   └── lpoptions
+├── .dart
+│   └── analytics.json
+├── .dartServer
+│   ├── .analysis-driver
+│   └── .instrumentation
+├── .devcontainer
+│   ├── Dockerfile
+│   ├── devcontainer.json
+│   ├── devcontainer.json.bak
+│   ├── install.sh
+│   ├── install_android_studio.sh
+│   └── start_ubuntu_desktop.sh
+├── .docker
+│   ├── .buildNodeID
+│   ├── .token_seed
+│   ├── .token_seed.lock
+│   ├── application-template
+│   ├── bin
+│   ├── buildx
+│   ├── canary.json
+│   ├── cli-plugins
+│   ├── config.json
+│   ├── contexts
+│   ├── daemon.json
+│   ├── desktop-build
+│   ├── devenvironments
+│   ├── features.json
+│   ├── mutagen
+│   ├── run
+│   ├── sbom
+│   ├── scan
+│   └── scout
+├── .dotfiles_bare
+│   ├── COMMIT_EDITMSG
+│   ├── FETCH_HEAD
+│   ├── HEAD
+│   ├── ORIG_HEAD
+│   ├── config
+│   ├── description
+│   ├── hooks
+│   ├── index
+│   ├── info
+│   ├── logs
+│   ├── objects
+│   ├── packed-refs
+│   └── refs
+├── .drivesync
+│   └── config.yml
+├── .drush
+│   ├── drupalvm.aliases.drushrc.php
+│   ├── drush.yml
+│   └── sites
+├── .emulator_console_auth_token
+├── .env
+├── .env.migrated_from_mac
+├── .eslintrc.js
+├── .expo
+│   ├── PATH
+│   ├── android-apk-cache
+│   ├── cache
+│   ├── codesigning
+│   ├── expo-go
+│   ├── ios-simulator-app-cache
+│   ├── native-modules-cache
+│   ├── ngrok.yml
+│   ├── schema-cache
+│   ├── state.json
+│   ├── template-cache
+│   └── versions-cache
+├── .flutter
+├── .flutter_tool_state
+├── .fly
+│   ├── agent-logs
+│   ├── config.yml
+│   └── state.yml
+├── .freerdp
+│   ├── certs
+│   └── server
+├── .gem
+│   ├── ruby
+│   └── specs
+├── .gitconfig
+├── .github
+│   └── dependabot.yml
+├── .gitignore
+├── .gnupg
+│   ├── S.gpg-agent
+│   ├── S.gpg-agent.browser
+│   ├── S.gpg-agent.extra
+│   ├── S.gpg-agent.ssh
+│   ├── common.conf
+│   ├── private-keys-v1.d
+│   └── random_seed
+├── .gradle
+│   ├── .tmp
+│   ├── build-scan-data
+│   ├── caches
+│   ├── daemon
+│   ├── jdks
+│   ├── kotlin-profile
+│   ├── native
+│   ├── notifications
+│   ├── workers
+│   └── wrapper
+├── .keras
+│   └── keras.json
+├── .lesshst
+├── .local
+│   └── share
+├── .matplotlib
+│   ├── fontlist-v330.json
+│   └── fontlist-v390.json
+├── .mybin
+│   ├── cleanup
+│   ├── configure_dotfiles.sh
+│   └── testme.sh
+├── .mysql_history
+├── .n8n
+│   ├── config
+│   └── database.sqlite
+├── .netrc
+├── .ngrok2
+│   └── ngrok.yml
+├── .node-gyp
+│   ├── 10.16.0
+│   └── 14.5.0
+├── .node_repl_history
+├── .npm
+│   ├── _cacache
+│   ├── _locks
+│   ├── _logs
+│   ├── _npx
+│   ├── _update-notifier-last-checked
+│   ├── anonymous-cli-metrics.json
+│   ├── node-sass
+│   └── sentry-cli
+├── .oh-my-zsh
+│   ├── .devcontainer
+│   ├── .editorconfig
+│   ├── .git
+│   ├── .github
+│   ├── .gitignore
+│   ├── .gitpod.Dockerfile
+│   ├── .gitpod.yml
+│   ├── .prettierrc
+│   ├── CODE_OF_CONDUCT.md
+│   ├── CONTRIBUTING.md
+│   ├── LICENSE.txt
+│   ├── README.md
+│   ├── SECURITY.md
+│   ├── cache
+│   ├── custom
+│   ├── lib
+│   ├── log
+│   ├── oh-my-zsh.sh
+│   ├── plugins
+│   ├── templates
+│   ├── themes
+│   └── tools
+├── .oh-my-zsh-custom
+│   ├── example.zsh
+│   ├── mycustom_aliases.zsh
+│   ├── plugins
+│   └── themes
+├── .openjfx
+│   └── cache
+├── .oracle_jre_usage
+│   └── 613bcfb3a06ef613.timestamp
+├── .postgresql
+│   └── root.crt
+├── .prettierrc.js
+├── .psql_history
+├── .pub-cache
+│   ├── _temp
+│   └── hosted
+├── .pyenv
+│   ├── shims
+│   └── versions
+├── .pylint.d
+│   ├── Bot31.stats
+│   ├── Permit1.stats
+│   ├── __init__1.stats
+│   ├── app1.stats
+│   ├── automation_utils1.stats
+│   ├── autoposter.admin1.stats
+│   ├── autoposter.migrations.0001_initial1.stats
+│   ├── autoposter.models1.stats
+│   ├── autoposter.tasks1.stats
+│   ├── autoposter.views1.stats
+│   ├── blog.__init__1.stats
+│   ├── blog.admin1.stats
+│   ├── blog.apps1.stats
+│   ├── blog.models1.stats
+│   ├── blog.urls1.stats
+│   ├── blog.views1.stats
+│   ├── bot.__init__1.stats
+│   ├── bot.admin1.stats
+│   ├── bot.apps1.stats
+│   ├── bot.brain1.stats
+│   ├── bot.email_utils1.stats
+│   ├── bot.fsm_telebot.__init__1.stats
+│   ├── bot.fsm_telebot.storage.__init__1.stats
+│   ├── bot.fsm_telebot.storage.memory1.stats
+│   ├── bot.fsm_telebot.storage.redis1.stats
+│   ├── bot.handlers.__init__1.stats
+│   ├── bot.handlers.callbacks1.stats
+│   ├── bot.handlers.commands1.stats
+│   ├── bot.handlers.messages1.stats
+│   ├── bot.keyboards.__init__1.stats
+│   ├── bot.keyboards.inline1.stats
+│   ├── bot.keyboards.reply1.stats
+│   ├── bot.migrations.0011_product_product_type1.stats
+│   ├── bot.models1.stats
+│   ├── bot.payment_bitcoin copy1.stats
+│   ├── bot.payment_bitcoin1.stats
+│   ├── bot.payment_blockonomics1.stats
+│   ├── bot.payment_cointopay1.stats
+│   ├── bot.payment_currencyconverter1.stats
+│   ├── bot.payment_myntoio1.stats
+│   ├── bot.payment_mytio1.stats
+│   ├── bot.strings1.stats
+│   ├── bot.tests1.stats
+│   ├── bot.theme1.stats
+│   ├── bot.urls1.stats
+│   ├── bot.utils.__init__1.stats
+│   ├── bot.utils.states1.stats
+│   ├── bot.utils1.stats
+│   ├── bot.views1.stats
+│   ├── bot1.stats
+│   ├── bot_helper_functions1.stats
+│   ├── bot_project.asgi1.stats
+│   ├── bot_project.urls1.stats
+│   ├── bs_drip.settings1.stats
+│   ├── cars_website.settings1.stats
+│   ├── cars_website.urls1.stats
+│   ├── config1.stats
+│   ├── createpost1.stats
+│   ├── datetime1.stats
+│   ├── demo.__init__1.stats
+│   ├── demo.azure1.stats
+│   ├── demo.settings1.stats
+│   ├── demo.urls1.stats
+│   ├── demo.wsgi1.stats
+│   ├── dialogflow1.stats
+│   ├── dialogflow_integration1.stats
+│   ├── django_project.settings1.stats
+│   ├── django_project.urls1.stats
+│   ├── django_project.wsgi1.stats
+│   ├── echoserver1.stats
+│   ├── finalPrototype1.stats
+│   ├── fleastore_bot.__init__1.stats
+│   ├── fleastore_bot.asgi1.stats
+│   ├── fleastore_bot.urls1.stats
+│   ├── fleastore_bot.wsgi1.stats
+│   ├── generate_products1.stats
+│   ├── generate_unconditional_samples1.stats
+│   ├── interactive_conditional_samples1.stats
+│   ├── leadmanager.settings1.stats
+│   ├── linebot.__init__1.stats
+│   ├── linebot.serializers1.stats
+│   ├── linebot.urls1.stats
+│   ├── linebot.views1.stats
+│   ├── linegamebot.__init__1.stats
+│   ├── linegamebot.admin1.stats
+│   ├── linegamebot.apps1.stats
+│   ├── linegamebot.exceptions1.stats
+│   ├── linegamebot.forms1.stats
+│   ├── linegamebot.linegamebot_controller1.stats
+│   ├── linegamebot.linegamebot_interactions1.stats
+│   ├── linegamebot.migrations-bkp.0005_linegamebotplayergroup_player_creditbalance1.stats
+│   ├── linegamebot.migrations.0005_linegamebotplayergroup_player_creditbalance1.stats
+│   ├── linegamebot.migrations.0006_linegamebotplayergroup_player_role1.stats
+│   ├── linegamebot.migrations.0021_auto_20200515_11111.stats
+│   ├── linegamebot.models1.stats
+│   ├── linegamebot.serializers1.stats
+│   ├── linegamebot.test_data1.stats
+│   ├── linegamebot.tests1.stats
+│   ├── linegamebot.urls1.stats
+│   ├── linegamebot.views1.stats
+│   ├── logging.__init__1.stats
+│   ├── main1.stats
+│   ├── manage1.stats
+│   ├── math1.stats
+│   ├── media_processor1.stats
+│   ├── merge_all_commands1.stats
+│   ├── model1.stats
+│   ├── models1.stats
+│   ├── notification1.stats
+│   ├── notification_bot1.stats
+│   ├── os1.stats
+│   ├── plates.admin1.stats
+│   ├── plates.apps1.stats
+│   ├── plates.models1.stats
+│   ├── plates.serializers1.stats
+│   ├── plates.urls1.stats
+│   ├── plates.views1.stats
+│   ├── posixpath1.stats
+│   ├── power_automator1.stats
+│   ├── pull_data_from_vinted1.stats
+│   ├── query1.stats
+│   ├── requirements.txt1.stats
+│   ├── sample1.stats
+│   ├── second_dialogflow1.stats
+│   ├── settings.__init__1.stats
+│   ├── settings.base1.stats
+│   ├── settings.development1.stats
+│   ├── settings.production1.stats
+│   ├── settings.utils1.stats
+│   ├── setup1.stats
+│   ├── time1.stats
+│   ├── users.admin1.stats
+│   ├── users.apps1.stats
+│   ├── users.forms1.stats
+│   ├── users.models1.stats
+│   ├── users.tests1.stats
+│   ├── users.views1.stats
+│   ├── vinted_crawler.__init__1.stats
+│   ├── vinted_crawler.items1.stats
+│   ├── vinted_crawler.middlewares1.stats
+│   ├── vinted_crawler.pipelines1.stats
+│   ├── vinted_crawler.settings1.stats
+│   ├── vinted_module.__init__1.stats
+│   ├── vinted_module.pull_data_from_vinted1.stats
+│   ├── vinted_module.update_vinted_description1.stats
+│   ├── vocabulary_bot1.stats
+│   ├── watermark1.stats
+│   ├── webwhatsapi.__init__1.stats
+│   ├── webwhatsapi.async_driver1.stats
+│   ├── webwhatsapi.consts1.stats
+│   └── webwhatsapi.wapi_js_wrapper1.stats
+├── .python_history
+├── .railway
+│   └── config.json
+├── .rbenv
+│   ├── shims
+│   ├── version
+│   └── versions
+├── .react-native-cli
+│   └── cache
+├── .rndebuggerrc
+├── .sqlite_history
+├── .ssh
+│   ├── id_rsa
+│   ├── id_rsa.pub
+│   ├── known_hosts
+│   ├── known_hosts-e
+│   └── known_hosts.old
+├── .subversion
+│   ├── README.txt
+│   ├── auth
+│   ├── config
+│   └── servers
+├── .swiftpm
+│   ├── cache -> /Users/sergio/Library/Caches/org.swift.swiftpm
+│   ├── configuration -> /Users/sergio/Library/org.swift.swiftpm/configuration
+│   └── security -> /Users/sergio/Library/org.swift.swiftpm/security
+├── .tmux-themepack
+│   ├── .git
+│   ├── .github
+│   ├── Makefile
+│   ├── README.md
+│   ├── basic.tmuxtheme
+│   ├── bin
+│   ├── default.tmuxtheme
+│   ├── powerline
+│   ├── src
+│   ├── test
+│   └── themepack.tmux
+├── .v8flags.6.8.275.32-node.52.3bffa4ebdf4874e506c2b12405796aa5.json
+├── .v8flags.7.9.317.25-node.23.3bffa4ebdf4874e506c2b12405796aa5.json
+├── .v8flags.8.3.110.9-node.23.3bffa4ebdf4874e506c2b12405796aa5.json
+├── .vagrant.d
+│   ├── boxes
+│   ├── bundler
+│   ├── data
+│   ├── gems
+│   ├── insecure_private_key
+│   ├── plugins.json
+│   ├── rgloader
+│   ├── setup_version
+│   └── tmp
+├── .vim_mru_files
+├── .vim_runtime
+│   ├── .git
+│   ├── .gitignore
+│   ├── LICENSE
+│   ├── README.md
+│   ├── autoload
+│   ├── install_awesome_parameterized.sh
+│   ├── install_awesome_vimrc.sh
+│   ├── install_basic_vimrc.sh
+│   ├── my_plugins
+│   ├── sources_forked
+│   ├── sources_non_forked
+│   ├── temp_dirs
+│   ├── update_plugins.py
+│   └── vimrcs
+├── .viminfo
+├── .vimrc
+├── .vscode
+│   ├── argv.json
+│   ├── cli
+│   └── extensions
+├── .wget-hsts
+├── .yarnrc
+├── .zcompdump-MacBook Pro de Sergio-5.7.1
+├── .zcompdump-MacBook Pro de Sergio-5.8
+├── .zcompdump-MacBook Pro de Sergio-5.8.1
+├── .zcompdump-MacBook Pro de Sergio-5.8.1.zwc
+├── .zsh_history
+├── .zsh_sessions
+│   ├── 04C92B41-95AE-4A30-B77C-B88EBF5D6B77.session
+│   ├── 0F1CCFF2-319D-42B3-8665-82F8FD215AB8.session
+│   ├── 1AAD5918-F7D0-47AA-92A7-5073423864D5.session
+│   ├── 2472BC74-6CCC-4F95-8E42-4EAD3A3DC27A.session
+│   ├── 3F285188-FD1D-4A99-A23D-134D552E64ED.session
+│   ├── 560478B7-5773-4F0F-A109-D72E96299C14.session
+│   ├── 5AF52062-9A86-4698-976D-4C7ABD7AE0F1.session
+│   ├── B67B3C88-C810-45B0-B9BC-1A0D0DDDEB54.session
+│   ├── BBD089E4-FEA3-4533-AFD0-8730F8E34A77.session
+│   ├── EF7D4C6F-6525-4253-AA6D-2999C589DA4B.session
+│   └── _expiration_check_timestamp
+├── .zshenv
+├── .zshrc
+├── .zshrc.backup
+├── Applications
+│   ├── .DS_Store
+│   ├── .localized
+│   └── Chrome Apps.localized
+├── Desktop  [error opening dir]
+├── Documents
+│   ├── .DS_Store
+│   ├── .localized
+│   ├── Blackmagic Design
+│   └── Zoom
+├── Downloads
+│   ├── (PROV1) (1).pdf
+│   ├── (PROV1) (2).pdf
+│   ├── (PROV1) (3).pdf
+│   ├── (PROV1).pdf
+│   ├── (PROV2).pdf
+│   ├── .DS_Store
+│   ├── .localized
+│   ├── .~lock.keyword_blogpost_candidates_df_sorted.txt#
+│   ├── .~lock.keyword_suggestion_10.csv#
+│   ├── 10457773-749c-d056-8050-5fd893e04622
+│   ├── 10457773-749c-d056-8050-5fd893e04622.zip
+│   ├── 1200x600wa.png
+│   ├── 1280x720 (1).mp4
+│   ├── 1280x720 (10).mp4
+│   ├── 1280x720 (11).mp4
+│   ├── 1280x720 (2).mp4
+│   ├── 1280x720 (3).mp4
+│   ├── 1280x720 (4).mp4
+│   ├── 1280x720 (5).mp4
+│   ├── 1280x720 (6).mp4
+│   ├── 1280x720 (7).mp4
+│   ├── 1280x720 (8).mp4
+│   ├── 1280x720 (9).mp4
+│   ├── 1280x720.mp4
+│   ├── 159118537563857334.pdf
+│   ├── 159169469745057194.pdf
+│   ├── 16342436975874875177720580892872.jpeg
+│   ├── 1a69a4581d745euntitled_design_1_4f188fa44964.zip
+│   ├── 2020 Contrat de maintenance Advocates France.pdf
+│   ├── 2020-07-20 17_01_17-Window.png
+│   ├── 20211109_220444.p0001.tiff.jpg
+│   ├── 2022721769_IN_Range_0
+│   ├── 25-01-2021-engagement-sur-l-honneur-moins-de-11-ans-espace-europeen.pdf
+│   ├── 25-01-2021-engagement-sur-l-honneur-plus-de-11-ans-espace-europeen.pdf
+│   ├── 2578281_charge_charging_electric_electricity_off_icon.png
+│   ├── 3.png
+│   ├── 30-10-2020-attestation-de-deplacement-derogatoire.pdf
+│   ├── 3217.jpg
+│   ├── 32675_power_switch_light_icon.png
+│   ├── 400154169778647.m3u
+│   ├── 50-001-341.pdf
+│   ├── 58283907-2021-10-21T09_34_45.613z.csv
+│   ├── 58283907-2021-10-21T09_41_09.csv
+│   ├── 60424_PSXX.jpeg
+│   ├── 608fb54dc707361ea01e01c1-registrationfiletexteditor-1622094043050-cfao.png
+│   ├── 608fb54dc707361ea01e01c1-registrationfiletexteditor-1622530244772-765x572-violet.png
+│   ├── 608fb54dc707361ea01e01c1-registrationfiletexteditor-1622530273538-layani-basseg-.png
+│   ├── 608fb54dc707361ea01e01c1-registrationfiletexteditor-1622530316252-haby-niakate-.png
+│   ├── 608fb54dc707361ea01e01c1-registrationfiletexteditor-1622530355330-valerie-gilles-alexia.png
+│   ├── 608fb54dc707361ea01e01c1-registrationfiletexteditor-1622530374193-olivier-enogo.png
+│   ├── 608fb54dc707361ea01e01c1-registrationfiletexteditor-1622530561829-africulture-logo160x160.jpeg
+│   ├── 608fb54dc707361ea01e01c1-registrationfiletexteditor-1622530642807-rfi160x160.jpeg
+│   ├── 67948846-woocommerce-amazon-affiliates-wordpress-plugin-license.txt
+│   ├── 71IXPcUrc1L._AC_SL1500_.jpg
+│   ├── 71L4tSWTtKL._AC_SX679_.jpg
+│   ├── 8219563_settings_preferences_options_dial_configuration_icon.png
+│   ├── AC1_01_108491609_600006589255.pdf
+│   ├── AI-on-the-edge-device-master
+│   ├── AI-on-the-edge-device-master.zip
+│   ├── Archive-e314.zip
+│   ├── AttestationDroits (2).pdf
+│   ├── À propos.json
+│   ├── Bible Study Kit (v1)
+│   ├── Bible Study Kit (v1).zip
+│   ├── BibleGateway-to-Obsidian
+│   ├── Blog-Template-Bootstrap-master.zip
+│   ├── Bonne_annee_seed.png
+│   ├── Bordereaux-affranchissement.pdf
+│   ├── Bright Softwares - Cabinet Jean Paul Mopo - Codes mots de passe.pdf
+│   ├── Brother-HL-2030-hl1250.ppd
+│   ├── CCOE Support process .drawio (1).pdf
+│   ├── CCOE Support process .drawio.pdf
+│   ├── COMMANDES3308_5862_15102021160953.pdf
+│   ├── CR_afanou_edem_scanner.pdf
+│   ├── Cabinet Mopo - Comptes et mots de passes.pdf
+│   ├── Cahier-des-charges-Application-mobile-PCC-2018.pdf
+│   ├── Certificate of acquisition - Share grant plan (1).pdf
+│   ├── Certificate of acquisition - Share grant plan (2).pdf
+│   ├── Certificate of acquisition - Share grant plan.pdf
+│   ├── Check-Docker-IP-Address.png
+│   ├── Courrier agence LCL - perte de chèque - Nov 2021.pdf
+│   ├── Custo.zip
+│   ├── Customer-2023-06-04.csv
+│   ├── Data Transformation in hindi.png
+│   ├── DevOps The Big Picture  Pluralsight (1).mp4
+│   ├── DevOps The Big Picture  Pluralsight.mp4
+│   ├── Devolutions.RemoteDesktopManager.Free.Mac.2020.1.8.0.dmg
+│   ├── Doc_1.19.0.1.zip
+│   ├── Draft EdifiXio - Essilor Application technical Contract.pdf
+│   ├── ER2012-0001.pdf
+│   ├── ESP-Flasher-macOS.app
+│   ├── ESP-Flasher_macOS.zip
+│   ├── Ec2Launch.log
+│   ├── Ecommerce-Template-Bootstrap-master.zip
+│   ├── Edifixio services monitoring probes updates on the TFS Frontend server.docx
+│   ├── Essilor-Monthly-Reboot-Architecture-v1.1.pdf
+│   ├── Eyecloud Cost reduction.png
+│   ├── FA2012-0001.pdf
+│   ├── FA2110-0014.pdf
+│   ├── FA2201-0015.pdf
+│   ├── FC118345.pdf
+│   ├── FFDispatcher.rar
+│   ├── FI2110-0010.pdf
+│   ├── FI2112-0011.pdf
+│   ├── FICHE EVALUATION A CHAUD Coop 2 2021-05.docx
+│   ├── FORMULAIRE DISPENSE ACOMPTE 2022.pdf
+│   ├── Fiche mensuelle Astreinte 1 - forfait jours.pdf
+│   ├── Figma.zip
+│   ├── Formulaire_de_retour (1).pdf
+│   ├── Formulaire_de_retour (2).pdf
+│   ├── Formulaire_de_retour.pdf
+│   ├── Front-end robot interface English-Chinese conversion.pdf
+│   ├── GUIDE PRATIQUE DES DONATIONS.pdf
+│   ├── GlobalReport_RedSon_20220714_054401.csv
+│   ├── Gmail - Advocates France_contrat de maintenance du site internet.pdf
+│   ├── GoGrocer Admin.csv
+│   ├── GoogleXMLfeedonModabyflora.f111280026.fr.fr.u1617660000000000.feeduploadreport.csv
+│   ├── Google_Play_apps_data_sample.xls
+│   ├── Grammarly.dmg
+│   ├── HOW DO FREE SHARES WORK(X+X).pdf
+│   ├── HOW DO FREE SHARES WORK.pdf
+│   ├── HOW DO PERFORMANCE SHARES WORK(X+X).pdf
+│   ├── HOW DO PERFORMANCE SHARES WORK.pdf
+│   ├── HPSupportSolutionsFramework-12.13.42.1.exe
+│   ├── HexapodWiring_01.jpg
+│   ├── IMG-20210609-WA0018.jpeg
+│   ├── IMG-20210609-WA0019.jpeg
+│   ├── IMG-20210804-WA0052.jpeg
+│   ├── IMG-20210914-WA0051.jpeg
+│   ├── IMG-20210914-WA0062.jpeg
+│   ├── IMG-20210914-WA0077.jpeg
+│   ├── IMG_0145_2.png
+│   ├── INT_PPR_SATURN_Stop_Monitoring.xlsx
+│   ├── IOT SF Selection Pk4.2-1-20200310T122558Z-001.zip
+│   ├── Impots 2021 - Sans titre 2.png
+│   ├── Impots 2021 - Sans titre 3.png
+│   ├── Impots 2021 Sans titre.png
+│   ├── Intervenant à revoir - ToImport (1).csv
+│   ├── Intervenant à revoir - ToImport (2).csv
+│   ├── Intervenant à revoir - ToImport (3).csv
+│   ├── Intervenant à revoir - ToImport.csv
+│   ├── Intervenant à revoir.xlsx - ToImport.csv
+│   ├── Invoice_EUINFR21_249781.pdf
+│   ├── KeePass2.23.zip
+│   ├── Keyword Forecasts 2022-05-22 at 15_24_40.csv
+│   ├── Keyword Stats 2022-05-22 at 15_29_40.csv
+│   ├── Keyword Stats 2022-05-22 at 17_50_46.csv
+│   ├── Keyword Stats 2022-05-22 at 23_31_49.csv
+│   ├── Keyword Stats 2022-05-31 at 21_46_41.csv
+│   ├── Keyword Stats 2022-05-31 at 21_51_11.csv
+│   ├── Keyword Stats 2022-05-31 at 21_53_03.csv
+│   ├── Keyword Stats 2022-06-30 at 20_47_21.csv
+│   ├── Keyword Stats 2022-06-30 at 21_08_28.csv
+│   ├── Keyword Stats 2022-06-30 at 21_14_49.csv
+│   ├── Keyword Stats 2022-06-30 at 21_24_23.csv
+│   ├── Keyword Stats 2022-06-30 at 21_26_57.csv
+│   ├── Keyword Stats 2022-07-15 at 18_39_31.csv
+│   ├── Keyword Stats 2022-07-15 at 18_48_44.csv
+│   ├── Keyword Stats 2022-07-15 at 18_51_32.csv
+│   ├── Keyword Stats 2022-07-15 at 18_55_15.csv
+│   ├── Keyword Stats 2022-07-15 at 19_04_37.csv
+│   ├── Keyword Stats 2022-07-15 at 19_09_03.csv
+│   ├── Keyword Stats 2022-07-15 at 19_14_17.csv
+│   ├── Keyword Stats 2022-07-15 at 19_22_48.csv
+│   ├── Keyword Stats 2022-07-15 at 19_27_58.csv
+│   ├── Keyword Stats 2022-07-15 at 19_38_37.csv
+│   ├── Keyword Stats 2022-07-15 at 19_41_24.csv
+│   ├── Keyword Stats 2022-07-15 at 19_41_48.csv
+│   ├── Keyword Stats 2022-07-18 at 23_31_56.csv
+│   ├── Keyword Stats 2022-08-06 at 20_27_11.csv
+│   ├── Keyword Stats 2022-08-06 at 20_36_50.csv
+│   ├── Khronos10.zip
+│   ├── LBT1072-59_BIBUS.pdf
+│   ├── LBT7900A.pdf
+│   ├── LBT8929.pdf
+│   ├── Logo-Carrefour-CI-Rectangle.png
+│   ├── Logo-Carrefour-Cameroun-Carre.png
+│   ├── Logo-Carrefour-Cameroun-Rectangle.png
+│   ├── Logo-Carrefour-SN-large-new.png
+│   ├── Logo-Carrefour-SN-large.png
+│   ├── MBF -  HAPPY NEW YEAR 1.zip
+│   ├── MFL63621078-French.pdf
+│   ├── MX-C55b_2104a_MacPS.dmg
+│   ├── Moda by Flora - Devis (FCFA) #1c75c410dbac.pdf
+│   ├── Moda by Flora - Maquillages et parfums - woocommerce-all-products.csv
+│   ├── Modèle-de-rapport-dintervention-informatique.docx
+│   ├── MyResume
+│   ├── MyResume.zip
+│   ├── N-boot.dmg
+│   ├── N-boot.img
+│   ├── N-recovery.dmg
+│   ├── N-recovery.img
+│   ├── N-system.dmg
+│   ├── N-system.img
+│   ├── NEWSLETTER 2021.pdf
+│   ├── NOT1183_2.pdf
+│   ├── NOTICE_1133-15.pdf
+│   ├── NOTLBT20589FR (1).pdf
+│   ├── NOTLBT20589FR.pdf
+│   ├── NOTLBT20679FR.pdf
+│   ├── NOT_LBT20590.pdf
+│   ├── Nety's Showroom_d7adb379-9495-405b-9258-1c75c410dbac.pdf.html
+│   ├── NordVPN_200x200_1linija_en.gif
+│   ├── Nordvpn_728x90v11.gif
+│   ├── Notion-Le-digital-pour-tous-2.png
+│   ├── Office2013-theme-1.1.oxt
+│   ├── P2URry.txt
+│   ├── PJ2012-0002.pdf
+│   ├── Partage_avec_cabinetmopo
+│   ├── Partenaires privés.rar
+│   ├── Pluralsight.mp4
+│   ├── Portfolio statement (1).pdf
+│   ├── Portfolio statement (2).pdf
+│   ├── Portfolio statement (3).pdf
+│   ├── Portfolio statement.pdf
+│   ├── Project1.pdf
+│   ├── Projet_Microcontroleur_2.pdf
+│   ├── Projets Juin 2023 avec Le Seigneur!.pdf
+│   ├── QUELLE FISCALITE POUR VOS ACTIONS AU NOMINATIF PUR (1).pdf
+│   ├── QUELLE FISCALITE POUR VOS ACTIONS AU NOMINATIF PUR.pdf
+│   ├── QUELLE FISCALITE POUR VOS ACTIONS GRATUITES.pdf
+│   ├── QUELLE FISCALITE POUR VOS DIVIDENDES DE SOURCE FRANCAISE (1).pdf
+│   ├── QUELLE FISCALITE POUR VOS DIVIDENDES DE SOURCE FRANCAISE.pdf
+│   ├── QUELLE FISCALITE POUR VOS STOCK-OPTIONS.pdf
+│   ├── RDS Build > Process for raising demands - April 2020.png
+│   ├── RECAP FAC MANQUANTES 2018-2019 AU 16-04-2021.pdf
+│   ├── RIB Sepopo Wonegou.pdf
+│   ├── Readme.pdf
+│   ├── Release
+│   ├── Run.log
+│   ├── SECURITIES ACCOUNT AGREEMENT.pdf
+│   ├── SalesAgility.postman_collection.json
+│   ├── Sans titre 10.png
+│   ├── Sans titre 2.png
+│   ├── Sans titre 21.png
+│   ├── Sans titre 3.png
+│   ├── Sans titre 31.png
+│   ├── Sans titre 4.png
+│   ├── Sans titre 41.png
+│   ├── Sans titre 5.png
+│   ├── Sans titre 51.png
+│   ├── Sans titre 6.png
+│   ├── Sans titre 61.png
+│   ├── Sans titre 7.png
+│   ├── Sans titre 71.png
+│   ├── Sans titre 8.png
+│   ├── Sans titre 9.png
+│   ├── Sans titre.png
+│   ├── Sans titre1.png
+│   ├── Saturn Tracking Migration - rest of data to migrate.jpg
+│   ├── Screenshot 2020-04-27 at 2.01.45 AM.png
+│   ├── Screenshot_2019-05-29_23-16-13.png
+│   ├── Screenshot_2019-05-29_23-16-49.png
+│   ├── Securities transaction notice (1).pdf
+│   ├── Securities transaction notice (2).pdf
+│   ├── Securities transaction notice (3).pdf
+│   ├── Securities transaction notice (4).pdf
+│   ├── Securities transaction notice (5).pdf
+│   ├── Securities transaction notice.pdf
+│   ├── Sepopo Edem Afanou - Primark - demande de congés parental - v3.pdf
+│   ├── Sergio's activities - Projects.csv
+│   ├── Sergio's activities - Tasks.csv
+│   ├── Sergio's activities.xlsx
+│   ├── SignetLogs20200529
+│   ├── SignetLogs20200529.zip
+│   ├── Simulateur-comparateur-statuts-juridiques-entreprise.xlsx
+│   ├── SodedeApropos-old.json
+│   ├── Splunk_f1_Data.zip
+│   ├── Standalone_instances_1672212443136.xlsx
+│   ├── Standalone_instances_1672212560676.csv
+│   ├── Statement of free shares (1).pdf
+│   ├── Statement of free shares (2).pdf
+│   ├── Statement of free shares (3).pdf
+│   ├── Statement of free shares (4).pdf
+│   ├── Statement of free shares (5).pdf
+│   ├── Statement of free shares.pdf
+│   ├── Stripe Tax Invoice LNCY8WYX-2021-11.pdf
+│   ├── Summary statement No. 2561 ter (1).pdf
+│   ├── Summary statement No. 2561 ter.pdf
+│   ├── SurfaceDefinitionImport_20220721_185508.csv
+│   ├── SurfaceDefinitionImport_20220721_185713.xlsx
+│   ├── SurfaceDefinitionImport_20220721_190459.xlsx
+│   ├── SyncdocsPortableInstaller.exe
+│   ├── TELEGRAM BOT.pdf
+│   ├── TV6201.pdf
+│   ├── TV6513 (1).pdf
+│   ├── TV6513.pdf
+│   ├── Textbroker - exercise  d'inscription.pdf
+│   ├── The Have a Word Rate Sheet Pack
+│   ├── Transaction notice.pdf
+│   ├── U0779A.pdf
+│   ├── UBold_v6.1.0
+│   ├── UBold_v6.1.0 2
+│   ├── USER GUIDE SHARINBOX.pdf
+│   ├── UTExport2 Documentation.doc
+│   ├── UniFi.pkg
+│   ├── Upload_21092021_102422.log
+│   ├── Upload_21092021_103108.log
+│   ├── UserdataExecution.log
+│   ├── Vesperr.zip
+│   ├── Viens et vois - Analyse page facebook - Nov 2021 .pdf
+│   ├── WEDOO Mail - IOT _ Haute disponibilité @ Tue, Oct 19, 2021 14_30 – 15_00 (GMT+02).pdf
+│   ├── WHY AND HOW CHOOSING YOUR PLACE OF RESIDENCE FOR TAX PURPOSES (1).pdf
+│   ├── WHY AND HOW CHOOSING YOUR PLACE OF RESIDENCE FOR TAX PURPOSES.pdf
+│   ├── Web-Development-Company-Bangalore.jpeg
+│   ├── WhatsApp Image 2021-10-14 at 11.54.57.jpeg
+│   ├── WhatsApp Image 2021-10-14 at 21.38.05.jpeg
+│   ├── [English (United States)] Docker Tutorial for Beginners [FULL COURSE in 3 Hours] [DownSub.com].txt
+│   ├── [English] How Can I Get More Sleep Without Taking Medication_ [DownSub.com].txt
+│   ├── [English] Top 5_ Best Drones in 2021 [DownSub.com] (1).txt
+│   ├── [English] Top 5_ Best Drones in 2021 [DownSub.com].txt
+│   ├── [French] Top 5_ Best Drones in 2021 [DownSub.com].txt
+│   ├── ads.txt
+│   ├── afanous_6-29-2021_14-51-26.pdf
+│   ├── afanous_6-29-2021_14-51-26_1.pdf
+│   ├── afanous_6-29-2021_14-56-32_2.pdf
+│   ├── afanous_6-29-2021_14-56-32_3.pdf
+│   ├── afanous_6-29-2021_14-56-32_4.pdf
+│   ├── afanous_6-29-2021_14-56-32_5.pdf
+│   ├── afanous_6-29-2021_14-56-32_6.pdf
+│   ├── afanous_6-29-2021_14-56-32_7.pdf
+│   ├── afanous_6-29-2021_14-56-32_8.pdf
+│   ├── afanous_6-29-2021_15-10-39_1.pdf
+│   ├── afanous_6-29-2021_15-23-47.pdf
+│   ├── ai_profile_picture.jpg
+│   ├── alessandro-erbetta-8oYPewvmhnY-unsplash.jpeg
+│   ├── anne-nygard-RaUUoAnVgcA-unsplash.jpeg
+│   ├── anydesk.dmg
+│   ├── appointmentscheduler-tdrhfh-9eff2c2669db.json
+│   ├── appointmentscheduler-tdrhfh-e87fa9db05cb.json
+│   ├── asteroid-image-bass.ext4
+│   ├── athirah-sarizal-Lha390knLco-unsplash.jpg
+│   ├── autoblog-bright-softwares.json
+│   ├── aws-cloud-computing.jpg
+│   ├── aws_drivers_upgrade
+│   ├── basic-auth.php
+│   ├── bb8.jpg
+│   ├── beb8df09_2023-06-15_30.csv
+│   ├── blog_images_pexels
+│   ├── blog_themes
+│   ├── boitumelo-phetla.jpeg
+│   ├── bon-de-livraison-1141.pdf
+│   ├── bootstrap
+│   ├── bootstrap-3.3.7-dist
+│   ├── bootstrap-3.3.7-dist.zip
+│   ├── bootstrap-5.0.0-beta1-dist.zip
+│   ├── bootstrap-5.1.0-examples.zip
+│   ├── bootstrap-5.1.0.zip
+│   ├── bordereau_echange.pdf
+│   ├── bright-softwares.com-Performance-on-Search-2022-07-02
+│   ├── bright-softwares.com-Performance-on-Search-2022-07-02.zip
+│   ├── brightsoftwares_pwa_7a6c3e16-2b84-4eda-8cce-1d77912f2ce9
+│   ├── brightsoftwares_pwa_7a6c3e16-2b84-4eda-8cce-1d77912f2ce9.zip
+│   ├── chatbot-4071274_1280.webp
+│   ├── chatbot-4071274_640.jpg
+│   ├── chem.eu.invoice (1).pdf
+│   ├── chem.eu.invoice (10).pdf
+│   ├── chem.eu.invoice (11).pdf
+│   ├── chem.eu.invoice (2).pdf
+│   ├── chem.eu.invoice (3).pdf
+│   ├── chem.eu.invoice (4).pdf
+│   ├── chem.eu.invoice (5).pdf
+│   ├── chem.eu.invoice (6).pdf
+│   ├── chem.eu.invoice (7).pdf
+│   ├── chem.eu.invoice (8).pdf
+│   ├── chem.eu.invoice (9).pdf
+│   ├── chem.eu.invoice.pdf
+│   ├── code_secret_client_377291837937-gebpds41msgp2d396pvv0243pqmc7i36.apps.googleusercontent.com.json
+│   ├── code_secret_client_377291837937-gg6fvta765aj2rhfm3mee47gd4n8kt7u.apps.googleusercontent.com.json
+│   ├── codecanyon-zktdLH72-chauffeur-booking-system-for-wordpress.zip
+│   ├── coinafrique2 (1).csv
+│   ├── coinafrique2.csv
+│   ├── colorbox
+│   ├── colorbox-master.zip
+│   ├── compare
+│   ├── compare.zip
+│   ├── composer.json
+│   ├── confiture fruits rouges.jpeg
+│   ├── convert video 16.drp
+│   ├── costs.csv
+│   ├── daniel-monteiro-rBP1LQ1M3I0-unsplash.jpeg
+│   ├── dashboard-4.init.js
+│   ├── database.sqlite
+│   ├── datatransformation.png
+│   ├── david-knox-0blbblsyf3o-unsplash.jpeg
+│   ├── default.jpg
+│   ├── defaultimage.jpg
+│   ├── documentation-technique-notice-bticino-pi-344082.pdf
+│   ├── dolibarr
+│   ├── dolibarr-15.0.3
+│   ├── dolibarr-15.0.3.zip
+│   ├── downloadResource.htm.pdf
+│   ├── eco-energy-logo-design-vector-24416126.jpeg
+│   ├── edit
+│   ├── element5-digital-OyCl7Y4y0Bk-unsplash.jpeg
+│   ├── empty.html
+│   ├── erreur connection.jpg
+│   ├── erreur connection.jpg.png
+│   ├── exploding-topics (1).csv
+│   ├── exploding-topics-eco.csv
+│   ├── exploding-topics-eco2.csv
+│   ├── exploding-topics-food.csv
+│   ├── exploding-topics-food2.csv
+│   ├── exploding-topics-sports.csv
+│   ├── exploding-topics.csv
+│   ├── export-2021-06-15-event-608fb54dc707361ea01e01c1.xls
+│   ├── export-2021-06-16-event-608fb54dc707361ea01e01c1 (1).xls
+│   ├── export-2021-06-16-event-608fb54dc707361ea01e01c1 (2).xls
+│   ├── export-2021-06-16-event-608fb54dc707361ea01e01c1.xls
+│   ├── eye-for-ebony-QhoDs-dFIdE-unsplash.jpg
+│   ├── f11f730d7498252ca9b098a3c6aaa4f0.ico.zip
+│   ├── facebook_boutiques_list (1).csv
+│   ├── facebook_boutiques_list (2).csv
+│   ├── facebook_boutiques_list (3).csv
+│   ├── facebook_boutiques_list.csv
+│   ├── facture-1089.pdf
+│   ├── facture-1217.pdf
+│   ├── facture-906.pdf
+│   ├── facture-956.pdf
+│   ├── femmes-a-suivre-flora-coquerel-la-miss-audacieuse.jpg
+│   ├── fontawesome-free-5.13.1-web
+│   ├── fontawesome-free-5.13.1-web.zip
+│   ├── fs-debug.log
+│   ├── fzh1fzw7ft1qrw1gfb7654e1tieu66.html
+│   ├── geckodriver-v0.28.0-macos.tar.gz
+│   ├── git-it-write-master.zip
+│   ├── git-updater-10.4.2.zip
+│   ├── google-workspace-1.jpeg
+│   ├── google-workspace.png
+│   ├── gsuiteprofessionalemail-550x275.png
+│   ├── gutenprint-5.3.3.tar.xz
+│   ├── hayes_tech_logo.png
+│   ├── hayes_tech_logo.svg
+│   ├── hayes_tech_logo_512.png
+│   ├── hayes_tech_logo_64.png
+│   ├── hognekaba.property.csv
+│   ├── hognekabastaging-logs-1647640509328.txt
+│   ├── home
+│   ├── htaccess_Backup_for_ieatmyhealth.com.txt
+│   ├── iStock-1202205418.jpeg
+│   ├── iconfinder_woman-round_hair_3430605.png
+│   ├── image.png
+│   ├── imager_1.7.1.dmg
+│   ├── images (28).jpeg
+│   ├── images (34).jpeg
+│   ├── images (46).jpeg
+│   ├── images (47).jpeg
+│   ├── impactfinances2020.txt
+│   ├── jYriepOyogQ.jpeg
+│   ├── johnpolacek-stacktable.js-1.0.2-13-g25ca16a.zip
+│   ├── jon-tyson-ROfrX4F__ck-unsplash.jpeg
+│   ├── jquery-simple-color-1.2.3.zip
+│   ├── keyword_blogpost_candidates_df_sorted.txt
+│   ├── keyword_suggestion_10.csv
+│   ├── keyword_suggestions.csv
+│   ├── keyword_suggestions_merged.csv
+│   ├── keyword_suggestions_merged_bs.csv
+│   ├── kw_blogpost_candidates_100_500.txt
+│   ├── kw_blogpost_candidates_10_100.txt
+│   ├── laas_cleaner_scripts.zip
+│   ├── leighann-blackwood-hx87JWG4yCI-unsplash.jpg
+│   ├── lineage-14.1-20210527-UNOFFICIAL-n1awifi.zip
+│   ├── lineage-14.1-20210608-UNOFFICIAL-n1awifi.zip
+│   ├── linux-brprinter-installer-2.2.1-1
+│   ├── linux-brprinter-installer-2.2.1-1.gz
+│   ├── logo modabyflora flowers.png
+│   ├── logo modabyflora.png
+│   ├── maria-teneva-2Wa88Py0h0A-unsplash.jpeg
+│   ├── mautic-master
+│   ├── mautic-master 2
+│   ├── mautic-recaptcha-1.1.3.zip
+│   ├── meche-bresilienne.html
+│   ├── meche-bresilienne.jpg
+│   ├── meghan-holmes-UpKlDN7_xVc-unsplash.jpg
+│   ├── migration.csv
+│   ├── migration2.csv
+│   ├── mikyoung-shin-eEqbvQJ0_Sg-unsplash.jpeg
+│   ├── milka_brownie_x2.jpeg
+│   ├── mobile_2.jpeg
+│   ├── mobile_3.jpeg
+│   ├── mobile_4.jpeg
+│   ├── mobile_5.jpeg
+│   ├── mobile_6.jpeg
+│   ├── mobile_7.jpeg
+│   ├── mobile_8.jpeg
+│   ├── modabyflbr119_mysql_db.sql
+│   ├── modabyflora-corporate.zip
+│   ├── modabyflora_wp
+│   ├── motor_bike.mp4
+│   ├── mysql037.kibalooryh687.2020-11-09-21h07
+│   ├── mysql037.kibalooryh687.2020-11-09-21h07.tar.gz
+│   ├── mysql338.modabyflbr119.2020-11-30-07h27.sql
+│   ├── mysql338.modabyflbr119.2020-11-30-07h27.tar.gz
+│   ├── mysql338.modabyflbr119.2020-12-08-07h27.sql
+│   ├── mysql338.modabyflbr119.2020-12-08-07h27.tar.gz
+│   ├── mysql338.modabyflbr119.2020-12-09-07h27.sql
+│   ├── mysql338.modabyflbr119.2020-12-09-07h27.tar.gz
+│   ├── mysql338.modabyflbr119.2021-11-24-19h27.gz
+│   ├── n-8-n-logo-xl.png
+│   ├── n8n-500-500-2.png
+│   ├── nasa-n463SoeSiVY-unsplash.jpeg
+│   ├── net2ftp-1605037868.zip
+│   ├── net2ftp-1605038414.zip
+│   ├── net2ftp-1637783280_dolibarr.zip
+│   ├── net2ftp-1637783322_dolibarr_documents.zip
+│   ├── net2ftp-1637783452_mautic.zip
+│   ├── net2ftp-1637784623_dolibarr2.zip
+│   ├── nicolai-fedderholdt-jJe9bx5uh-8-unsplash.jpg
+│   ├── output_file_en.jl
+│   ├── ovayo-ntlabati-f_WTk4JqwiM-unsplash.jpg
+│   ├── petit ecolier .jpeg
+│   ├── petit ecolier lu.jpeg
+│   ├── pexels-sebastian-voortman-214573.jpeg
+│   ├── philippe-oursel-R5IdSDngcv8-unsplash.jpeg
+│   ├── piscou2011-4d01a733a6ee.json
+│   ├── platform
+│   ├── prince_lu_x4.jpeg
+│   ├── profile.jpg
+│   ├── pua_automation_v202007081910 (3).zip
+│   ├── rate-sheet-pack.zip
+│   ├── regilait.jpeg
+│   ├── relatedQueries (1).csv
+│   ├── relatedQueries (2).csv
+│   ├── relatedQueries (3).csv
+│   ├── relatedQueries (4).csv
+│   ├── relatedQueries.csv
+│   ├── requirements.png
+│   ├── responsive-html-email-templates-master.zip
+│   ├── retail.png
+│   ├── reveal.js-master
+│   ├── reveal.js-master.zip
+│   ├── ricardo-gomez-angel-D9kOnC_1AHw-unsplash.jpeg
+│   ├── runner-images-macos-13-20230509.4.zip
+│   ├── samuele-errico-piccarini-MyjVReZ5GLQ-unsplash.jpeg
+│   ├── scraped_data.csv
+│   ├── sergioafanou_favicon.zip
+│   ├── services.yml
+│   ├── shopping (5).webp
+│   ├── shopping-01.jpeg
+│   ├── smartmenus
+│   ├── smartmenus-1.1.0.zip
+│   ├── sms_and_whatsapp_sender.apk
+│   ├── sms_sender (1).apk
+│   ├── sms_sender (2).apk
+│   ├── sms_sender.apk
+│   ├── softweb-google-workspace.jpeg
+│   ├── sp55708.exe
+│   ├── spatial-path-280410-a4d9c87c8dee.json
+│   ├── spectrum
+│   ├── spectrum-1.8.1.zip
+│   ├── stacktable.js
+│   ├── stil-ROlz8qgP2ms-unsplash.jpg
+│   ├── suitecrm.log
+│   ├── suitecrm_12_2020.log
+│   ├── surface_NSC_NikonPresioPower.zip
+│   ├── tasmota32-webcam.bin
+│   ├── telegram_banner.png
+│   ├── test2.mp4
+│   ├── téléchargement (15).jpeg
+│   ├── téléchargement (4).webp
+│   ├── téléchargement (57).jpeg
+│   ├── téléchargement.webp
+│   ├── themeforest-Ld2GW5rN-ubold-responsive-web-app-kit.zip
+│   ├── themeforest-XNIO9aV7-ubold-responsive-web-app-kit.zip
+│   ├── tiktok_to_telegram_v201911192357.zip
+│   ├── timhayes.jpg
+│   ├── to_delete
+│   ├── to_delete_cleanup.log
+│   ├── to_triage
+│   ├── tv_channels_577552801803240_plus.m3u
+│   ├── tv_channels_907373847880217_plus.m3u.txt
+│   ├── v3-0w4dgxippwe.pdf
+│   ├── v3-g82yb8somtv.pdf
+│   ├── v3-rbtvgel14o.pdf
+│   ├── v3-t4j5y2dhr6.pdf
+│   ├── valerie-kaarna-YsutjEqmLWo-unsplash.jpeg
+│   ├── visa_payment_instructions (1).pdf
+│   ├── visa_payment_instructions.pdf
+│   ├── wc-product-export-20-2-2020-1582237224887.csv
+│   ├── wc-product-export-21-2-2020-1582242608029.csv
+│   ├── wetransfer-21e63a.zip
+│   ├── wetransfer-ec58c1.zip
+│   ├── wetransfer-f225ad.zip
+│   ├── whatsapp-app-social-smartphone-chat.jpg
+│   ├── woocommerce-sample-products.csv
+│   ├── write-a-30-days-digital-marketing-stratagy (1).png
+│   ├── write-a-30-days-digital-marketing-stratagy.png
+│   └── zImage-dtb-bass.fastboot
+├── Games
+│   ├── .DS_Store
+│   ├── Classic NES Series - Super Mario Bros. (USA, Europe).gba
+│   ├── Classic NES Series_ Super Mario Bros..zip
+│   ├── Contra_ The Alien Wars.zip
+│   ├── Emulation
+│   ├── Legend of Zelda, The - Link's Awakening (USA, Europe) (Rev 2).gb
+│   ├── Legend of Zelda, The_ Link's Awakening.zip
+│   ├── Mega Man V.zip
+│   ├── Super Mario All-Stars + Super Mario World (U) [!].zip
+│   ├── Super Mario Land (World) (Rev 1).gb
+│   ├── Super Mario Land (World) (Rev 1).zip
+│   ├── Super Mario World (U) [!].zip
+│   ├── Tetris (JUE) (V1.1) [!].gb
+│   ├── Tetris (JUE) (V1.1) [!].state1
+│   ├── Tetris (JUE) (V1.1) [!].zip
+│   ├── fromvbox.txt
+│   ├── fromwindowsvboc.txt
+│   ├── supermariogamesaved.state
+│   ├── supermariogamesaved2.state
+│   ├── supermariogamesaved3.state
+│   └── supermariogamesaved4.state
+├── Library
+│   ├── .DS_Store
+│   ├── .localized
+│   ├── Accounts
+│   ├── Android
+│   ├── Application Scripts
+│   ├── Application Support
+│   ├── Assistant
+│   ├── Assistants
+│   ├── Audio
+│   ├── Autosave Information
+│   ├── Biome
+│   ├── Caches
+│   ├── Calendars
+│   ├── CallServices
+│   ├── CloudStorage
+│   ├── ColorPickers
+│   ├── Colors
+│   ├── Compositions
+│   ├── Contacts
+│   ├── ContainerManager
+│   ├── Containers
+│   ├── Cookies
+│   ├── CoreFollowUp
+│   ├── DES
+│   ├── Daemon Containers
+│   ├── DataDeliveryServices
+│   ├── Developer
+│   ├── Dictionaries
+│   ├── DoNotDisturb
+│   ├── DuetExpertCenter
+│   ├── Favorites
+│   ├── FontCollections
+│   ├── Fonts
+│   ├── FrontBoard
+│   ├── GameKit
+│   ├── Google
+│   ├── Group Containers
+│   ├── HTTPStorages
+│   ├── HomeKit
+│   ├── IdentityServices
+│   ├── Input Methods
+│   ├── Internet Plug-Ins
+│   ├── Keyboard
+│   ├── Keyboard Layouts
+│   ├── KeyboardServices
+│   ├── Keychains
+│   ├── LanguageModeling
+│   ├── LaunchAgents
+│   ├── Log
+│   ├── Logs
+│   ├── Mail
+│   ├── Maps
+│   ├── Messages
+│   ├── Metadata
+│   ├── Mobile Documents
+│   ├── News
+│   ├── PDF Services
+│   ├── Passes
+│   ├── PersonalizationPortrait
+│   ├── Photos
+│   ├── PreferencePanes
+│   ├── Preferences
+│   ├── Printers
+│   ├── Python
+│   ├── Reminders
+│   ├── Safari
+│   ├── SafariSafeBrowsing
+│   ├── SafariSandboxBroker
+│   ├── Saved Application State
+│   ├── Saved Searches
+│   ├── Screen Savers
+│   ├── ScreenRecordings
+│   ├── Scripts
+│   ├── Services
+│   ├── Sharing
+│   ├── Shortcuts
+│   ├── Sounds
+│   ├── Speech
+│   ├── Spelling
+│   ├── Staging
+│   ├── StatusKit
+│   ├── Suggestions
+│   ├── SyncedPreferences
+│   ├── Translation
+│   ├── Trial
+│   ├── UIKitSystem
+│   ├── VirtualBox
+│   ├── Weather
+│   ├── WebKit
+│   ├── Workflows
+│   ├── com.apple.WatchListKit
+│   ├── com.apple.appleaccountd
+│   ├── com.apple.bluetooth.services.cloud
+│   ├── com.apple.icloud.searchpartyd
+│   ├── com.apple.internal.ck
+│   ├── org.swift.swiftpm
+│   └── studentd
+├── Mon Drive
+│   ├── .DS_Store
+│   ├── .grive
+│   ├── .grive.bkp
+│   ├── .grive_state
+│   ├── .griveignore
+│   ├── .tmp.drivedownload
+│   ├── 00-09.INBOX
+│   ├── 10-19.family.projects
+│   ├── 100-109.ftj.admistrative_documents
+│   ├── 110-119.archive
+│   ├── 20-29.solo.projects
+│   ├── 20240104_090331.mp4
+│   ├── 30-39.ftj.projects
+│   ├── 40-49.family.areas
+│   ├── 40-Full_time_jobs
+│   ├── 41.99.Archives
+│   ├── 41.BrightSoftwares
+│   ├── 50-59.solo.areas
+│   ├── 50.03.scanner_server_tiff_files
+│   ├── 60-69.ftj.areas
+│   ├── 60-Backups
+│   ├── 60.backups
+│   ├── 70-79.resources
+│   ├── 80-89.family.administrative_documents
+│   ├── 90-99.solo.administrative_documents
+│   ├── BlackmagicDesign
+│   ├── DavinciResolve
+│   ├── FileOwnershipTransfert.gscript
+│   ├── Getting started
+│   ├── Icon\015
+│   ├── all_mydocuments
+│   ├── containerdata
+│   ├── dev_fiverr_browser_automation
+│   ├── exclude_list.txt
+│   ├── gotitalone_book.html
+│   ├── libgrive
+│   ├── rclonefilters.txt
+│   └── rclonefilters.txt.md5
+├── Movies
+│   ├── .DS_Store
+│   ├── .localized
+│   ├── Bibliothèque iMovie.imovielibrary
+│   ├── Motion Templates.localized
+│   ├── RustDesk
+│   ├── Skilleos - Teaser Family-401625066.mp4
+│   ├── TV
+│   ├── download_m3u.sh
+│   ├── iMovie Theater.theater
+│   ├── path
+│   ├── skilloscookies.txt
+│   └── tv_channels.m3u
+├── Music
+│   ├── .DS_Store
+│   ├── .localized
+│   ├── AudioBooks
+│   ├── BibleAudio
+│   ├── Music
+│   └── rename_bible_files.py
+├── MyDocuments_documents
+│   ├── .DS_Store
+│   ├── .grive
+│   ├── .~lock.AFANOU Edem - Superviseur - avec Primark.docx#
+│   └── Notes_Obisidian
+├── Pictures
+│   ├── .DS_Store
+│   ├── .localized
+│   ├── Capture d’écran 2023-07-13 à 22.07.15.png
+│   ├── Capture d’écran 2023-07-13 à 22.07.34.png
+│   ├── Capture d’écran 2023-07-13 à 22.09.18.png
+│   ├── Capture d’écran 2023-07-13 à 22.09.35.png
+│   ├── Capture d’écran 2023-07-13 à 22.10.00.png
+│   ├── Capture d’écran 2023-07-13 à 22.10.27.png
+│   ├── Capture d’écran 2023-07-13 à 22.11.24.png
+│   ├── Capture d’écran 2023-07-13 à 22.11.33.png
+│   ├── Capture d’écran 2023-07-13 à 22.11.50.png
+│   ├── Photos Library.photoslibrary
+│   ├── vlcsnap-2023-10-10-21h02m35s949.png
+│   ├── vlcsnap-2023-10-10-21h02m54s811.png
+│   ├── vlcsnap-2023-10-10-21h02m59s922.png
+│   ├── vlcsnap-2023-10-10-21h13m26s898.png
+│   ├── vlcsnap-2023-10-10-21h14m33s841.png
+│   ├── vlcsnap-2023-10-10-21h15m34s101.png
+│   ├── vlcsnap-2023-10-10-21h17m33s123.png
+│   ├── vlcsnap-2023-10-10-21h18m18s692.png
+│   ├── vlcsnap-2023-10-10-21h18m48s237.png
+│   ├── vlcsnap-2023-10-10-21h19m07s161.png
+│   ├── vlcsnap-2023-10-10-21h20m33s130.png
+│   ├── vlcsnap-2023-10-10-21h21m13s408.png
+│   └── vlcsnap-2023-10-10-21h21m41s539.png
+├── Postman
+│   └── files
+├── Public
+│   ├── .localized
+│   └── Drop Box
+├── README.md
+├── Screenshots
+│   ├── Capture d’écran 2020-02-09 à 20.27.24.png
+│   ├── Capture d’écran 2020-02-09 à 20.27.47.png
+│   ├── Capture d’écran 2020-04-15 à 12.50.07.png
+│   ├── Capture d’écran 2020-04-15 à 12.50.14.png
+│   ├── Capture d’écran 2020-04-15 à 12.50.30.png
+│   ├── Capture d’écran 2020-04-16 à 16.38.08.png
+│   ├── Capture d’écran 2020-04-20 à 01.04.05.png
+│   ├── Capture d’écran 2020-04-20 à 21.22.36.png
+│   ├── Capture d’écran 2020-04-21 à 09.56.41.png
+│   ├── Capture d’écran 2020-04-21 à 09.57.45.png
+│   ├── Capture d’écran 2023-07-13 à 22.16.25.png
+│   ├── Capture d’écran 2023-07-13 à 22.16.35.png
+│   ├── Capture d’écran 2023-07-13 à 22.16.49.png
+│   ├── Capture d’écran 2023-07-13 à 22.17.27.png
+│   ├── Capture d’écran 2023-07-13 à 22.17.49.png
+│   ├── Capture d’écran 2023-07-13 à 22.18.02.png
+│   ├── Capture d’écran 2023-07-23 à 10.25.49 (2).png
+│   ├── Capture d’écran 2023-07-23 à 10.25.49.png
+│   ├── Capture d’écran 2023-07-23 à 10.25.57 (2).png
+│   ├── Capture d’écran 2023-07-23 à 10.25.57.png
+│   └── exchange blockchain error.png
+├── VirtualBox VMs
+│   ├── .DS_Store
+│   ├── Linux desktop
+│   ├── Windows11
+│   ├── foobar-kiosk_default_1611011198849_11601
+│   ├── fullbright_station_default_1611869305048_68110
+│   ├── fullbright_station_default_1611870668091_59384
+│   └── linux-mint
+├── automated_dev_cleanup.sh.bkp1
+├── automated_dev_cleanup.sh.bkp2
+├── cam-truck
+│   ├── .DS_Store
+│   ├── cam-truck-1
+│   ├── cam-truck-certificate-pwd.md
+│   ├── cam-truck-certificate-pwd.md.gpg
+│   ├── camtruck
+│   ├── camtruck_id_rsa
+│   ├── camtruck_id_rsa.gpg
+│   ├── camtruck_id_rsa.pub
+│   ├── camtruck_id_rsa.pub.gpg
+│   ├── id_rsa_camtruck
+│   └── id_rsa_camtruck.gpg
+├── cleaning_commands.txt
+├── d2s1
+├── desktop_install_commands.txt
+├── dev
+│   ├── collectmeterdigits
+│   └── react-native-expo-test
+├── dev_d_personal_from_windows
+│   ├── .DS_Store
+│   ├── Icon\015
+│   ├── accelerated-text-fullbright
+│   ├── accelerated-text-old
+│   ├── akaunting-docker
+│   ├── backup_sophiafolwer_s3_bucket
+│   ├── blogpost-tools
+│   ├── bookmark_parser
+│   ├── bright-corporate-website
+│   ├── cam-truck
+│   ├── camtruck
+│   ├── docker_display
+│   ├── eagles-techs.com
+│   ├── evernote-to-obsidian
+│   ├── freelance-work-automation
+│   ├── full-bright-latexcv
+│   ├── generate_page_related_terms
+│   ├── gquestions
+│   ├── hognekaba-backend
+│   ├── ieatmyhealth.com
+│   ├── joyousbyflora-posts
+│   ├── keep-to-markdown
+│   ├── keke.li
+│   └── kibitzr
+├── devbkp_compare_20240812.txt
+├── docker-server-automation.txt
+├── google-cloud-sdk
+│   ├── .DS_Store
+│   ├── .install
+│   ├── LICENSE
+│   ├── README
+│   ├── RELEASE_NOTES
+│   ├── VERSION
+│   ├── bin
+│   ├── completion.bash.inc
+│   ├── completion.zsh.inc
+│   ├── data
+│   ├── deb
+│   ├── install.bat
+│   ├── install.sh
+│   ├── lib
+│   ├── path.bash.inc
+│   ├── path.fish.inc
+│   ├── path.zsh.inc
+│   ├── platform
+│   ├── properties
+│   └── rpm
+├── google_drive_storage.infreqaccess_afanou.com
+│   ├── .DS_Store
+│   ├── .tmp.drivedownload
+│   ├── 10-19.family.projects_infreq_access
+│   ├── 100-109.ftj.admistrative_documents_infreq_access
+│   ├── 110-119.archive_infreq_access
+│   ├── 20-29.solo.projects_infreq_access
+│   ├── 30-39.ftj.projects_infreq_access
+│   ├── 40-49.family.areas_infreq_access
+│   ├── 50-59.solo.areas_infreq_access
+│   ├── 60-69.ftj.areas_infreq_access
+│   ├── 70-79.resources_infreq_access
+│   ├── 80-89.family.administrative_documents_infreq_access
+│   ├── 90-99.solo.administrative_documents_infreq_access
+│   ├── FileOwnershipTransfert.gscript
+│   ├── Icon\015
+│   ├── MyDocuments_infrequent_access
+│   ├── backup_MyDocuments
+│   └── modabyflora_wp.zip
+├── googledrive_compare_20240804.txt
+├── googledrive_compare_60backups_20240807.txt
+├── googledrive_compare_glacier_20240807.txt
+├── googledrive_compare_glacier_update_20240807.txt
+├── googledrive_compare_glacierbackups_20240807.txt
+├── googledrive_compare_glacierinner_20240807.txt
+├── googledrive_compare_infreq_20240807.txt
+├── googledrive_merge_20240804.txt
+├── hmarket
+│   ├── .DS_Store
+│   ├── DriverApp
+│   ├── DriverApp.zip
+│   ├── StoreApp
+│   ├── StoreApp.zip
+│   ├── UserApp
+│   └── UserApp.zip
+├── hognekaba
+│   ├── .DS_Store
+│   ├── HK
+│   ├── HK_Maquette
+│   ├── LOGO_HK_2023
+│   ├── LOGO_HK_2023.zip
+│   ├── LWS_config_cpanel_hognekaba_core
+│   ├── Maquette_HK_2023
+│   ├── documentation
+│   ├── hognekaba-archives
+│   ├── hognekaba-backend
+│   ├── hognekaba-backend-customer-delivery
+│   ├── hognekaba-backend-customer-delivery.zip
+│   ├── hognekaba-mobile-expo
+│   ├── hognekaba-mobile-expo-customer-delivery
+│   ├── hognekaba-mobile-expo-customer-delivery.zip
+│   ├── hognekaba-mobile-expo-v2
+│   ├── hognekaba-mobile-expo-v4
+│   ├── hognekaba-mobile-expo-v5
+│   ├── hognekaba-mobile-expo-v6
+│   ├── hognekaba-mobile-expo-v7
+│   └── hognekaba_core.zip
+├── lionel_deliveries
+│   ├── .DS_Store
+│   ├── WebWhatsapp-Wrapper
+│   ├── ansible-vagrant-examples
+│   ├── bright-car-finder-experiments
+│   ├── bright-parkings-homeassistant
+│   ├── foobar-kiosk
+│   ├── whatsapp_ecommerce
+│   ├── whatsapp_ecommerce2
+│   └── whatsappbot-dialogflow-integrations
+├── mbox
+├── migration_from_heroku
+│   ├── .DS_Store
+│   ├── afanousergio@gmail.com
+│   ├── bkp_envvariables.sh
+│   ├── bkp_getdbdata.sh
+│   ├── bkp_pgdb.sh
+│   ├── client1.heroku@bright-softwares.com
+│   └── fullbright
+├── my_tree_d2.txt
+├── output-1.csv
+├── portainer_container_data
+│   ├── .DS_Store
+│   ├── data
+│   └── docker-compose.yml
+├── process_audit.py
+├── repos_analysis_20240623.txt
+├── repos_analysis_old.txt
+├── sheetsformatterbot-rymsqo-2ff5298e5af1.json
+├── stats_external_repo_to_fork.txt
+├── stats_local_folder_not_a_repo.txt
+├── stats_myrepo_changes_to_save.txt
+├── stats_myrepo_everything_uptodate.txt
+├── stats_size_of_folders.txt
+├── storage.infreqaccess@afanou.com - Google Drive -> /Users/sergio/Library/CloudStorage/GoogleDrive-storage.infreqaccess@afanou.com
+├── storage.std@afanou.com - Google Drive -> /Users/sergio/Library/CloudStorage/GoogleDrive-storage.std@afanou.com
+└── xubuntu_dev
+    ├── .DS_Store
+    ├── CH341SER_MAC
+    ├── MagicMirror
+    ├── MyIonicProject
+    ├── Watch-Me-Build-a-Trading-Bot
+    ├── aws-telegram-serverless
+    ├── bearsfeed
+    ├── bible-latex-pdf
+    ├── bible-latex-site
+    ├── bright-blockchain
+    ├── bright-corporate-telegram-bot
+    ├── bright-softwares
+    ├── bright-softwares-agency
+    ├── bright-todos
+    ├── bright_company
+    ├── brightsoftwares_coming_soon
+    ├── derplup
+    ├── docker-images-builder
+    ├── drupal-ci-cd
+    ├── eepm-video-tools
+    ├── exonam
+    ├── fiverr
+    ├── fiverr-deliveries-1
+    ├── fr-media-downloader
+    ├── fr-replay-downloader
+    ├── garcia-hubot
+    ├── gary-reporter
+    ├── gekko
+    ├── google_drive_upload_test
+    ├── jeedom
+    ├── jekyll-serif-theme
+    ├── justme-fashion-jekyll
+    ├── mailman
+    ├── missjos
+    ├── myAppTest
+    ├── myAppTest2
+    ├── myAppTest3
+    ├── myAppTest4
+    ├── myAppTest5
+    ├── node-stripe-membership-saas
+    ├── parking-bright
+    ├── peoplecounting
+    ├── pocket-api
+    ├── saveur-africaine
+    ├── scanbutton
+    ├── sergio-blog
+    ├── sergio-first-test
+    ├── simple-podcast-server
+    ├── smart-cv
+    ├── speedtest
+    ├── webwhatsapp
+    ├── yowsup-test
+    └── yt-tests
+
+539 directories, 1052 files
