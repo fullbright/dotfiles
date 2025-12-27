@@ -32,6 +32,13 @@
 		// }
 
 	},
+	"dotfiles": {
+	    "repository": "https://github.com/fullbright/dotfiles",
+	
+	    "targetPath": "~",
+	
+	    "installCommand": "install_dotfiles.sh"
+	}
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
