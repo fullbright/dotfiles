@@ -39,3 +39,10 @@ id_rsa*
 *.pub
 
 
+# VSCode
+
+## Extensions
+.vscode/extensions
+
+
+
