@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/local/bin/bash
 #
 # Mac Data Assessment Script
 # Purpose: Comprehensive inventory of all data before Mac reinstallation
@@ -10,6 +10,14 @@
 #
 
 set -euo pipefail
+
+# Source configuration if it exists
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+CONFIG_FILE="${SCRIPT_DIR}/config.sh"
+
+if [[ -f "$CONFIG_FILE" ]]; then
+    source "$CONFIG_FILE"
+fi
 
 # Color codes for output
 readonly RED='\033[0;31m'
@@ -119,22 +127,26 @@ assess_git_repos() {
 
     print_info "Scanning for git repositories in common locations..."
 
-    # Common directories to scan
+    # Common directories to scan - start with smaller set
     local search_dirs=(
-        "${HOME}/Documents"
         "${HOME}/Desktop"
-        "${HOME}/Projects"
-        "${HOME}/Dev"
-        "${HOME}/Development"
-        "${HOME}/Code"
-        "${HOME}/src"
-        "${HOME}/repos"
-        "${HOME}/git"
+        "${HOME}/Documents"
     )
-
-    # Add custom directories from dotfiles
-    if [[ -d "${HOME}/dotfiles" ]]; then
-        search_dirs+=("${HOME}/dotfiles")
+    
+    # Add more directories if they exist and are accessible
+    [[ -d "${HOME}/Projects" && -r "${HOME}/Projects" ]] && search_dirs+=("${HOME}/Projects")
+    [[ -d "${HOME}/Dev" && -r "${HOME}/Dev" ]] && search_dirs+=("${HOME}/Dev")
+    [[ -d "${HOME}/Development" && -r "${HOME}/Development" ]] && search_dirs+=("${HOME}/Development")
+    [[ -d "${HOME}/Code" && -r "${HOME}/Code" ]] && search_dirs+=("${HOME}/Code")
+    [[ -d "${HOME}/src" && -r "${HOME}/src" ]] && search_dirs+=("${HOME}/src")
+    [[ -d "${HOME}/repos" && -r "${HOME}/repos" ]] && search_dirs+=("${HOME}/repos")
+    [[ -d "${HOME}/git" && -r "${HOME}/git" ]] && search_dirs+=("${HOME}/git")
+    [[ -d "${HOME}/dotfiles" && -r "${HOME}/dotfiles" ]] && search_dirs+=("${HOME}/dotfiles")
+    
+    # Add the custom dirs
+    # Add custom directories from config
+    if [[ ${#CUSTOM_GIT_SEARCH_DIRS[@]} -gt 0 ]]; then
+        search_dirs+=("${CUSTOM_GIT_SEARCH_DIRS[@]}")
     fi
 
     {
@@ -146,29 +158,67 @@ assess_git_repos() {
         local repos_with_changes=0
         local repos_with_unpushed=0
         local repos_clean=0
+        
+        echo "Processing ${#search_dirs[@]} search dirs"
+        echo "Search dirs = ${search_dirs[@]}"
 
-        # Find all .git directories
         for base_dir in "${search_dirs[@]}"; do
-            if [[ ! -d "$base_dir" ]]; then
-                continue
-            fi
+            [[ -d "$base_dir" ]] || continue
 
             echo ""
             echo "━━━ Scanning: $base_dir ━━━"
             echo ""
 
-            while IFS= read -r -d '' git_dir; do
+            # First, collect all git directories into an array to avoid pipe issues
+            local git_repos=()
+            while IFS= read -r git_dir; do
+                [[ -n "$git_dir" ]] && git_repos+=("$git_dir")
+            done < <(find "$base_dir" -type d -name ".git" 2>/dev/null)
+        #done
+
+            echo "Found ${#git_repos[@]} repositories in $base_dir"
+            echo "Repos are ${git_repos[@]}"
+            echo ""
+
+            # Now process each repository
+            for git_dir in "${git_repos[@]}"; do
+                echo "Processing git_dir = $git_dir"
                 repo_dir=$(dirname "$git_dir")
-                ((repo_count++))
+                echo "Repo dir = $repo_dir"
+                repo_count=$((repo_count+1))
 
                 echo "[$repo_count] Repository: $repo_dir"
-                echo "    Size: $(get_dir_size "$repo_dir")"
 
-                cd "$repo_dir" || continue
+                # Check basic access first
+                if [[ ! -x "$repo_dir" || ! -r "$repo_dir" ]]; then
+                    echo "    ⚠️  Skipped (permission denied)"
+                    echo ""
+                    continue
+                fi
+
+                # Try to change to directory
+                if ! cd "$repo_dir" 2>/dev/null; then
+                    echo "    ⚠️  Cannot enter directory"
+                    echo ""
+                    continue
+                fi
+
+                # Verify it's a valid git repo
+                if ! git rev-parse --is-inside-work-tree >/dev/null 2>&1; then
+                    echo "    ⚠️  Not a valid git repo"
+                    echo ""
+                    continue
+                fi
+
+                # Get directory size
+                local size
+                size=$(du -sh "$repo_dir" 2>/dev/null | cut -f1 || echo "unknown")
+                echo "    Size: $size"
 
                 # Get remote URLs
                 local remotes
-                remotes=$(git remote -v 2>/dev/null | grep fetch | awk '{print $2}' || echo "No remotes")
+                remotes=$(git remote -v 2>/dev/null | awk '/fetch/{print $2}' | head -1)
+                [[ -z "$remotes" ]] && remotes="No remotes"
                 echo "    Remote: $remotes"
 
                 # Get current branch
@@ -177,72 +227,106 @@ assess_git_repos() {
                 echo "    Branch: $branch"
 
                 # Check for uncommitted changes
+                local has_changes=0
                 if ! git diff-index --quiet HEAD -- 2>/dev/null; then
                     echo "    Status: ⚠️  HAS UNCOMMITTED CHANGES"
-                    ((repos_with_changes++))
-
-                    # Show what changed
+                    has_changes=1
+                    repos_with_changes=$((repos_with_changes+1))
+                    
+                    # Show modified files (limited to first 10)
                     echo "    Modified files:"
-                    git status --short | head -20
+                    git status --short
+                    echo "    Git status (showing top 10):"
+                    git status --short 2>/dev/null | head -10
+                    
+                    echo "    8"
                     local change_count
-                    change_count=$(git status --short | wc -l | tr -d ' ')
-                    if [[ $change_count -gt 20 ]]; then
-                        echo "    ... and $((change_count - 20)) more files"
+                    echo "    6"
+                    change_count=$(git status --short 2>/dev/null | wc -l | tr -d ' ')
+                    echo "    7"
+                    if [[ $change_count -gt 10 ]]; then
+                        echo "    ... and $((change_count - 10)) more files"
                     fi
                 else
-                    echo "    Status: ✓ Clean working directory"
-                    ((repos_clean++))
+                    echo "    Status: ✓ Clean"
+                    repos_clean=$((repos_clean+1))
                 fi
 
-                # Check for unpushed commits
+                # Check for unpushed commits (only if there are remotes)
+                echo "    4"
                 if [[ "$remotes" != "No remotes" ]]; then
+                    echo "    Found remotes $remotes"
                     local unpushed
-                    unpushed=$(git log @{u}.. --oneline 2>/dev/null | wc -l | tr -d ' ')
-                    if [[ $unpushed -gt 0 ]]; then
+                    # unpushed=$(git log -c $repo_dir @{u}..HEAD --oneline 2>/dev/null | wc -l | tr -d ' ') || true
+                    git log --branches --not --remotes --oneline
+                    #git log --branches --not --remotes --oneline >/dev/null
+#                    echo "Last command result = $?"
+#                    if [[ $? != 0 ]] ; then
+#                        echo "Git failed to detect unpushed branched. Trying git gc and rename the icon issues."
+#                        git gc
+#                        if [[ $? != 0 ]] ; then
+#                            echo "likely a icon issue generated by google drive sync. run auto fix"
+#                            mv .git/**/Icon* /tmp
+#                            echo "try git gc again"
+#                            if [[ $? != 0 ]] ; then
+#                                echo "still failing. Manual check then"
+#                            else
+#                                echo "git gc success -> issue fixed"
+#                            fi
+#                        else
+#                            echo "git gc success -> not a Icon file google drive issue, check manually"
+#                        fi
+#                    else
+#                        echo "Git unpushed updates succeeded. Continuing."
+#                    fi
+                    echo "9"
+                    unpushed=$(git log --branches --not --remotes --oneline 2>/dev/null | wc -l | tr -d ' ')
+                    echo "    Found $unpushed unpushed commits"
+                    if [[ -n "$unpushed" && $unpushed -gt 0 ]]; then
                         echo "    Unpushed: ⚠️  $unpushed commit(s) not pushed"
-                        ((repos_with_unpushed++))
+                        repos_with_unpushed=$((repos_with_unpushed+1))
                     fi
                 fi
+                echo "    5"
 
                 # Last commit info
                 local last_commit
                 last_commit=$(git log -1 --format="%h - %s (%cr)" 2>/dev/null || echo "No commits")
                 echo "    Last commit: $last_commit"
 
-                # Stashes
+                # Check for stashes
                 local stash_count
                 stash_count=$(git stash list 2>/dev/null | wc -l | tr -d ' ')
-                if [[ $stash_count -gt 0 ]]; then
+                if [[ -n "$stash_count" && $stash_count -gt 0 ]]; then
                     echo "    Stashes: ⚠️  $stash_count stashed change(s)"
                 fi
 
+                echo "Done with $repo_dir. Continue with next one."
                 echo ""
-
-            done < <(find "$base_dir" -name ".git" -type d -print0 2>/dev/null)
+            done
         done
-
         echo ""
         echo "═══════════════════════════════════════════════════════════"
         echo "SUMMARY"
         echo "═══════════════════════════════════════════════════════════"
-        echo "Total repositories found: $repo_count"
-        echo "Repositories with uncommitted changes: $repos_with_changes"
-        echo "Repositories with unpushed commits: $repos_with_unpushed"
-        echo "Clean repositories: $repos_clean"
+        echo "Total repositories found: ${repo_count:-0}"
+        echo "Repositories with uncommitted changes: ${repos_with_changes:-0}"
+        echo "Repositories with unpushed commits: ${repos_with_unpushed:-0}"
+        echo "Clean repositories: ${repos_clean:-0}"
         echo ""
 
-        if [[ $repos_with_changes -gt 0 || $repos_with_unpushed -gt 0 ]]; then
+        if [[ ${repos_with_changes:-0} -gt 0 || ${repos_with_unpushed:-0} -gt 0 ]]; then
             echo "⚠️  WARNING: You have repositories that need attention!"
             echo "   Please commit and push changes before reinstalling."
         fi
 
-    } > "$output"
+    } | tee "$output"
 
-    print_info "Git repositories assessed: $repo_count repositories found"
+    print_info "Git repositories assessed: ${repo_count:-0} repositories found"
     print_info "Details saved to: $output"
 
-    if [[ $repos_with_changes -gt 0 ]]; then
-        print_warning "$repos_with_changes repositories have uncommitted changes"
+    if [[ ${repos_with_changes:-0} -gt 0 ]]; then
+        print_warning "${repos_with_changes:-0} repositories have uncommitted changes"
     fi
 }
 
