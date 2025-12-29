@@ -449,6 +449,13 @@ main() {
         install_packages "$os"
     fi
 
+    # Setup security hooks (always recommended)
+    echo ""
+    log_info "Setting up security hooks to prevent committing sensitive data..."
+    if [[ -f "$HOME/setup-hooks.sh" ]]; then
+        bash "$HOME/setup-hooks.sh"
+    fi
+
     # Optional: Decrypt sensitive files
     echo ""
     read -p "Decrypt sensitive files (GPG encrypted)? (y/n) " -n 1 -r

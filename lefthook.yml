@@ -1,0 +1,52 @@
+# Lefthook - Fast and powerful Git hooks manager
+# Install: https://github.com/evilmartians/lefthook
+# Run: lefthook install
+#
+# This file travels with the repo and defines hooks that protect against
+# committing sensitive data.
+
+pre-commit:
+  parallel: true
+  commands:
+    detect-secrets:
+      glob: "*.{md,txt,sh,yml,yaml,json,ps1,py,js,ts}"
+      run: |
+        if command -v detect-secrets &> /dev/null; then
+          detect-secrets-hook --baseline .secrets.baseline {staged_files}
+        else
+          echo "Warning: detect-secrets not installed. Run: pip install detect-secrets"
+        fi
+      
+    check-sensitive-patterns:
+      glob: "*.{md,txt,sh,yml,yaml,json,ps1,py}"
+      run: |
+        # Check for company-specific patterns
+        PATTERNS="@essilor\.com|@luxottica\.com|helpdesk\.luxottica\.com|luxotticagroup\.sharepoint\.com|AFANOUS|Sergio.*Essilor"
+        if echo "{staged_files}" | xargs grep -lE "$PATTERNS" 2>/dev/null; then
+          echo "ERROR: Found sensitive company patterns in staged files!"
+          echo "Please encrypt these files with GPG before committing."
+          exit 1
+        fi
+      
+    no-private-keys:
+      glob: "*"
+      run: |
+        # Check for private keys
+        if echo "{staged_files}" | xargs grep -l "PRIVATE KEY" 2>/dev/null; then
+          echo "ERROR: Private key detected! Do not commit private keys."
+          exit 1
+        fi
+
+    check-large-files:
+      glob: "*"
+      run: |
+        # Prevent files larger than 500KB (except encrypted)
+        for file in {staged_files}; do
+          if [[ ! "$file" =~ \.gpg$ ]] && [[ -f "$file" ]]; then
+            size=$(wc -c < "$file")
+            if [[ $size -gt 512000 ]]; then
+              echo "ERROR: File $file is larger than 500KB"
+              exit 1
+            fi
+          fi
+        done
