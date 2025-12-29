@@ -1,0 +1,14 @@
+[Desktop Entry]
+Comment=Color temperature adjustment tool
+Icon=redshift
+Categories=Utility;
+Exec=redshift-gtk
+Terminal=false
+Version=1.0
+Name=Redshift
+GenericName=Color temperature adjustment
+X-GNOME-Autostart-enabled=true
+StartupNotify=true
+Hidden=false
+Type=Application
+

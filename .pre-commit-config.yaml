@@ -1,0 +1,30 @@
+# Pre-commit hooks for sensitive data detection
+# See https://pre-commit.com for more information
+# Install: pip install pre-commit && pre-commit install
+
+repos:
+  # Detect secrets and credentials
+  - repo: https://github.com/Yelp/detect-secrets
+    rev: v1.4.0
+    hooks:
+      - id: detect-secrets
+        args: ['--baseline', '.secrets.baseline']
+        exclude: '.*\.gpg$|.*\.encrypted$'
+
+  # Check for common sensitive patterns
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+      - id: detect-private-key
+      - id: check-added-large-files
+        args: ['--maxkb=500']
+
+  # Custom local hooks for company-specific patterns
+  - repo: local
+    hooks:
+      - id: check-sensitive-patterns
+        name: Check for sensitive company patterns
+        entry: bash -c 'if grep -rE "@essilor\.com|@luxottica\.com|@essilorluxottica\.com|helpdesk\.luxottica\.com|luxotticagroup\.sharepoint\.com|\.essilor\.com:|AFANOUS|Sergio.*Essilor" --include="*.md" --include="*.txt" --include="*.sh" --include="*.yml" --include="*.yaml" --include="*.json" --include="*.ps1" --include="*.py" "$@" 2>/dev/null; then echo "ERROR: Found sensitive company patterns. Please encrypt or remove these files."; exit 1; fi' --
+        language: system
+        types: [text]
+        exclude: '.*\.gpg$|.*\.encrypted$|\.pre-commit-config\.yaml$|\.gitsecrets$'
