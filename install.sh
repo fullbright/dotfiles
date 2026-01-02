@@ -426,12 +426,12 @@ main() {
     echo "  5. Run the configuration wizard (optional)"
     echo ""
 
-    read -p "Continue with installation? (y/n) " -n 1 -r
-    echo
-    if [[ ! $REPLY =~ ^[Yy]$ ]]; then
-        log_info "Installation cancelled"
-        exit 0
-    fi
+    # read -p "Continue with installation? (y/n) " -n 1 -r
+    # echo
+    # if [[ ! $REPLY =~ ^[Yy]$ ]]; then
+    #     log_info "Installation cancelled"
+    #     exit 0
+    # fi
 
     echo ""
 
