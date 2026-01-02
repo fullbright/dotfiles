@@ -811,7 +811,7 @@ assess_system_preferences() {
     # Create a script to restore preferences
     local restore_script="${REPORT_DIR}/restore_system_preferences.sh"
     {
-        echo "#!/bin/bash"
+        echo "#!/usr/bin/env bash"
         echo "# Script to restore system preferences"
         echo "# Generated on $(date)"
         echo ""

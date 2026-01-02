@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 #
 # Configuration file for Mac Assessment Tool
 # Edit this file to customize where the script searches for your data

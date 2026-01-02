@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 echo "Configure vscode settings"
 cp "~/vscode/.config/Code/User/settings.json" "~/Library/Application Support/Code/User/"

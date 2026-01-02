@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 #
 # Enhanced Mac Data Assessment Script
 # Now with: custom directories, office files, encryption, and FTP upload

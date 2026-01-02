@@ -5,7 +5,7 @@ mv ~/.vnc/xstartup ~/.vnc/xstartup.bak
 nano ~/.vnc/xstartup
 
 ``` 
-#!/bin/bash
+#!/usr/bin/env bash
 xrdb $HOME/.Xresources
 startxfce4 &
 ```
@@ -110,6 +110,6 @@ Start a vncserver on screen 3 and start websokify on the same screen and adapt t
 
 
 
-#!/bin/bash
+#!/usr/bin/env bash
 xrdb $HOME/.Xresources
 startxfce4 &

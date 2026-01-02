@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 #
 # Deduplication Helper Script
 # Helps find and handle duplicate files and overlapping folders

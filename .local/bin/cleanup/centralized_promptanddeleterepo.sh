@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Colors for better readability
 GREEN='\e[0;32m'

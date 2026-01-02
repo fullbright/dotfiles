@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 set -e
 export DEBIAN_FRONTEND=noninteractive
 
@@ -20,7 +20,7 @@ fi
 echo "Creating the vnc startup file"
 mkdir -p /home/codespace/.vnc/
 cat > /home/codespace/.vnc/xstartup << EOF
-#!/bin/bash
+#!/usr/bin/env bash
 xrdb $HOME/.Xresources
 startxfce4 &
 EOF

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 ################################################################################
 # Windows-macOS Keyboard Shortcuts Synchronization Script

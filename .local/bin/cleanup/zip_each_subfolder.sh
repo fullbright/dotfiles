@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 
 [[ -z "$1" ]] && { echo "Please provide the folder to process" ; exit 1; }

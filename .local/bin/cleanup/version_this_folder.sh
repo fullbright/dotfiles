@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 FOLDER_TO_PROCESS=$1
 REPO_URL=$2

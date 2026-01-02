@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 git clone --bare https://github.com/fullbright/dotfiles.git $HOME/.dotfiles_bare
 
