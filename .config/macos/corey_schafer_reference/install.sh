@@ -39,4 +39,7 @@ ln -sf "${dotfiledir}/settings/ruff.toml" "${HOME}/.config/ruff/ruff.toml"
 # Run the Sublime Script
 ./sublime.sh
 
+# Install Karabiner Elements
+./karabiner-elements.sh 
+
 echo "Installation Complete!"

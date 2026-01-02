@@ -11,8 +11,8 @@ read
 killall Finder
 
 # Set location for screenshots
-mkdir "${HOME}/Users/kekeli/Pictures/Screenshots"
-defaults write com.apple.screencapture location "${HOME}/Users/kekeli/Pictures/Screenshots"
+mkdir "${HOME}/Pictures/Screenshots"
+defaults write com.apple.screencapture location "${HOME}/Pictures/Screenshots"
 killall SystemUIServer
 
 # Add Bluetooth to Menu Bar for battery percentages

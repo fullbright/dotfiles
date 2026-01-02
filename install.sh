@@ -262,12 +262,12 @@ install_packages() {
                 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
             fi
 
-            # Run Corey Schafer's brew script if available
-            if [[ -f "$HOME/.config/macos/corey_schafer_reference/brew.sh" ]]; then
+            # Run Corey Schafer's install script if available
+            if [[ -f "$HOME/.config/macos/corey_schafer_reference/install.sh" ]]; then
                 read -p "Run Homebrew setup from Corey Schafer reference? (y/n) " -n 1 -r
                 echo
                 if [[ $REPLY =~ ^[Yy]$ ]]; then
-                    bash "$HOME/.config/macos/corey_schafer_reference/brew.sh"
+                    bash "$HOME/.config/macos/corey_schafer_reference/install.sh"
                 fi
             fi
             ;;
