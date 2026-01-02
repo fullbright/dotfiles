@@ -20,7 +20,7 @@ defaults write com.apple.controlcenter "NSStatusItem Visible Bluetooth" -bool tr
 killall ControlCenter
 
 # Get the absolute path to the image
-IMAGE_PATH="${HOME}/dotfiles/settings/Desktop.png"
+IMAGE_PATH="${HOME}/.config/macos/corey_schafer_reference/settings/Desktop.png"
 
 # AppleScript command to set the desktop background
 osascript <<EOF
