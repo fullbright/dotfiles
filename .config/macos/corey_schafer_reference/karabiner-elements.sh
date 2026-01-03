@@ -868,7 +868,8 @@ main() {
     create_directories
     
     print_header "Step 4: Disable Conflicting macOS Shortcuts"
-    disable_macos_conflicting_shortcuts
+    print_header "  Not disabling because it causes the shortcuts to fail."
+    # disable_macos_conflicting_shortcuts
     
     print_header "Step 5: Create Custom Karabiner Rules"
     create_karabiner_rules
