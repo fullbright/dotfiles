@@ -138,7 +138,7 @@ create_karabiner_rules() {
               "type": "device_if",
               "identifiers": [
                 {
-                  "vendor_id": 1060,
+                  "vendor_id": 16700,
                   "product_id": 8454
                 }
               ]
@@ -157,7 +157,7 @@ create_karabiner_rules() {
               "type": "device_if",
               "identifiers": [
                 {
-                  "vendor_id": 1060,
+                  "vendor_id": 16700,
                   "product_id": 8454
                 }
               ]
@@ -176,7 +176,7 @@ create_karabiner_rules() {
               "type": "device_if",
               "identifiers": [
                 {
-                  "vendor_id": 1060,
+                  "vendor_id": 16700,
                   "product_id": 8454
                 }
               ]
@@ -195,7 +195,7 @@ create_karabiner_rules() {
               "type": "device_if",
               "identifiers": [
                 {
-                  "vendor_id": 1060,
+                  "vendor_id": 16700,
                   "product_id": 8454
                 }
               ]
@@ -219,7 +219,7 @@ create_karabiner_rules() {
               "type": "device_if",
               "identifiers": [
                 {
-                  "vendor_id": 1060,
+                  "vendor_id": 16700,
                   "product_id": 8454
                 }
               ]
@@ -248,7 +248,7 @@ create_karabiner_rules() {
               "type": "device_if",
               "identifiers": [
                 {
-                  "vendor_id": 1060,
+                  "vendor_id": 16700,
                   "product_id": 8454
                 }
               ]
@@ -272,7 +272,7 @@ create_karabiner_rules() {
               "type": "device_if",
               "identifiers": [
                 {
-                  "vendor_id": 1060,
+                  "vendor_id": 16700,
                   "product_id": 8454
                 }
               ]
@@ -301,7 +301,7 @@ create_karabiner_rules() {
               "type": "device_if",
               "identifiers": [
                 {
-                  "vendor_id": 1060,
+                  "vendor_id": 16700,
                   "product_id": 8454
                 }
               ]
@@ -329,7 +329,7 @@ create_karabiner_rules() {
               "type": "device_if",
               "identifiers": [
                 {
-                  "vendor_id": 1060,
+                  "vendor_id": 16700,
                   "product_id": 8454
                 }
               ]
@@ -358,7 +358,7 @@ create_karabiner_rules() {
               "type": "device_if",
               "identifiers": [
                 {
-                  "vendor_id": 1060,
+                  "vendor_id": 16700,
                   "product_id": 8454
                 }
               ]
@@ -382,7 +382,7 @@ create_karabiner_rules() {
               "type": "device_if",
               "identifiers": [
                 {
-                  "vendor_id": 1060,
+                  "vendor_id": 16700,
                   "product_id": 8454
                 }
               ]
@@ -406,7 +406,7 @@ create_karabiner_rules() {
               "type": "device_if",
               "identifiers": [
                 {
-                  "vendor_id": 1060,
+                  "vendor_id": 16700,
                   "product_id": 8454
                 }
               ]
@@ -435,7 +435,7 @@ create_karabiner_rules() {
               "type": "device_if",
               "identifiers": [
                 {
-                  "vendor_id": 1060,
+                  "vendor_id": 16700,
                   "product_id": 8454
                 }
               ]
@@ -464,7 +464,7 @@ create_karabiner_rules() {
               "type": "device_if",
               "identifiers": [
                 {
-                  "vendor_id": 1060,
+                  "vendor_id": 16700,
                   "product_id": 8454
                 }
               ]
@@ -487,7 +487,7 @@ create_karabiner_rules() {
               "type": "device_if",
               "identifiers": [
                 {
-                  "vendor_id": 1060,
+                  "vendor_id": 16700,
                   "product_id": 8454
                 }
               ]
@@ -519,7 +519,7 @@ create_karabiner_rules() {
               "type": "device_if",
               "identifiers": [
                 {
-                  "vendor_id": 1060,
+                  "vendor_id": 16700,
                   "product_id": 8454
                 }
               ]
@@ -542,7 +542,7 @@ create_karabiner_rules() {
               "type": "device_if",
               "identifiers": [
                 {
-                  "vendor_id": 1060,
+                  "vendor_id": 16700,
                   "product_id": 8454
                 }
               ]
@@ -566,7 +566,7 @@ create_karabiner_rules() {
               "type": "device_if",
               "identifiers": [
                 {
-                  "vendor_id": 1060,
+                  "vendor_id": 16700,
                   "product_id": 8454
                 }
               ]
@@ -590,7 +590,7 @@ create_karabiner_rules() {
               "type": "device_if",
               "identifiers": [
                 {
-                  "vendor_id": 1060,
+                  "vendor_id": 16700,
                   "product_id": 8454
                 }
               ]
@@ -617,7 +617,7 @@ create_karabiner_rules() {
               "type": "device_if",
               "identifiers": [
                 {
-                  "vendor_id": 1060,
+                  "vendor_id": 16700,
                   "product_id": 8454
                 }
               ]
@@ -639,7 +639,7 @@ create_karabiner_rules() {
               "type": "device_if",
               "identifiers": [
                 {
-                  "vendor_id": 1060,
+                  "vendor_id": 16700,
                   "product_id": 8454
                 }
               ]
@@ -662,7 +662,7 @@ create_karabiner_rules() {
               "type": "device_if",
               "identifiers": [
                 {
-                  "vendor_id": 1060,
+                  "vendor_id": 16700,
                   "product_id": 8454
                 }
               ]
