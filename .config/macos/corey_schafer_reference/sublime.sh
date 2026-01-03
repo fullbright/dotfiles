@@ -64,14 +64,14 @@ read
 osascript -e 'quit app "Sublime Text"'
 
 # Copy custom settings, keymaps, and other configurations
-cp "settings/Preferences.sublime-settings" "$USER_PACKAGES_DIR/Preferences.sublime-settings"
-cp "settings/Default (OSX).sublime-keymap" "$USER_PACKAGES_DIR/Default (OSX).sublime-keymap"
-cp "settings/Material-Theme-Darker.sublime-theme" "$USER_PACKAGES_DIR/Material-Theme-Darker.sublime-theme"
-cp "settings/JsPrettier.sublime-settings" "$USER_PACKAGES_DIR/JsPrettier.sublime-settings"
-cp "settings/SublimeLinter.sublime-settings" "$USER_PACKAGES_DIR/SublimeLinter.sublime-settings"
+cp "${HOME}/.config/macos/corey_schafer_reference/settings/Preferences.sublime-settings" "$USER_PACKAGES_DIR/Preferences.sublime-settings"
+cp "${HOME}/.config/macos/corey_schafer_reference/settings/Default (OSX).sublime-keymap" "$USER_PACKAGES_DIR/Default (OSX).sublime-keymap"
+cp "${HOME}/.config/macos/corey_schafer_reference/settings/Material-Theme-Darker.sublime-theme" "$USER_PACKAGES_DIR/Material-Theme-Darker.sublime-theme"
+cp "${HOME}/.config/macos/corey_schafer_reference/settings/JsPrettier.sublime-settings" "$USER_PACKAGES_DIR/JsPrettier.sublime-settings"
+cp "${HOME}/.config/macos/corey_schafer_reference/settings/SublimeLinter.sublime-settings" "$USER_PACKAGES_DIR/SublimeLinter.sublime-settings"
 
 # Copy custom build systems
-cp "settings/Python-3.sublime-build" "$USER_PACKAGES_DIR/Python-3.sublime-build"
+cp "${HOME}/.config/macos/corey_schafer_reference/settings/Python-3.sublime-build" "$USER_PACKAGES_DIR/Python-3.sublime-build"
 
 # I had issues with using the $HOME variable in a Sublime build system
 # So I just create this file manually in the shell and push it with the home directory hard coded
