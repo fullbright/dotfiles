@@ -58,6 +58,7 @@ packages=(
     "ripgrep"
     "tealdeer"
     "imagemagick"
+    "gnupg"
 )
 
 # Loop over the array to install each application.

@@ -29,18 +29,18 @@ done
 # ln -sf "${dotfiledir}/settings/ruff.toml" "${HOME}/.config/ruff/ruff.toml"
 
 # Run the MacOS Script
-./macOS.sh
+.config/macos/corey_schafer_reference/macOS.sh
 
 # Run the Homebrew Script
-./brew.sh
+.config/macos/corey_schafer_reference/brew.sh
 
 # Run VS Code Script
-./vscode.sh
+.config/macos/corey_schafer_reference/vscode.sh
 
 # Run the Sublime Script
-./sublime.sh
+.config/macos/corey_schafer_reference/sublime.sh
 
 # Install Karabiner Elements
-./karabiner-elements.sh 
+.config/macos/corey_schafer_reference/karabiner-elements.sh 
 
-echo "Installation Complete!"
+echo "Corey's Installation Complete!"
