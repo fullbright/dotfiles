@@ -14,6 +14,6 @@ call %VENV_PATH%\Scripts\deactivate.bat
 echo "Done"
 
 echo "Doing housekeeping"
-call C:\myAPPS\dotfiles\.mybin\ftj_computer_housekeeping\run_housekeeping.cmd
+call C:\myAPPS\dotfiles\.local\bin\ftj_computer_housekeeping\run_housekeeping.cmd
 
 rem pause

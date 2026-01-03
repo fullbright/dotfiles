@@ -4,7 +4,7 @@
 # Supports: macOS, Linux, Windows (via WSL or Git Bash)
 #
 # Usage:
-#   curl -fsSL https://raw.githubusercontent.com/fullbright/dotfiles/main/install.sh | bash
+#   bash <(curl -fsSL https://raw.githubusercontent.com/fullbright/dotfiles/main/install.sh)
 #   # or
 #   git clone --bare https://github.com/fullbright/dotfiles.git $HOME/.dotfiles
 #   ./install.sh

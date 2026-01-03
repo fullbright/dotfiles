@@ -1,8 +1,8 @@
 # Windows computer ignores
 .ftj_config_files/organize/organize/Logs/
 .venv
-.mybin/architecture_schemas/logs/
-.mybin/sync_git_repo/Logs/
+.local/bin/architecture_schemas/logs/
+.local/bin/sync_git_repo/Logs/
 
 # Mac computer ignores
 .dotfiles_bare

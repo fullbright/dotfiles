@@ -199,7 +199,7 @@ done
 # Once fonts are installed, import your Terminal Profile
 echo "Import your terminal settings..."
 echo "Terminal -> Settings -> Profiles -> Import..."
-echo "Import from ${HOME}/dotfiles/settings/CMS.terminal"
+echo "Import from ${HOME}/.config/macos/corey_schafer_reference/settings/CMS.terminal"
 echo "Press enter to continue..."
 read
 
@@ -224,5 +224,5 @@ read
 echo "Open Rectangle and give it necessary permissions. Press enter to continue..."
 read
 
-echo "Import your Rectangle settings located in ~/dotfiles/settings/RectangleConfig.json. Press enter to continue..."
+echo "Import your Rectangle settings located in ~/.config/macos/corey_schafer_reference/settings/RectangleConfig.json. Press enter to continue..."
 read

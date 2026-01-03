@@ -16,5 +16,5 @@ echo "Copy done"
 
 echo "Backup my dotfiles"
 cd c:\myApps\dotfiles
-powershell c:\myApps\dotfiles\.mybin\sync_git_repo\Sync-GitRepo.ps1 -RepoPath "c:\myApps\dotfiles"
+powershell c:\myApps\dotfiles\.local\bin\sync_git_repo\Sync-GitRepo.ps1 -RepoPath "c:\myApps\dotfiles"
 echo "dotfiles backup done"

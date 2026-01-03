@@ -1,1 +1,1 @@
-C:\myAPPS\dotfiles\.mybin\ad_accounts\Find-ADGroupsv2.ps1  -Tokens "*calp*,*deo*,*kp*,*xf*,*2S*,*DJ*,*QC*,*V2*,*VC*,*XF*,*GDP*,*TFS*,*VCET*,*CALP*,*VCAP*,*AZDO*,*RCP*,*PMD*,*RCP*"
+C:\myAPPS\dotfiles\.local\bin\ad_accounts\Find-ADGroupsv2.ps1  -Tokens "*calp*,*deo*,*kp*,*xf*,*2S*,*DJ*,*QC*,*V2*,*VC*,*XF*,*GDP*,*TFS*,*VCET*,*CALP*,*VCAP*,*AZDO*,*RCP*,*PMD*,*RCP*"

@@ -43,7 +43,7 @@ A comprehensive READ-ONLY assessment tool designed to inventory **all** your Mac
 
 ```bash
 # Navigate to the assessment tool directory
-cd ~/dotfiles/.mybin/mac_assessment
+cd ~/.local/bin/mac_assessment
 
 # Make the script executable
 chmod +x assess_mac_data.sh

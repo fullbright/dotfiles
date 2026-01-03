@@ -14,8 +14,8 @@
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home
 
-export PATH=$PATH:$HOME/.mybin
-export PATH=$PATH:$HOME/.mybin/cleanup
+export PATH=$PATH:$HOME/.local/bin
+export PATH=$PATH:$HOME/.local/bin/cleanup
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin

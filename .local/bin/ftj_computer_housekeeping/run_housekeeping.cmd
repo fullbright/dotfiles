@@ -1,6 +1,6 @@
 @echo off
 echo "Backup the list of installed applications"
-powershell -Command "C:\myAPPS\dotfiles\.mybin\Backup_installed_apps\backup_installed_windowspacabilities.ps1 -ComputerName $env:COMPUTERNAME | Format-Table DisplayName > C:\myAPPS\dotfiles\.mybin\Backup_installed_apps\installed_apps.config"
+powershell -Command "C:\myAPPS\dotfiles\.local\bin\Backup_installed_apps\backup_installed_windowspacabilities.ps1 -ComputerName $env:COMPUTERNAME | Format-Table DisplayName > C:\myAPPS\dotfiles\.local\bin\Backup_installed_apps\installed_apps.config"
 
 echo "Copying files"
 copy C:\myAPPS\Tools\MuLaN\MultiLab.UI.exe.Config C:\Users\AFANOUS\Documents\MesSauvegardesDeConfigOutils\Mulan
@@ -15,13 +15,13 @@ xcopy "C:\Users\AFANOUS\AppData\Local\organize" C:\myAPPS\dotfiles\.ftj_config_f
 echo "Copy done"
 
 rem echo "Clean outdated files in the todelete folder"
-rem call c:\myAPPS\dotfiles\.mybin\organize-tool\clean_old_files.cmd
+rem call c:\myAPPS\dotfiles\.local\bin\organize-tool\clean_old_files.cmd
 rem echo "Done"
 
 echo "Backup my dotfiles"
 cd c:\myApps\dotfiles
 c:
-call c:\myApps\dotfiles\.mybin\sync_git_repo\Sync-GitRepo.cmd "c:\myApps\dotfiles" -Verbose
+call c:\myApps\dotfiles\.local\bin\sync_git_repo\Sync-GitRepo.cmd "c:\myApps\dotfiles" -Verbose
 echo "dotfiles backup done"
 
 rem pause

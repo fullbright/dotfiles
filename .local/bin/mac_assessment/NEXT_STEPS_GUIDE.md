@@ -16,7 +16,7 @@ You've run the assessment and discovered:
 The enhanced script will ask you for custom directories and scan for office files.
 
 ```bash
-cd ~/dotfiles/.mybin/mac_assessment
+cd ~/.local/bin/mac_assessment
 
 # Make it executable
 chmod +x assess_mac_data_enhanced.sh
@@ -113,7 +113,7 @@ tar -czf ~/Desktop/old_backups_archive.tar.gz \
 Edit the config file:
 
 ```bash
-cd ~/dotfiles/.mybin/mac_assessment
+cd ~/.local/bin/mac_assessment
 nano config.sh
 ```
 

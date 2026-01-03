@@ -4,11 +4,11 @@ echo S3 Bucket Changes Parser
 echo ====================================
 echo.
 
-cd c:\myAPPS\dotfiles\.mybin\architecture_schemas
+cd c:\myAPPS\dotfiles\.local\bin\architecture_schemas
 
 c:
 
-c:\myAPPS\dotfiles\.mybin\architecture_schemas\.venv\Scripts\python parse_s3bucket_notification.py
+c:\myAPPS\dotfiles\.local\bin\architecture_schemas\.venv\Scripts\python parse_s3bucket_notification.py
 
 echo.
 echo ====================================

@@ -11,7 +11,7 @@
 ## Phase 1: Assessment (30 minutes)
 
 ### 1.1 Run Assessment Script
-- [ ] Navigate to `~/dotfiles/.mybin/mac_assessment/`
+- [ ] Navigate to `~/.local/bin/mac_assessment/`
 - [ ] Run: `chmod +x assess_mac_data.sh`
 - [ ] Run: `./assess_mac_data.sh`
 - [ ] Wait for completion (5-15 minutes)
@@ -371,7 +371,7 @@ You're now ready to reinstall macOS safely. Follow the `POST_INSTALL_GUIDE.md` a
 - Apple Support: 1-800-MY-APPLE
 - [macOS Recovery Mode Guide](https://support.apple.com/guide/mac-help/macos-recovery-mchl46d531d6)
 - Your IT department (if applicable)
-- This checklist location: `~/dotfiles/.mybin/mac_assessment/PRE_REINSTALL_CHECKLIST.md`
+- This checklist location: `~/.local/bin/mac_assessment/PRE_REINSTALL_CHECKLIST.md`
 
 ---
 
