@@ -52,7 +52,7 @@ curl -L -o "$HOME/Library/Application Support/Sublime Text/Installed Packages/Pa
 USER_PACKAGES_DIR="$HOME/Library/Application Support/Sublime Text/Packages/User"
 
 # Copy packages that should be installed
-cp "settings/Package Control.sublime-settings" "$HOME/Library/Application Support/Sublime Text/Packages/User/Package Control.sublime-settings"
+cp "${HOME}/.config/macos/corey_schafer_reference/settings/Package Control.sublime-settings" "$HOME/Library/Application Support/Sublime Text/Packages/User/Package Control.sublime-settings"
 
 # Open Sublime Text to install packages
 echo "Opening Sublime to automatically install packages"
