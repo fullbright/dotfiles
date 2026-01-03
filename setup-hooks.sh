@@ -37,7 +37,8 @@ setup_hooks() {
 }
 
 setup_manual_hooks() {
-    local hooks_dir=".git/hooks"
+    # local hooks_dir=".git/hooks"
+    local hooks_dir=".dotfiles/hooks"
     
     # Create pre-commit hook
     cat > "$hooks_dir/pre-commit" << 'HOOK'
