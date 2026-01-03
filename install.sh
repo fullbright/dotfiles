@@ -248,6 +248,170 @@ checkout_dotfiles() {
     log_success "Dotfiles checked out successfully!"
 }
 
+# Fixed clone_dotfiles function
+clone_dotfiles() {
+    if [[ -d "$DOTFILES_DIR" ]]; then
+        log_warn "Dotfiles directory already exists at $DOTFILES_DIR"
+        read -p "Do you want to backup and replace it? (y/n) " -n 1 -r </dev/tty
+        echo
+        if [[ $REPLY =~ ^[Yy]$ ]]; then
+            # Backup the bare repository
+            mv "$DOTFILES_DIR" "$DOTFILES_BACKUP"
+            log_info "Backed up existing dotfiles repository to $DOTFILES_BACKUP"
+            
+            # IMPORTANT: Also backup any tracked files that might conflict
+            # Get list of tracked files from the backed-up repo
+            local tracked_files
+            tracked_files=$(/usr/bin/git --git-dir="$DOTFILES_BACKUP" --work-tree="$HOME" ls-tree -r HEAD --name-only 2>/dev/null || true)
+            
+            if [[ -n "$tracked_files" ]]; then
+                log_info "Backing up currently tracked dotfiles..."
+                local backup_dir="${DOTFILES_BACKUP}-files"
+                mkdir -p "$backup_dir"
+                
+                while IFS= read -r file; do
+                    if [[ -f "$HOME/$file" ]] || [[ -L "$HOME/$file" ]]; then
+                        local dir=$(dirname "$file")
+                        mkdir -p "$backup_dir/$dir"
+                        cp -a "$HOME/$file" "$backup_dir/$file" 2>/dev/null || true
+                        rm -f "$HOME/$file"
+                        log_info "Backed up and removed: $file"
+                    fi
+                done <<< "$tracked_files"
+                
+                log_success "Tracked files backed up to $backup_dir"
+            fi
+        else
+            log_error "Installation cancelled"
+            exit 1
+        fi
+    fi
+
+    log_info "Cloning dotfiles repository as bare repo..."
+    git clone --bare "$DOTFILES_REPO" "$DOTFILES_DIR"
+    log_success "Cloned dotfiles to $DOTFILES_DIR"
+}
+
+# Alternative simpler approach - just force checkout
+checkout_dotfiles_force() {
+    log_info "Checking out dotfiles to home directory..."
+
+    # Define the dotfiles function for this script
+    dotfiles() {
+        /usr/bin/git --git-dir="$DOTFILES_DIR" --work-tree="$HOME" "$@"
+    }
+
+    # Get list of files that will conflict
+    local conflicts
+    conflicts=$(dotfiles checkout 2>&1 | grep -E "^\s+" | awk '{print $1}' || true)
+
+    if [[ -n "$conflicts" ]]; then
+        log_warn "The following files will be overwritten:"
+        echo "$conflicts" | head -20
+        if [[ $(echo "$conflicts" | wc -l) -gt 20 ]]; then
+            echo "... and $(( $(echo "$conflicts" | wc -l) - 20 )) more files"
+        fi
+        echo
+        
+        read -p "Backup these files and continue? (y/n) " -n 1 -r </dev/tty
+        echo
+        
+        if [[ ! $REPLY =~ ^[Yy]$ ]]; then
+            log_error "Checkout cancelled"
+            exit 1
+        fi
+
+        # Backup conflicting files
+        mkdir -p "$DOTFILES_BACKUP"
+        while IFS= read -r file; do
+            if [[ -f "$HOME/$file" ]] || [[ -L "$HOME/$file" ]]; then
+                local dir=$(dirname "$file")
+                mkdir -p "$DOTFILES_BACKUP/$dir"
+                mv "$HOME/$file" "$DOTFILES_BACKUP/$file" 2>/dev/null || true
+                log_info "Backed up: $file"
+            fi
+        done <<< "$conflicts"
+
+        # Try checkout again
+        if ! dotfiles checkout 2>/dev/null; then
+            # If still failing, force it
+            log_warn "Forcing checkout..."
+            dotfiles checkout -f
+        fi
+    else
+        # No conflicts, just checkout
+        dotfiles checkout
+    fi
+
+    # Configure to hide untracked files
+    dotfiles config --local status.showUntrackedFiles no
+
+    log_success "Dotfiles checked out successfully!"
+}
+
+# Complete fixed version combining both
+clone_and_checkout_fixed() {
+    # Handle existing dotfiles directory
+    if [[ -d "$DOTFILES_DIR" ]]; then
+        log_warn "Dotfiles directory already exists at $DOTFILES_DIR"
+        read -p "Do you want to start fresh? This will backup and remove existing dotfiles. (y/n) " -n 1 -r </dev/tty
+        echo
+        if [[ $REPLY =~ ^[Yy]$ ]]; then
+            # Create backup directory
+            local backup_base="${DOTFILES_BACKUP}-complete"
+            mkdir -p "$backup_base"
+            
+            # Backup the bare repository
+            if [[ -d "$DOTFILES_DIR" ]]; then
+                cp -R "$DOTFILES_DIR" "$backup_base/.dotfiles"
+                log_info "Backed up repository to $backup_base/.dotfiles"
+            fi
+            
+            # Get list of tracked files and back them up
+            local tracked_files
+            tracked_files=$(/usr/bin/git --git-dir="$DOTFILES_DIR" --work-tree="$HOME" ls-tree -r HEAD --name-only 2>/dev/null || true)
+            
+            if [[ -n "$tracked_files" ]]; then
+                log_info "Backing up tracked files..."
+                while IFS= read -r file; do
+                    if [[ -e "$HOME/$file" ]]; then
+                        local dir=$(dirname "$file")
+                        mkdir -p "$backup_base/home/$dir"
+                        cp -a "$HOME/$file" "$backup_base/home/$file" 2>/dev/null || true
+                        rm -f "$HOME/$file"
+                    fi
+                done <<< "$tracked_files"
+            fi
+            
+            # Remove old repo
+            rm -rf "$DOTFILES_DIR"
+            log_success "Cleaned up old dotfiles. Backup at: $backup_base"
+        else
+            log_error "Installation cancelled"
+            exit 1
+        fi
+    fi
+
+    # Clone fresh
+    log_info "Cloning dotfiles repository as bare repo..."
+    git clone --bare "$DOTFILES_REPO" "$DOTFILES_DIR"
+    log_success "Cloned dotfiles to $DOTFILES_DIR"
+
+    # Checkout
+    log_info "Checking out dotfiles to home directory..."
+    dotfiles() {
+        /usr/bin/git --git-dir="$DOTFILES_DIR" --work-tree="$HOME" "$@"
+    }
+    
+    if ! dotfiles checkout 2>/dev/null; then
+        log_warn "Some files exist and would be overwritten. Using force checkout..."
+        dotfiles checkout -f
+    fi
+    
+    dotfiles config --local status.showUntrackedFiles no
+    log_success "Dotfiles checked out successfully!"
+}
+
 # Install platform-specific packages
 install_packages() {
     local os=$1
@@ -436,8 +600,9 @@ main() {
     echo ""
 
     # Run installation steps
-    clone_dotfiles
-    checkout_dotfiles
+    # clone_dotfiles
+    # checkout_dotfiles
+    clone_and_checkout_fixed
     setup_dotfiles_alias "$shell_type"
     setup_completion "$shell_type"
 

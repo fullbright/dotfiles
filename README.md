@@ -7,7 +7,7 @@ Cross-platform dotfiles management using the git bare repository method.
 ## Quick Install
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/fullbright/dotfiles/main/install.sh | bash
+bash <(curl -fsSL https://raw.githubusercontent.com/fullbright/dotfiles/main/install.sh)
 ```
 
 Or manually:
