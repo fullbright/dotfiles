@@ -124,3 +124,5 @@ if [ -f '/Users/sergio/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/se
 
 # git bare dotfiles
 #alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles_bare/ --work-tree=$HOME'
+fpath=($HOME/.zsh/completions $fpath)
+autoload -Uz compinit && compinit
